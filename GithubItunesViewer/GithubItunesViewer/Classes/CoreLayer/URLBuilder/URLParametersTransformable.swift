@@ -15,9 +15,9 @@ protocol URLParametersTransformable {
 
 extension URLParametersTransformable {
     
-    func stringQuery(fromStringArray array: [String]) -> String {
+    func stringQuery(fromStringArray array: [String], withSeprator separator: String) -> String {
         var query = array.reduce("") { result, element in
-            return result + element + ","
+            return result + element + separator
         }
         query.remove(at: query.index(before: query.endIndex))
         

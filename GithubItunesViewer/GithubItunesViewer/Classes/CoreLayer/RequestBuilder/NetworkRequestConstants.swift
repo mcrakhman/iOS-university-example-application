@@ -16,13 +16,13 @@ enum NetworkRequestConstants {
     }
     
     enum APIPath: String {
-        case githubPath = "a"
+        case githubPath = "https://api.github.com/search/"
         case itunesPath = "b"
     }
     
     enum APIMethodName: String {
         case itunesMethod = "a"
-        case githubMethod = "b"
+        case githubMethod = "repositories"
     }
     
     enum HTTPMethod: String {
