@@ -13,8 +13,6 @@
 		9E237A161E3396D300CA2FD1 /* GithubItunesViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A151E3396D300CA2FD1 /* GithubItunesViewerTests.swift */; };
 		9E237A271E33980300CA2FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A261E33980300CA2FD1 /* AppDelegate.swift */; };
 		9E237A281E33980300CA2FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A261E33980300CA2FD1 /* AppDelegate.swift */; };
-		9E237A2C1E33994600CA2FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A2B1E33994600CA2FD1 /* ViewController.swift */; };
-		9E237A2D1E33994600CA2FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A2B1E33994600CA2FD1 /* ViewController.swift */; };
 		9E237A311E339BB800CA2FD1 /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A301E339BB800CA2FD1 /* Deserializer.swift */; };
 		9E237A321E339BB800CA2FD1 /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A301E339BB800CA2FD1 /* Deserializer.swift */; };
 		9E237A341E339BFC00CA2FD1 /* JSONDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A331E339BFC00CA2FD1 /* JSONDeserializer.swift */; };
@@ -47,6 +45,48 @@
 		9E237A6A1E33B5A200CA2FD1 /* GithubMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A681E33B5A200CA2FD1 /* GithubMapper.swift */; };
 		9E237A6C1E33B5D500CA2FD1 /* GithubMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A6B1E33B5D500CA2FD1 /* GithubMapperImplementation.swift */; };
 		9E237A6D1E33B5D500CA2FD1 /* GithubMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A6B1E33B5D500CA2FD1 /* GithubMapperImplementation.swift */; };
+		9E237A701E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A6F1E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift */; };
+		9E237A711E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A6F1E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift */; };
+		9E237A741E33EA3B00CA2FD1 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A731E33EA3B00CA2FD1 /* UIViewController.swift */; };
+		9E237A751E33EA3B00CA2FD1 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A731E33EA3B00CA2FD1 /* UIViewController.swift */; };
+		9E237A781E33EBE900CA2FD1 /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A771E33EBE900CA2FD1 /* MainRouterInput.swift */; };
+		9E237A791E33EBE900CA2FD1 /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A771E33EBE900CA2FD1 /* MainRouterInput.swift */; };
+		9E237A7B1E33EC2500CA2FD1 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A7A1E33EC2500CA2FD1 /* MainRouter.swift */; };
+		9E237A7C1E33EC2500CA2FD1 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A7A1E33EC2500CA2FD1 /* MainRouter.swift */; };
+		9E237A801E33ED2300CA2FD1 /* GithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A7F1E33ED2300CA2FD1 /* GithubViewController.swift */; };
+		9E237A811E33ED2300CA2FD1 /* GithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A7F1E33ED2300CA2FD1 /* GithubViewController.swift */; };
+		9E237A841E33ED9D00CA2FD1 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A831E33ED9D00CA2FD1 /* ApplicationAssembly.swift */; };
+		9E237A851E33ED9D00CA2FD1 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A831E33ED9D00CA2FD1 /* ApplicationAssembly.swift */; };
+		9E237A871E33FFA100CA2FD1 /* GithubViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A861E33FFA100CA2FD1 /* GithubViewInput.swift */; };
+		9E237A881E33FFA100CA2FD1 /* GithubViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A861E33FFA100CA2FD1 /* GithubViewInput.swift */; };
+		9E237A8B1E3405CD00CA2FD1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A8A1E3405CD00CA2FD1 /* MainViewController.swift */; };
+		9E237A8C1E3405CD00CA2FD1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A8A1E3405CD00CA2FD1 /* MainViewController.swift */; };
+		9E237A8E1E34068700CA2FD1 /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A8D1E34068700CA2FD1 /* MainViewInput.swift */; };
+		9E237A8F1E34068700CA2FD1 /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A8D1E34068700CA2FD1 /* MainViewInput.swift */; };
+		9E237A911E34069800CA2FD1 /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A901E34069800CA2FD1 /* MainViewOutput.swift */; };
+		9E237A921E34069800CA2FD1 /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A901E34069800CA2FD1 /* MainViewOutput.swift */; };
+		9E237A951E34086300CA2FD1 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A941E34086300CA2FD1 /* MainPresenter.swift */; };
+		9E237A961E34086300CA2FD1 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A941E34086300CA2FD1 /* MainPresenter.swift */; };
+		9E237A9B1E34099600CA2FD1 /* ITunesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A9A1E34099600CA2FD1 /* ITunesViewController.swift */; };
+		9E237A9C1E34099600CA2FD1 /* ITunesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A9A1E34099600CA2FD1 /* ITunesViewController.swift */; };
+		9E237A9E1E3409A700CA2FD1 /* ITunesViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A9D1E3409A700CA2FD1 /* ITunesViewInput.swift */; };
+		9E237A9F1E3409A700CA2FD1 /* ITunesViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A9D1E3409A700CA2FD1 /* ITunesViewInput.swift */; };
+		9E237AA21E340C9E00CA2FD1 /* AssemblyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AA11E340C9E00CA2FD1 /* AssemblyFactory.swift */; };
+		9E237AA31E340C9E00CA2FD1 /* AssemblyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AA11E340C9E00CA2FD1 /* AssemblyFactory.swift */; };
+		9E237AA61E340DB100CA2FD1 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AA51E340DB100CA2FD1 /* MainAssembly.swift */; };
+		9E237AA71E340DB100CA2FD1 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AA51E340DB100CA2FD1 /* MainAssembly.swift */; };
+		9E237AAA1E340DF400CA2FD1 /* GithubAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AA91E340DF400CA2FD1 /* GithubAssembly.swift */; };
+		9E237AAB1E340DF400CA2FD1 /* GithubAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AA91E340DF400CA2FD1 /* GithubAssembly.swift */; };
+		9E237AAE1E340E8E00CA2FD1 /* ITunesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AAD1E340E8E00CA2FD1 /* ITunesAssembly.swift */; };
+		9E237AAF1E340E8E00CA2FD1 /* ITunesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AAD1E340E8E00CA2FD1 /* ITunesAssembly.swift */; };
+		9E237AB11E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB01E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift */; };
+		9E237AB21E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB01E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift */; };
+		9E237AB41E34105400CA2FD1 /* GithubAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB31E34105400CA2FD1 /* GithubAssemblyImplementation.swift */; };
+		9E237AB51E34105400CA2FD1 /* GithubAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB31E34105400CA2FD1 /* GithubAssemblyImplementation.swift */; };
+		9E237AB71E34108A00CA2FD1 /* MainAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB61E34108A00CA2FD1 /* MainAssemblyImplementation.swift */; };
+		9E237AB81E34108A00CA2FD1 /* MainAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB61E34108A00CA2FD1 /* MainAssemblyImplementation.swift */; };
+		9E237ABA1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB91E34139500CA2FD1 /* AssemblyFactoryImplementation.swift */; };
+		9E237ABB1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB91E34139500CA2FD1 /* AssemblyFactoryImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +109,6 @@
 		9E237A151E3396D300CA2FD1 /* GithubItunesViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubItunesViewerTests.swift; sourceTree = "<group>"; };
 		9E237A171E3396D300CA2FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E237A261E33980300CA2FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Classes/ApplicationLayer/AppDelegate.swift; sourceTree = "<group>"; };
-		9E237A2B1E33994600CA2FD1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Classes/PresentationLayer/UserStories/Main/ViewController.swift; sourceTree = "<group>"; };
 		9E237A301E339BB800CA2FD1 /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deserializer.swift; path = Classes/CoreLayer/Deserializer/Deserializer.swift; sourceTree = "<group>"; };
 		9E237A331E339BFC00CA2FD1 /* JSONDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONDeserializer.swift; path = Classes/CoreLayer/Deserializer/JSONDeserializer.swift; sourceTree = "<group>"; };
 		9E237A371E339CCC00CA2FD1 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkClient.swift; path = Classes/CoreLayer/NetworkClient/NetworkClient.swift; sourceTree = "<group>"; };
@@ -86,6 +125,27 @@
 		9E237A641E33B4E800CA2FD1 /* GithubRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubRepository.swift; path = Classes/Entity/GithubRepository.swift; sourceTree = "<group>"; };
 		9E237A681E33B5A200CA2FD1 /* GithubMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubMapper.swift; path = Classes/CoreLayer/Mapper/GithubMapper/GithubMapper.swift; sourceTree = "<group>"; };
 		9E237A6B1E33B5D500CA2FD1 /* GithubMapperImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubMapperImplementation.swift; path = Classes/CoreLayer/Mapper/GithubMapper/GithubMapperImplementation.swift; sourceTree = "<group>"; };
+		9E237A6F1E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerEmbedding.swift; path = Classes/Helpers/ViewControllerEmbedding/ViewControllerEmbedding.swift; sourceTree = "<group>"; };
+		9E237A731E33EA3B00CA2FD1 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Classes/Extensions/UIViewController.swift; sourceTree = "<group>"; };
+		9E237A771E33EBE900CA2FD1 /* MainRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainRouterInput.swift; path = Classes/PresentationLayer/UserStories/Main/Router/MainRouterInput.swift; sourceTree = "<group>"; };
+		9E237A7A1E33EC2500CA2FD1 /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainRouter.swift; path = Classes/PresentationLayer/UserStories/Main/Router/MainRouter.swift; sourceTree = "<group>"; };
+		9E237A7F1E33ED2300CA2FD1 /* GithubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubViewController.swift; path = Classes/PresentationLayer/UserStories/Github/View/GithubViewController.swift; sourceTree = "<group>"; };
+		9E237A831E33ED9D00CA2FD1 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationAssembly.swift; path = Classes/ApplicationLayer/Assembly/ApplicationAssembly.swift; sourceTree = "<group>"; };
+		9E237A861E33FFA100CA2FD1 /* GithubViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubViewInput.swift; path = Classes/PresentationLayer/UserStories/Github/View/GithubViewInput.swift; sourceTree = "<group>"; };
+		9E237A8A1E3405CD00CA2FD1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/PresentationLayer/UserStories/Main/View/MainViewController.swift; sourceTree = "<group>"; };
+		9E237A8D1E34068700CA2FD1 /* MainViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewInput.swift; path = Classes/PresentationLayer/UserStories/Main/View/MainViewInput.swift; sourceTree = "<group>"; };
+		9E237A901E34069800CA2FD1 /* MainViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewOutput.swift; path = Classes/PresentationLayer/UserStories/Main/View/MainViewOutput.swift; sourceTree = "<group>"; };
+		9E237A941E34086300CA2FD1 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPresenter.swift; path = Classes/PresentationLayer/UserStories/Main/Presenter/MainPresenter.swift; sourceTree = "<group>"; };
+		9E237A9A1E34099600CA2FD1 /* ITunesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ITunesViewController.swift; path = Classes/PresentationLayer/UserStories/ITunes/View/ITunesViewController.swift; sourceTree = "<group>"; };
+		9E237A9D1E3409A700CA2FD1 /* ITunesViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ITunesViewInput.swift; path = Classes/PresentationLayer/UserStories/ITunes/View/ITunesViewInput.swift; sourceTree = "<group>"; };
+		9E237AA11E340C9E00CA2FD1 /* AssemblyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssemblyFactory.swift; path = Classes/ApplicationLayer/Assembly/AssemblyFactory.swift; sourceTree = "<group>"; };
+		9E237AA51E340DB100CA2FD1 /* MainAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainAssembly.swift; path = Classes/PresentationLayer/UserStories/Main/Assembly/MainAssembly.swift; sourceTree = "<group>"; };
+		9E237AA91E340DF400CA2FD1 /* GithubAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubAssembly.swift; path = Classes/PresentationLayer/UserStories/Github/Assembly/GithubAssembly.swift; sourceTree = "<group>"; };
+		9E237AAD1E340E8E00CA2FD1 /* ITunesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ITunesAssembly.swift; path = Classes/PresentationLayer/UserStories/ITunes/Assembly/ITunesAssembly.swift; sourceTree = "<group>"; };
+		9E237AB01E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ITunesAssemblyImplementation.swift; path = Classes/PresentationLayer/UserStories/ITunes/Assembly/ITunesAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9E237AB31E34105400CA2FD1 /* GithubAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubAssemblyImplementation.swift; path = Classes/PresentationLayer/UserStories/Github/Assembly/GithubAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9E237AB61E34108A00CA2FD1 /* MainAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainAssemblyImplementation.swift; path = Classes/PresentationLayer/UserStories/Main/Assembly/MainAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9E237AB91E34139500CA2FD1 /* AssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssemblyFactoryImplementation.swift; path = Classes/ApplicationLayer/Assembly/AssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +208,7 @@
 		9E237A201E33976800CA2FD1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9E237A721E33EA1900CA2FD1 /* Extensions */,
 				9E237A2E1E33996400CA2FD1 /* Helpers */,
 				9E237A251E3397A600CA2FD1 /* Entity */,
 				9E237A241E3397A000CA2FD1 /* CoreLayer */,
@@ -161,6 +222,7 @@
 		9E237A211E33978A00CA2FD1 /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9E237A821E33ED8400CA2FD1 /* Assembly */,
 				9E237A261E33980300CA2FD1 /* AppDelegate.swift */,
 			);
 			name = ApplicationLayer;
@@ -204,6 +266,8 @@
 		9E237A291E33981500CA2FD1 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				9E237A981E34096C00CA2FD1 /* ITunes */,
+				9E237A7D1E33ECF500CA2FD1 /* Github */,
 				9E237A2A1E33983300CA2FD1 /* Main */,
 			);
 			name = UserStories;
@@ -212,7 +276,10 @@
 		9E237A2A1E33983300CA2FD1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				9E237A2B1E33994600CA2FD1 /* ViewController.swift */,
+				9E237AA41E340D9900CA2FD1 /* Assembly */,
+				9E237A931E34084B00CA2FD1 /* Presenter */,
+				9E237A891E3405B200CA2FD1 /* View */,
+				9E237A761E33EBD200CA2FD1 /* Router */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -220,6 +287,7 @@
 		9E237A2E1E33996400CA2FD1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9E237A6E1E33E36E00CA2FD1 /* ViewControllerEmbedding */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -288,6 +356,122 @@
 				9E237A6B1E33B5D500CA2FD1 /* GithubMapperImplementation.swift */,
 			);
 			name = GithubMapper;
+			sourceTree = "<group>";
+		};
+		9E237A6E1E33E36E00CA2FD1 /* ViewControllerEmbedding */ = {
+			isa = PBXGroup;
+			children = (
+				9E237A6F1E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift */,
+			);
+			name = ViewControllerEmbedding;
+			sourceTree = "<group>";
+		};
+		9E237A721E33EA1900CA2FD1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E237A731E33EA3B00CA2FD1 /* UIViewController.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		9E237A761E33EBD200CA2FD1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9E237A771E33EBE900CA2FD1 /* MainRouterInput.swift */,
+				9E237A7A1E33EC2500CA2FD1 /* MainRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		9E237A7D1E33ECF500CA2FD1 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AA81E340DDC00CA2FD1 /* Assembly */,
+				9E237A7E1E33ECFB00CA2FD1 /* View */,
+			);
+			name = Github;
+			sourceTree = "<group>";
+		};
+		9E237A7E1E33ECFB00CA2FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E237A7F1E33ED2300CA2FD1 /* GithubViewController.swift */,
+				9E237A861E33FFA100CA2FD1 /* GithubViewInput.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9E237A821E33ED8400CA2FD1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AA11E340C9E00CA2FD1 /* AssemblyFactory.swift */,
+				9E237AB91E34139500CA2FD1 /* AssemblyFactoryImplementation.swift */,
+				9E237A831E33ED9D00CA2FD1 /* ApplicationAssembly.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		9E237A891E3405B200CA2FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E237A8A1E3405CD00CA2FD1 /* MainViewController.swift */,
+				9E237A8D1E34068700CA2FD1 /* MainViewInput.swift */,
+				9E237A901E34069800CA2FD1 /* MainViewOutput.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9E237A931E34084B00CA2FD1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9E237A941E34086300CA2FD1 /* MainPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9E237A981E34096C00CA2FD1 /* ITunes */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AAC1E340E7600CA2FD1 /* Assembly */,
+				9E237A991E34097400CA2FD1 /* View */,
+			);
+			name = ITunes;
+			sourceTree = "<group>";
+		};
+		9E237A991E34097400CA2FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E237A9A1E34099600CA2FD1 /* ITunesViewController.swift */,
+				9E237A9D1E3409A700CA2FD1 /* ITunesViewInput.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9E237AA41E340D9900CA2FD1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AA51E340DB100CA2FD1 /* MainAssembly.swift */,
+				9E237AB61E34108A00CA2FD1 /* MainAssemblyImplementation.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		9E237AA81E340DDC00CA2FD1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AA91E340DF400CA2FD1 /* GithubAssembly.swift */,
+				9E237AB31E34105400CA2FD1 /* GithubAssemblyImplementation.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		9E237AAC1E340E7600CA2FD1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AAD1E340E8E00CA2FD1 /* ITunesAssembly.swift */,
+				9E237AB01E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift */,
+			);
+			name = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,23 +578,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E237A341E339BFC00CA2FD1 /* JSONDeserializer.swift in Sources */,
+				9E237A9E1E3409A700CA2FD1 /* ITunesViewInput.swift in Sources */,
+				9E237A8B1E3405CD00CA2FD1 /* MainViewController.swift in Sources */,
+				9E237A871E33FFA100CA2FD1 /* GithubViewInput.swift in Sources */,
 				9E237A691E33B5A200CA2FD1 /* GithubMapper.swift in Sources */,
+				9E237A9B1E34099600CA2FD1 /* ITunesViewController.swift in Sources */,
+				9E237AB71E34108A00CA2FD1 /* MainAssemblyImplementation.swift in Sources */,
 				9E237A5E1E33AC6A00CA2FD1 /* GithubRepositorySearchConfiguration.swift in Sources */,
+				9E237ABA1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */,
 				9E237A381E339CCC00CA2FD1 /* NetworkClient.swift in Sources */,
-				9E237A2C1E33994600CA2FD1 /* ViewController.swift in Sources */,
+				9E237A8E1E34068700CA2FD1 /* MainViewInput.swift in Sources */,
 				9E237A561E33A89700CA2FD1 /* NetworkRequestErrors.swift in Sources */,
 				9E237A6C1E33B5D500CA2FD1 /* GithubMapperImplementation.swift in Sources */,
+				9E237A951E34086300CA2FD1 /* MainPresenter.swift in Sources */,
 				9E237A4D1E33A6CB00CA2FD1 /* URLBuilder.swift in Sources */,
+				9E237A781E33EBE900CA2FD1 /* MainRouterInput.swift in Sources */,
+				9E237A911E34069800CA2FD1 /* MainViewOutput.swift in Sources */,
+				9E237A801E33ED2300CA2FD1 /* GithubViewController.swift in Sources */,
+				9E237AA21E340C9E00CA2FD1 /* AssemblyFactory.swift in Sources */,
 				9E237A491E33A37100CA2FD1 /* RequestBuilderImplementation.swift in Sources */,
+				9E237AAA1E340DF400CA2FD1 /* GithubAssembly.swift in Sources */,
+				9E237AA61E340DB100CA2FD1 /* MainAssembly.swift in Sources */,
+				9E237AB11E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift in Sources */,
 				9E237A461E33A32F00CA2FD1 /* RequestBuilder.swift in Sources */,
 				9E237A651E33B4E800CA2FD1 /* GithubRepository.swift in Sources */,
 				9E237A531E33A80B00CA2FD1 /* URLParametersTransformable.swift in Sources */,
+				9E237A7B1E33EC2500CA2FD1 /* MainRouter.swift in Sources */,
 				9E237A3B1E339CFC00CA2FD1 /* NetworkClientImplementation.swift in Sources */,
+				9E237A841E33ED9D00CA2FD1 /* ApplicationAssembly.swift in Sources */,
 				9E237A431E33A19500CA2FD1 /* RequestBuilderConfiguration.swift in Sources */,
+				9E237A741E33EA3B00CA2FD1 /* UIViewController.swift in Sources */,
 				9E237A3F1E33A06F00CA2FD1 /* NetworkRequestConstants.swift in Sources */,
+				9E237AAE1E340E8E00CA2FD1 /* ITunesAssembly.swift in Sources */,
 				9E237A501E33A79800CA2FD1 /* URLBuilderImplementation.swift in Sources */,
 				9E237A311E339BB800CA2FD1 /* Deserializer.swift in Sources */,
 				9E237A271E33980300CA2FD1 /* AppDelegate.swift in Sources */,
+				9E237AB41E34105400CA2FD1 /* GithubAssemblyImplementation.swift in Sources */,
+				9E237A701E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,20 +626,40 @@
 				9E237A401E33A06F00CA2FD1 /* NetworkRequestConstants.swift in Sources */,
 				9E237A351E339BFC00CA2FD1 /* JSONDeserializer.swift in Sources */,
 				9E237A321E339BB800CA2FD1 /* Deserializer.swift in Sources */,
+				9E237AAF1E340E8E00CA2FD1 /* ITunesAssembly.swift in Sources */,
 				9E237A4A1E33A37100CA2FD1 /* RequestBuilderImplementation.swift in Sources */,
 				9E237A441E33A19500CA2FD1 /* RequestBuilderConfiguration.swift in Sources */,
+				9E237AAB1E340DF400CA2FD1 /* GithubAssembly.swift in Sources */,
 				9E237A5F1E33AC6A00CA2FD1 /* GithubRepositorySearchConfiguration.swift in Sources */,
 				9E237A4E1E33A6CB00CA2FD1 /* URLBuilder.swift in Sources */,
+				9E237AA31E340C9E00CA2FD1 /* AssemblyFactory.swift in Sources */,
 				9E237A3C1E339CFC00CA2FD1 /* NetworkClientImplementation.swift in Sources */,
+				9E237A791E33EBE900CA2FD1 /* MainRouterInput.swift in Sources */,
 				9E237A511E33A79800CA2FD1 /* URLBuilderImplementation.swift in Sources */,
+				9E237A7C1E33EC2500CA2FD1 /* MainRouter.swift in Sources */,
+				9E237A961E34086300CA2FD1 /* MainPresenter.swift in Sources */,
 				9E237A471E33A32F00CA2FD1 /* RequestBuilder.swift in Sources */,
-				9E237A2D1E33994600CA2FD1 /* ViewController.swift in Sources */,
 				9E237A281E33980300CA2FD1 /* AppDelegate.swift in Sources */,
+				9E237AB51E34105400CA2FD1 /* GithubAssemblyImplementation.swift in Sources */,
+				9E237A811E33ED2300CA2FD1 /* GithubViewController.swift in Sources */,
+				9E237A881E33FFA100CA2FD1 /* GithubViewInput.swift in Sources */,
+				9E237A8C1E3405CD00CA2FD1 /* MainViewController.swift in Sources */,
+				9E237A851E33ED9D00CA2FD1 /* ApplicationAssembly.swift in Sources */,
 				9E237A6A1E33B5A200CA2FD1 /* GithubMapper.swift in Sources */,
+				9E237A9C1E34099600CA2FD1 /* ITunesViewController.swift in Sources */,
+				9E237AA71E340DB100CA2FD1 /* MainAssembly.swift in Sources */,
+				9E237A751E33EA3B00CA2FD1 /* UIViewController.swift in Sources */,
+				9E237A8F1E34068700CA2FD1 /* MainViewInput.swift in Sources */,
 				9E237A6D1E33B5D500CA2FD1 /* GithubMapperImplementation.swift in Sources */,
+				9E237A9F1E3409A700CA2FD1 /* ITunesViewInput.swift in Sources */,
+				9E237ABB1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */,
 				9E237A161E3396D300CA2FD1 /* GithubItunesViewerTests.swift in Sources */,
 				9E237A571E33A89700CA2FD1 /* NetworkRequestErrors.swift in Sources */,
+				9E237AB21E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift in Sources */,
 				9E237A541E33A80B00CA2FD1 /* URLParametersTransformable.swift in Sources */,
+				9E237A711E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift in Sources */,
+				9E237A921E34069800CA2FD1 /* MainViewOutput.swift in Sources */,
+				9E237AB81E34108A00CA2FD1 /* MainAssemblyImplementation.swift in Sources */,
 				9E237A391E339CCC00CA2FD1 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
