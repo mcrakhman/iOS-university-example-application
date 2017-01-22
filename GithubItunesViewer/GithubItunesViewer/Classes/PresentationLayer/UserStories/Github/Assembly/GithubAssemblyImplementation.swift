@@ -18,22 +18,27 @@ class GithubAssemblyImplementation: GithubAssembly {
     
     func module() -> UIViewController {
         let storyboard = UIStoryboard(name: StoryboardConstants.main, bundle: nil)
+       
         let viewController = storyboard.instantiateViewController(withIdentifier: GithubViewController.storyboardIdentifier) as! GithubViewController
-        
         let presenter = GithubPresenter()
         let githubService = assemblyFactory.serviceAssembly().githubService()
+        let downloaderService = assemblyFactory.serviceAssembly().imageDownloaderService()
         let interactor = GithubInteractor()
+        let viewModelFactory = GithubViewModelFactoryImplementation()
+        let dataDisplayManager = GithubDataDisplayManagerImplementation()
+        
+        interactor.githubService = githubService
+        interactor.downloaderService = downloaderService
+        interactor.output = presenter
         
         presenter.view = viewController
         presenter.interactor = interactor
-        viewController.output = presenter
-        interactor.githubService = githubService
-        interactor.output = presenter
         
-        let viewModelFactory = GithubViewModelFactoryImplementation()
-        let dataDisplayManager = GithubDataDisplayManagerImplementation()
-        dataDisplayManager.factory = viewModelFactory
+        viewController.output = presenter
         viewController.dataDisplayManager = dataDisplayManager
+        
+        dataDisplayManager.factory = viewModelFactory
+        dataDisplayManager.imageCellDelegate = viewController
         
         return viewController
     }

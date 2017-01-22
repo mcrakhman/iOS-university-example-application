@@ -11,6 +11,8 @@ import UIKit
 class GithubDataDisplayManagerImplementation: NSObject, GithubDataDisplayManager {
     
     var factory: GithubViewModelFactory?
+    weak var imageCellDelegate: ImageCellDelegate?
+    
     var viewModels: [CellViewModel] = []
     
     func update(with repositiories: [GithubRepository]) {
@@ -32,10 +34,12 @@ class GithubDataDisplayManagerImplementation: NSObject, GithubDataDisplayManager
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let viewModel = viewModels[indexPath.row]
         let cellIdentifier = viewModel.associatedCell.identifier
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! ConfigurableCell
         
-        cell.configure(with: viewModel)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? ConfigurableCell,
+           let delegate = imageCellDelegate {
+            cell.configure(with: viewModel, delegate: delegate)
+        }
         
-        return cell as! UITableViewCell
+        return UITableViewCell()
     }
 }

@@ -29,4 +29,11 @@ class ServiceAssemblyImplementation: ServiceAssembly {
                                            urlBuilder: urlBuilder,
                                            requestBuilder: requestBuilder)
     }
+    
+    func imageDownloaderService() -> ImageDownloaderService {
+        let coreAssembly = assemblyFactory.coreAssembly()
+        let networkClient = coreAssembly.networkClient()
+        
+        return ImageDownloaderServiceImplementation(networkClient: networkClient)
+    }
 }

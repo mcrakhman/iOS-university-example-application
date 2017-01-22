@@ -1,5 +1,5 @@
 //
-//  GithubInteractorInput.swift
+//  ImageCellDelegate.swift
 //  GithubItunesViewer
 //
 //  Created by m.rakhmanov on 22.01.17.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-protocol GithubInteractorInput: class {
-    func requestRepositioryInformation(_ requestString: String)
+protocol ImageCellDelegate: class, CellDelegate {
     func downloadImage(with configuration: ImageDownloaderConfiguration)
 }

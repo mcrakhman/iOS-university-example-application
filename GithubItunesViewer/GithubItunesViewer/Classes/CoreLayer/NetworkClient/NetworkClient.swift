@@ -14,4 +14,5 @@ typealias NetworkClientCompletion = (_ result: @escaping NetworkClientResult) ->
 
 protocol NetworkClient {
     func perform(request: URLRequest, completion: NetworkClientCompletion?)
+    func data(from url: URL, completion: NetworkClientCompletion?)
 }

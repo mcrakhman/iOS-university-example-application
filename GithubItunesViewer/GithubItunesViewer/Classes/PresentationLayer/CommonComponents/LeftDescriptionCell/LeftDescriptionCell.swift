@@ -9,7 +9,9 @@
 import UIKit
 
 class LeftDescriptionCell: UITableViewCell, ConfigurableCell {
-    func configure(with viewModel: CellViewModel) {
-        
+    func configure(with viewModel: CellViewModel, delegate: CellDelegate) {
+        guard let viewModel = viewModel as? GithubRepositoryViewModel else {
+            return
+        }
     }
 }

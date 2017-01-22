@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GithubViewController: UIViewController, GithubViewInput, MainModuleOutputProvider {
+class GithubViewController: UIViewController, GithubViewInput, MainModuleOutputProvider, ImageCellDelegate {
     var output: GithubViewOutput?
     var dataDisplayManager: GithubDataDisplayManager?
     
@@ -37,6 +37,10 @@ class GithubViewController: UIViewController, GithubViewInput, MainModuleOutputP
     
     func provideMainModuleOutput() -> MainModuleOutput? {
         return output as? MainModuleOutput
+    }
+    
+    func downloadImage(with configuration: ImageDownloaderConfiguration) {
+        output?.didAskToDownloadImage(with: configuration)
     }
 }
 

@@ -9,6 +9,7 @@
 import Foundation
 
 class GithubViewModelFactoryImplementation: GithubViewModelFactory {
+    
     func viewModels(from repositories: [GithubRepository]) -> [CellViewModel] {
         return repositories.enumerated().map(repositoryToViewModel)
     }

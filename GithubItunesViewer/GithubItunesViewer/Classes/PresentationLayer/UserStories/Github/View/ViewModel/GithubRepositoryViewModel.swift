@@ -9,7 +9,7 @@
 import Foundation
 
 struct GithubRepositoryViewModel: CellViewModel {
-    let associatedCell: ConfigurableCell.Type
+    var associatedCell: ConfigurableCell.Type
     let login: String
     let imageUrl: URL?
     let userUrl: URL?

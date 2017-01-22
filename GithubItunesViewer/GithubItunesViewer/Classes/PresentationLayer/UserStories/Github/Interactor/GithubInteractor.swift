@@ -11,6 +11,7 @@ import Foundation
 class GithubInteractor: GithubInteractorInput {
     
     var githubService: GithubService?
+    var downloaderService: ImageDownloaderService?
     var output: GithubInteractorOutput?
     
     func requestRepositioryInformation(_ requestString: String) {
@@ -27,5 +28,10 @@ class GithubInteractor: GithubInteractorInput {
                 strongSelf.output?.didFail(with: error)
             }
         }
+    }
+    
+    func downloadImage(with configuration: ImageDownloaderConfiguration) {
+        downloaderService?.downloadImage(with: configuration.url,
+                                         completion: configuration.completion)
     }
 }

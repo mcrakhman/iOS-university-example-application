@@ -9,5 +9,5 @@
 import Foundation
 
 protocol GithubViewOutput: class {
-    
+    func didAskToDownloadImage(with configuration: ImageDownloaderConfiguration)
 }

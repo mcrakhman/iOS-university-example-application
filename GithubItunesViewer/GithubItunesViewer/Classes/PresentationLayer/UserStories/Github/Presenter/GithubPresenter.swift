@@ -17,6 +17,10 @@ class GithubPresenter: MainModuleOutput, GithubViewOutput, GithubInteractorOutpu
         interactor?.requestRepositioryInformation(text)
     }
     
+    func didAskToDownloadImage(with configuration: ImageDownloaderConfiguration) {
+        interactor?.downloadImage(with: configuration)
+    }
+    
     func didReceive(_ repositories: [GithubRepository]) {
         view?.update(with: repositories)
     }

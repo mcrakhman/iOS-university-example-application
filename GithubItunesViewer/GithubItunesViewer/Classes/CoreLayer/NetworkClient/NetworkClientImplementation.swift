@@ -40,4 +40,22 @@ class NetworkClientImplementation: NetworkClient {
         }
         dataTask.resume()
     }
+    
+    func data(from url: URL, completion: NetworkClientCompletion?) {
+        let dataTask = session.dataTask(with: url) { data, response, error in
+            
+            completion? {
+                if let networkError = error {
+                    throw networkError
+                }
+                
+                guard let responseData = data else {
+                    throw NetworkClientError.emptyDataReturned
+                }
+                
+                return responseData
+            }
+        }
+        dataTask.resume()
+    }
 }

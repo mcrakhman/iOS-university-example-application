@@ -149,6 +149,14 @@
 		9E237B271E34CC6E00CA2FD1 /* GithubDataDisplayManagerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B251E34CC6E00CA2FD1 /* GithubDataDisplayManagerImplementation.swift */; };
 		9E237B2A1E34D24700CA2FD1 /* TableViewDataDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B291E34D24700CA2FD1 /* TableViewDataDisplayManager.swift */; };
 		9E237B2B1E34D24700CA2FD1 /* TableViewDataDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B291E34D24700CA2FD1 /* TableViewDataDisplayManager.swift */; };
+		9E237B3A1E34ECB000CA2FD1 /* ImageDownloaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B391E34ECB000CA2FD1 /* ImageDownloaderService.swift */; };
+		9E237B3B1E34ECB000CA2FD1 /* ImageDownloaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B391E34ECB000CA2FD1 /* ImageDownloaderService.swift */; };
+		9E237B3D1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B3C1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift */; };
+		9E237B3E1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B3C1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift */; };
+		9E237B401E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B3F1E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift */; };
+		9E237B411E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B3F1E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift */; };
+		9E237B441E34F49900CA2FD1 /* ImageCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B431E34F49900CA2FD1 /* ImageCellDelegate.swift */; };
+		9E237B451E34F49900CA2FD1 /* ImageCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B431E34F49900CA2FD1 /* ImageCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +247,10 @@
 		9E237B221E34CA5A00CA2FD1 /* GithubViewModelFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubViewModelFactoryImplementation.swift; path = Classes/PresentationLayer/UserStories/Github/View/ViewModelFactory/GithubViewModelFactoryImplementation.swift; sourceTree = "<group>"; };
 		9E237B251E34CC6E00CA2FD1 /* GithubDataDisplayManagerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubDataDisplayManagerImplementation.swift; path = Classes/PresentationLayer/UserStories/Github/View/DataDisplayManager/GithubDataDisplayManagerImplementation.swift; sourceTree = "<group>"; };
 		9E237B291E34D24700CA2FD1 /* TableViewDataDisplayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewDataDisplayManager.swift; path = Classes/Helpers/TableViewDataDisplayManager/TableViewDataDisplayManager.swift; sourceTree = "<group>"; };
+		9E237B391E34ECB000CA2FD1 /* ImageDownloaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownloaderService.swift; path = Classes/ServiceLayer/ImageDownloaderService/ImageDownloaderService.swift; sourceTree = "<group>"; };
+		9E237B3C1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownloaderServiceImplementation.swift; path = Classes/ServiceLayer/ImageDownloaderService/ImageDownloaderServiceImplementation.swift; sourceTree = "<group>"; };
+		9E237B3F1E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownloaderConfiguration.swift; path = Classes/ServiceLayer/ImageDownloaderService/ImageDownloaderConfiguration.swift; sourceTree = "<group>"; };
+		9E237B431E34F49900CA2FD1 /* ImageCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCellDelegate.swift; path = Classes/PresentationLayer/CommonComponents/ImageCellDelegate/ImageCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +345,7 @@
 		9E237A231E33979900CA2FD1 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9E237B381E34EC8600CA2FD1 /* ImageDownloaderService */,
 				9E237AD31E3429D600CA2FD1 /* GithubService */,
 				9E237ACF1E34293600CA2FD1 /* Assembly */,
 			);
@@ -385,6 +398,7 @@
 		9E237A2E1E33996400CA2FD1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9E237B371E34EC6800CA2FD1 /* Image */,
 				9E237B281E34CD0800CA2FD1 /* TableViewDataDisplayManager */,
 				9E237B031E34BBDD00CA2FD1 /* ConfigurableCell */,
 				9E237AF91E343B8B00CA2FD1 /* Assembly */,
@@ -686,6 +700,7 @@
 		9E237B0F1E34C88700CA2FD1 /* CommonComponents */ = {
 			isa = PBXGroup;
 			children = (
+				9E237B421E34F47E00CA2FD1 /* ImageCellDelegate */,
 				9E237B141E34C8E900CA2FD1 /* LeftDescriptionCell */,
 				9E237B131E34C8DD00CA2FD1 /* RightDescriptionCell */,
 			);
@@ -724,6 +739,31 @@
 				9E237B291E34D24700CA2FD1 /* TableViewDataDisplayManager.swift */,
 			);
 			name = TableViewDataDisplayManager;
+			sourceTree = "<group>";
+		};
+		9E237B371E34EC6800CA2FD1 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		9E237B381E34EC8600CA2FD1 /* ImageDownloaderService */ = {
+			isa = PBXGroup;
+			children = (
+				9E237B3F1E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift */,
+				9E237B391E34ECB000CA2FD1 /* ImageDownloaderService.swift */,
+				9E237B3C1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift */,
+			);
+			name = ImageDownloaderService;
+			sourceTree = "<group>";
+		};
+		9E237B421E34F47E00CA2FD1 /* ImageCellDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9E237B431E34F49900CA2FD1 /* ImageCellDelegate.swift */,
+			);
+			name = ImageCellDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -842,6 +882,7 @@
 				9E237ADC1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift in Sources */,
 				9E237A691E33B5A200CA2FD1 /* GithubMapper.swift in Sources */,
 				9E237AFB1E343B9D00CA2FD1 /* HelperAssembly.swift in Sources */,
+				9E237B401E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift in Sources */,
 				9E237A9B1E34099600CA2FD1 /* ITunesViewController.swift in Sources */,
 				9E237AB71E34108A00CA2FD1 /* MainAssemblyImplementation.swift in Sources */,
 				9E237A5E1E33AC6A00CA2FD1 /* GithubRepositorySearchConfiguration.swift in Sources */,
@@ -859,14 +900,17 @@
 				9E237AED1E342E4600CA2FD1 /* GithubInteractorOutput.swift in Sources */,
 				9E237A911E34069800CA2FD1 /* MainViewOutput.swift in Sources */,
 				9E237B091E34C6FA00CA2FD1 /* GithubDataDisplayManager.swift in Sources */,
+				9E237B441E34F49900CA2FD1 /* ImageCellDelegate.swift in Sources */,
 				9E237A801E33ED2300CA2FD1 /* GithubViewController.swift in Sources */,
 				9E237AA21E340C9E00CA2FD1 /* AssemblyFactory.swift in Sources */,
 				9E237AD51E342A1100CA2FD1 /* GithubService.swift in Sources */,
 				9E237AEA1E342DFB00CA2FD1 /* GithubInteractorInput.swift in Sources */,
+				9E237B3D1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift in Sources */,
 				9E237AC11E341A3600CA2FD1 /* GithubPresenter.swift in Sources */,
 				9E237A491E33A37100CA2FD1 /* RequestBuilderImplementation.swift in Sources */,
 				9E237ABD1E3419F300CA2FD1 /* MainModuleOutput.swift in Sources */,
 				9E237ADF1E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift in Sources */,
+				9E237B3A1E34ECB000CA2FD1 /* ImageDownloaderService.swift in Sources */,
 				9E237AE21E342BE400CA2FD1 /* GithubServiceImplementation.swift in Sources */,
 				9E237AAA1E340DF400CA2FD1 /* GithubAssembly.swift in Sources */,
 				9E237AF01E342EC500CA2FD1 /* GithubInteractor.swift in Sources */,
@@ -918,8 +962,10 @@
 				9E237B121E34C8B900CA2FD1 /* RightDescriptionCell.swift in Sources */,
 				9E237AEE1E342E4600CA2FD1 /* GithubInteractorOutput.swift in Sources */,
 				9E237ADA1E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */,
+				9E237B3B1E34ECB000CA2FD1 /* ImageDownloaderService.swift in Sources */,
 				9E237A4A1E33A37100CA2FD1 /* RequestBuilderImplementation.swift in Sources */,
 				9E237A441E33A19500CA2FD1 /* RequestBuilderConfiguration.swift in Sources */,
+				9E237B3E1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift in Sources */,
 				9E237AE01E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift in Sources */,
 				9E237AAB1E340DF400CA2FD1 /* GithubAssembly.swift in Sources */,
 				9E237A5F1E33AC6A00CA2FD1 /* GithubRepositorySearchConfiguration.swift in Sources */,
@@ -948,6 +994,7 @@
 				9E237A851E33ED9D00CA2FD1 /* ApplicationAssembly.swift in Sources */,
 				9E237A6A1E33B5A200CA2FD1 /* GithubMapper.swift in Sources */,
 				9E237AF11E342EC500CA2FD1 /* GithubInteractor.swift in Sources */,
+				9E237B411E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift in Sources */,
 				9E237AC21E341A3600CA2FD1 /* GithubPresenter.swift in Sources */,
 				9E237AFC1E343B9D00CA2FD1 /* HelperAssembly.swift in Sources */,
 				9E237ACB1E341F3200CA2FD1 /* MainModuleInput.swift in Sources */,
@@ -960,6 +1007,7 @@
 				9E237A8F1E34068700CA2FD1 /* MainViewInput.swift in Sources */,
 				9E237A6D1E33B5D500CA2FD1 /* GithubMapperImplementation.swift in Sources */,
 				9E237AD61E342A1100CA2FD1 /* GithubService.swift in Sources */,
+				9E237B451E34F49900CA2FD1 /* ImageCellDelegate.swift in Sources */,
 				9E237A9F1E3409A700CA2FD1 /* ITunesViewInput.swift in Sources */,
 				9E237ABB1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */,
 				9E237A161E3396D300CA2FD1 /* GithubItunesViewerTests.swift in Sources */,
