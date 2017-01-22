@@ -13,7 +13,9 @@ struct GithubRepositorySearchConfiguration: URLParametersTransformable, URLBuild
     
     func toDictionary() -> [String : String] {
         var parameter = searchString.components(separatedBy: " ").filter { $0 != "" }.reduce("") { $0.0 + "+" + $0.1 }
-        parameter.remove(at: parameter.startIndex)
+        if !parameter.isEmpty {
+             parameter.remove(at: parameter.startIndex)
+        }
         
         return ["q": parameter]
     }

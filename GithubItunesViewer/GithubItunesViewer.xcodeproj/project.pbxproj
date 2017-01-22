@@ -125,6 +125,8 @@
 		9E237AFC1E343B9D00CA2FD1 /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AFA1E343B9D00CA2FD1 /* HelperAssembly.swift */; };
 		9E237AFE1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AFD1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift */; };
 		9E237AFF1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AFD1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift */; };
+		9E237B011E34B43E00CA2FD1 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B001E34B43E00CA2FD1 /* Dictionary.swift */; };
+		9E237B021E34B43E00CA2FD1 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B001E34B43E00CA2FD1 /* Dictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +205,7 @@
 		9E237AF61E34396200CA2FD1 /* ThrottlerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThrottlerImplementation.swift; path = Classes/Helpers/Throttler/ThrottlerImplementation.swift; sourceTree = "<group>"; };
 		9E237AFA1E343B9D00CA2FD1 /* HelperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelperAssembly.swift; path = Classes/Helpers/Assembly/HelperAssembly.swift; sourceTree = "<group>"; };
 		9E237AFD1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelperAssemblyImplementation.swift; path = Classes/Helpers/Assembly/HelperAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9E237B001E34B43E00CA2FD1 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Classes/Extensions/Dictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,6 +435,7 @@
 		9E237A721E33EA1900CA2FD1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9E237B001E34B43E00CA2FD1 /* Dictionary.swift */,
 				9E237A731E33EA3B00CA2FD1 /* UIViewController.swift */,
 			);
 			name = Extensions;
@@ -766,6 +770,7 @@
 				9E237A431E33A19500CA2FD1 /* RequestBuilderConfiguration.swift in Sources */,
 				9E237A741E33EA3B00CA2FD1 /* UIViewController.swift in Sources */,
 				9E237AD91E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */,
+				9E237B011E34B43E00CA2FD1 /* Dictionary.swift in Sources */,
 				9E237A3F1E33A06F00CA2FD1 /* NetworkRequestConstants.swift in Sources */,
 				9E237AAE1E340E8E00CA2FD1 /* ITunesAssembly.swift in Sources */,
 				9E237AF71E34396200CA2FD1 /* ThrottlerImplementation.swift in Sources */,
@@ -810,6 +815,7 @@
 				9E237AB51E34105400CA2FD1 /* GithubAssemblyImplementation.swift in Sources */,
 				9E237ACE1E34224900CA2FD1 /* MainModuleOutputProvider.swift in Sources */,
 				9E237A811E33ED2300CA2FD1 /* GithubViewController.swift in Sources */,
+				9E237B021E34B43E00CA2FD1 /* Dictionary.swift in Sources */,
 				9E237A881E33FFA100CA2FD1 /* GithubViewInput.swift in Sources */,
 				9E237A8C1E3405CD00CA2FD1 /* MainViewController.swift in Sources */,
 				9E237AD21E34299800CA2FD1 /* ServiceAssembly.swift in Sources */,
