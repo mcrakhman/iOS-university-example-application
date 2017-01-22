@@ -87,6 +87,44 @@
 		9E237AB81E34108A00CA2FD1 /* MainAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB61E34108A00CA2FD1 /* MainAssemblyImplementation.swift */; };
 		9E237ABA1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB91E34139500CA2FD1 /* AssemblyFactoryImplementation.swift */; };
 		9E237ABB1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB91E34139500CA2FD1 /* AssemblyFactoryImplementation.swift */; };
+		9E237ABD1E3419F300CA2FD1 /* MainModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ABC1E3419F300CA2FD1 /* MainModuleOutput.swift */; };
+		9E237ABE1E3419F300CA2FD1 /* MainModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ABC1E3419F300CA2FD1 /* MainModuleOutput.swift */; };
+		9E237AC11E341A3600CA2FD1 /* GithubPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC01E341A3600CA2FD1 /* GithubPresenter.swift */; };
+		9E237AC21E341A3600CA2FD1 /* GithubPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC01E341A3600CA2FD1 /* GithubPresenter.swift */; };
+		9E237AC41E341A8F00CA2FD1 /* GithubViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC31E341A8F00CA2FD1 /* GithubViewOutput.swift */; };
+		9E237AC51E341A8F00CA2FD1 /* GithubViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC31E341A8F00CA2FD1 /* GithubViewOutput.swift */; };
+		9E237AC71E341CE100CA2FD1 /* MainModuleInputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC61E341CE100CA2FD1 /* MainModuleInputProvider.swift */; };
+		9E237AC81E341CE100CA2FD1 /* MainModuleInputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC61E341CE100CA2FD1 /* MainModuleInputProvider.swift */; };
+		9E237ACA1E341F3200CA2FD1 /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC91E341F3200CA2FD1 /* MainModuleInput.swift */; };
+		9E237ACB1E341F3200CA2FD1 /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC91E341F3200CA2FD1 /* MainModuleInput.swift */; };
+		9E237ACD1E34224900CA2FD1 /* MainModuleOutputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ACC1E34224900CA2FD1 /* MainModuleOutputProvider.swift */; };
+		9E237ACE1E34224900CA2FD1 /* MainModuleOutputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ACC1E34224900CA2FD1 /* MainModuleOutputProvider.swift */; };
+		9E237AD11E34299800CA2FD1 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AD01E34299800CA2FD1 /* ServiceAssembly.swift */; };
+		9E237AD21E34299800CA2FD1 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AD01E34299800CA2FD1 /* ServiceAssembly.swift */; };
+		9E237AD51E342A1100CA2FD1 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AD41E342A1100CA2FD1 /* GithubService.swift */; };
+		9E237AD61E342A1100CA2FD1 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AD41E342A1100CA2FD1 /* GithubService.swift */; };
+		9E237AD91E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AD81E342A3C00CA2FD1 /* CoreAssembly.swift */; };
+		9E237ADA1E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AD81E342A3C00CA2FD1 /* CoreAssembly.swift */; };
+		9E237ADC1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ADB1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift */; };
+		9E237ADD1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ADB1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift */; };
+		9E237ADF1E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ADE1E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift */; };
+		9E237AE01E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ADE1E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift */; };
+		9E237AE21E342BE400CA2FD1 /* GithubServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AE11E342BE400CA2FD1 /* GithubServiceImplementation.swift */; };
+		9E237AE31E342BE400CA2FD1 /* GithubServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AE11E342BE400CA2FD1 /* GithubServiceImplementation.swift */; };
+		9E237AEA1E342DFB00CA2FD1 /* GithubInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AE91E342DFB00CA2FD1 /* GithubInteractorInput.swift */; };
+		9E237AEB1E342DFB00CA2FD1 /* GithubInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AE91E342DFB00CA2FD1 /* GithubInteractorInput.swift */; };
+		9E237AED1E342E4600CA2FD1 /* GithubInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AEC1E342E4600CA2FD1 /* GithubInteractorOutput.swift */; };
+		9E237AEE1E342E4600CA2FD1 /* GithubInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AEC1E342E4600CA2FD1 /* GithubInteractorOutput.swift */; };
+		9E237AF01E342EC500CA2FD1 /* GithubInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AEF1E342EC500CA2FD1 /* GithubInteractor.swift */; };
+		9E237AF11E342EC500CA2FD1 /* GithubInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AEF1E342EC500CA2FD1 /* GithubInteractor.swift */; };
+		9E237AF41E3438E300CA2FD1 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AF31E3438E300CA2FD1 /* Throttler.swift */; };
+		9E237AF51E3438E300CA2FD1 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AF31E3438E300CA2FD1 /* Throttler.swift */; };
+		9E237AF71E34396200CA2FD1 /* ThrottlerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AF61E34396200CA2FD1 /* ThrottlerImplementation.swift */; };
+		9E237AF81E34396200CA2FD1 /* ThrottlerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AF61E34396200CA2FD1 /* ThrottlerImplementation.swift */; };
+		9E237AFB1E343B9D00CA2FD1 /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AFA1E343B9D00CA2FD1 /* HelperAssembly.swift */; };
+		9E237AFC1E343B9D00CA2FD1 /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AFA1E343B9D00CA2FD1 /* HelperAssembly.swift */; };
+		9E237AFE1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AFD1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift */; };
+		9E237AFF1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AFD1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +184,25 @@
 		9E237AB31E34105400CA2FD1 /* GithubAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubAssemblyImplementation.swift; path = Classes/PresentationLayer/UserStories/Github/Assembly/GithubAssemblyImplementation.swift; sourceTree = "<group>"; };
 		9E237AB61E34108A00CA2FD1 /* MainAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainAssemblyImplementation.swift; path = Classes/PresentationLayer/UserStories/Main/Assembly/MainAssemblyImplementation.swift; sourceTree = "<group>"; };
 		9E237AB91E34139500CA2FD1 /* AssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssemblyFactoryImplementation.swift; path = Classes/ApplicationLayer/Assembly/AssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
+		9E237ABC1E3419F300CA2FD1 /* MainModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainModuleOutput.swift; path = Classes/PresentationLayer/UserStories/Main/Presenter/MainModuleOutput.swift; sourceTree = "<group>"; };
+		9E237AC01E341A3600CA2FD1 /* GithubPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubPresenter.swift; path = Classes/PresentationLayer/UserStories/Github/Presenter/GithubPresenter.swift; sourceTree = "<group>"; };
+		9E237AC31E341A8F00CA2FD1 /* GithubViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubViewOutput.swift; path = Classes/PresentationLayer/UserStories/Github/Presenter/GithubViewOutput.swift; sourceTree = "<group>"; };
+		9E237AC61E341CE100CA2FD1 /* MainModuleInputProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainModuleInputProvider.swift; path = Classes/PresentationLayer/UserStories/Main/Presenter/MainModuleInputProvider.swift; sourceTree = "<group>"; };
+		9E237AC91E341F3200CA2FD1 /* MainModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainModuleInput.swift; path = Classes/PresentationLayer/UserStories/Main/Presenter/MainModuleInput.swift; sourceTree = "<group>"; };
+		9E237ACC1E34224900CA2FD1 /* MainModuleOutputProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainModuleOutputProvider.swift; path = Classes/PresentationLayer/UserStories/Main/Presenter/MainModuleOutputProvider.swift; sourceTree = "<group>"; };
+		9E237AD01E34299800CA2FD1 /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceAssembly.swift; path = Classes/ServiceLayer/Assembly/ServiceAssembly.swift; sourceTree = "<group>"; };
+		9E237AD41E342A1100CA2FD1 /* GithubService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubService.swift; path = Classes/ServiceLayer/GithubService/GithubService.swift; sourceTree = "<group>"; };
+		9E237AD81E342A3C00CA2FD1 /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreAssembly.swift; path = Classes/CoreLayer/Assembly/CoreAssembly.swift; sourceTree = "<group>"; };
+		9E237ADB1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreAssemblyImplementation.swift; path = Classes/CoreLayer/Assembly/CoreAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9E237ADE1E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceAssemblyImplementation.swift; path = Classes/ServiceLayer/Assembly/ServiceAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9E237AE11E342BE400CA2FD1 /* GithubServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubServiceImplementation.swift; path = Classes/ServiceLayer/GithubService/GithubServiceImplementation.swift; sourceTree = "<group>"; };
+		9E237AE91E342DFB00CA2FD1 /* GithubInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubInteractorInput.swift; path = Classes/PresentationLayer/UserStories/Github/Interactor/GithubInteractorInput.swift; sourceTree = "<group>"; };
+		9E237AEC1E342E4600CA2FD1 /* GithubInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubInteractorOutput.swift; path = Classes/PresentationLayer/UserStories/Github/Presenter/GithubInteractorOutput.swift; sourceTree = "<group>"; };
+		9E237AEF1E342EC500CA2FD1 /* GithubInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubInteractor.swift; path = Classes/PresentationLayer/UserStories/Github/Interactor/GithubInteractor.swift; sourceTree = "<group>"; };
+		9E237AF31E3438E300CA2FD1 /* Throttler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Throttler.swift; path = Classes/Helpers/Throttler/Throttler.swift; sourceTree = "<group>"; };
+		9E237AF61E34396200CA2FD1 /* ThrottlerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThrottlerImplementation.swift; path = Classes/Helpers/Throttler/ThrottlerImplementation.swift; sourceTree = "<group>"; };
+		9E237AFA1E343B9D00CA2FD1 /* HelperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelperAssembly.swift; path = Classes/Helpers/Assembly/HelperAssembly.swift; sourceTree = "<group>"; };
+		9E237AFD1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelperAssemblyImplementation.swift; path = Classes/Helpers/Assembly/HelperAssemblyImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +296,8 @@
 		9E237A231E33979900CA2FD1 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9E237AD31E3429D600CA2FD1 /* GithubService */,
+				9E237ACF1E34293600CA2FD1 /* Assembly */,
 			);
 			name = ServiceLayer;
 			sourceTree = "<group>";
@@ -246,6 +305,7 @@
 		9E237A241E3397A000CA2FD1 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9E237AD71E342A2300CA2FD1 /* Assembly */,
 				9E237A601E33B2E500CA2FD1 /* Mapper */,
 				9E237A4B1E33A69000CA2FD1 /* URLBuilder */,
 				9E237A3D1E33A03C00CA2FD1 /* RequestBuilder */,
@@ -276,6 +336,7 @@
 		9E237A2A1E33983300CA2FD1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9E237AE41E342D4700CA2FD1 /* Interactor */,
 				9E237AA41E340D9900CA2FD1 /* Assembly */,
 				9E237A931E34084B00CA2FD1 /* Presenter */,
 				9E237A891E3405B200CA2FD1 /* View */,
@@ -287,6 +348,8 @@
 		9E237A2E1E33996400CA2FD1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9E237AF91E343B8B00CA2FD1 /* Assembly */,
+				9E237AF21E3438CC00CA2FD1 /* Throttler */,
 				9E237A6E1E33E36E00CA2FD1 /* ViewControllerEmbedding */,
 			);
 			name = Helpers;
@@ -388,6 +451,8 @@
 			children = (
 				9E237AA81E340DDC00CA2FD1 /* Assembly */,
 				9E237A7E1E33ECFB00CA2FD1 /* View */,
+				9E237ABF1E341A2300CA2FD1 /* Presenter */,
+				9E237AE81E342DA000CA2FD1 /* Interactor */,
 			);
 			name = Github;
 			sourceTree = "<group>";
@@ -425,6 +490,10 @@
 			isa = PBXGroup;
 			children = (
 				9E237A941E34086300CA2FD1 /* MainPresenter.swift */,
+				9E237ABC1E3419F300CA2FD1 /* MainModuleOutput.swift */,
+				9E237AC61E341CE100CA2FD1 /* MainModuleInputProvider.swift */,
+				9E237ACC1E34224900CA2FD1 /* MainModuleOutputProvider.swift */,
+				9E237AC91E341F3200CA2FD1 /* MainModuleInput.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -470,6 +539,77 @@
 			children = (
 				9E237AAD1E340E8E00CA2FD1 /* ITunesAssembly.swift */,
 				9E237AB01E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		9E237ABF1E341A2300CA2FD1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AC01E341A3600CA2FD1 /* GithubPresenter.swift */,
+				9E237AC31E341A8F00CA2FD1 /* GithubViewOutput.swift */,
+				9E237AEC1E342E4600CA2FD1 /* GithubInteractorOutput.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9E237ACF1E34293600CA2FD1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AD01E34299800CA2FD1 /* ServiceAssembly.swift */,
+				9E237ADE1E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		9E237AD31E3429D600CA2FD1 /* GithubService */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AD41E342A1100CA2FD1 /* GithubService.swift */,
+				9E237AE11E342BE400CA2FD1 /* GithubServiceImplementation.swift */,
+			);
+			name = GithubService;
+			sourceTree = "<group>";
+		};
+		9E237AD71E342A2300CA2FD1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AD81E342A3C00CA2FD1 /* CoreAssembly.swift */,
+				9E237ADB1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		9E237AE41E342D4700CA2FD1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		9E237AE81E342DA000CA2FD1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AE91E342DFB00CA2FD1 /* GithubInteractorInput.swift */,
+				9E237AEF1E342EC500CA2FD1 /* GithubInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		9E237AF21E3438CC00CA2FD1 /* Throttler */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AF31E3438E300CA2FD1 /* Throttler.swift */,
+				9E237AF61E34396200CA2FD1 /* ThrottlerImplementation.swift */,
+			);
+			name = Throttler;
+			sourceTree = "<group>";
+		};
+		9E237AF91E343B8B00CA2FD1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9E237AFA1E343B9D00CA2FD1 /* HelperAssembly.swift */,
+				9E237AFD1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift */,
 			);
 			name = Assembly;
 			sourceTree = "<group>";
@@ -579,13 +719,17 @@
 			files = (
 				9E237A341E339BFC00CA2FD1 /* JSONDeserializer.swift in Sources */,
 				9E237A9E1E3409A700CA2FD1 /* ITunesViewInput.swift in Sources */,
+				9E237AF41E3438E300CA2FD1 /* Throttler.swift in Sources */,
 				9E237A8B1E3405CD00CA2FD1 /* MainViewController.swift in Sources */,
 				9E237A871E33FFA100CA2FD1 /* GithubViewInput.swift in Sources */,
+				9E237ADC1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift in Sources */,
 				9E237A691E33B5A200CA2FD1 /* GithubMapper.swift in Sources */,
+				9E237AFB1E343B9D00CA2FD1 /* HelperAssembly.swift in Sources */,
 				9E237A9B1E34099600CA2FD1 /* ITunesViewController.swift in Sources */,
 				9E237AB71E34108A00CA2FD1 /* MainAssemblyImplementation.swift in Sources */,
 				9E237A5E1E33AC6A00CA2FD1 /* GithubRepositorySearchConfiguration.swift in Sources */,
 				9E237ABA1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */,
+				9E237ACA1E341F3200CA2FD1 /* MainModuleInput.swift in Sources */,
 				9E237A381E339CCC00CA2FD1 /* NetworkClient.swift in Sources */,
 				9E237A8E1E34068700CA2FD1 /* MainViewInput.swift in Sources */,
 				9E237A561E33A89700CA2FD1 /* NetworkRequestErrors.swift in Sources */,
@@ -593,23 +737,38 @@
 				9E237A951E34086300CA2FD1 /* MainPresenter.swift in Sources */,
 				9E237A4D1E33A6CB00CA2FD1 /* URLBuilder.swift in Sources */,
 				9E237A781E33EBE900CA2FD1 /* MainRouterInput.swift in Sources */,
+				9E237AED1E342E4600CA2FD1 /* GithubInteractorOutput.swift in Sources */,
 				9E237A911E34069800CA2FD1 /* MainViewOutput.swift in Sources */,
 				9E237A801E33ED2300CA2FD1 /* GithubViewController.swift in Sources */,
 				9E237AA21E340C9E00CA2FD1 /* AssemblyFactory.swift in Sources */,
+				9E237AD51E342A1100CA2FD1 /* GithubService.swift in Sources */,
+				9E237AEA1E342DFB00CA2FD1 /* GithubInteractorInput.swift in Sources */,
+				9E237AC11E341A3600CA2FD1 /* GithubPresenter.swift in Sources */,
 				9E237A491E33A37100CA2FD1 /* RequestBuilderImplementation.swift in Sources */,
+				9E237ABD1E3419F300CA2FD1 /* MainModuleOutput.swift in Sources */,
+				9E237ADF1E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift in Sources */,
+				9E237AE21E342BE400CA2FD1 /* GithubServiceImplementation.swift in Sources */,
 				9E237AAA1E340DF400CA2FD1 /* GithubAssembly.swift in Sources */,
+				9E237AF01E342EC500CA2FD1 /* GithubInteractor.swift in Sources */,
 				9E237AA61E340DB100CA2FD1 /* MainAssembly.swift in Sources */,
+				9E237AC71E341CE100CA2FD1 /* MainModuleInputProvider.swift in Sources */,
 				9E237AB11E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift in Sources */,
 				9E237A461E33A32F00CA2FD1 /* RequestBuilder.swift in Sources */,
 				9E237A651E33B4E800CA2FD1 /* GithubRepository.swift in Sources */,
 				9E237A531E33A80B00CA2FD1 /* URLParametersTransformable.swift in Sources */,
+				9E237AD11E34299800CA2FD1 /* ServiceAssembly.swift in Sources */,
 				9E237A7B1E33EC2500CA2FD1 /* MainRouter.swift in Sources */,
+				9E237AC41E341A8F00CA2FD1 /* GithubViewOutput.swift in Sources */,
+				9E237ACD1E34224900CA2FD1 /* MainModuleOutputProvider.swift in Sources */,
+				9E237AFE1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift in Sources */,
 				9E237A3B1E339CFC00CA2FD1 /* NetworkClientImplementation.swift in Sources */,
 				9E237A841E33ED9D00CA2FD1 /* ApplicationAssembly.swift in Sources */,
 				9E237A431E33A19500CA2FD1 /* RequestBuilderConfiguration.swift in Sources */,
 				9E237A741E33EA3B00CA2FD1 /* UIViewController.swift in Sources */,
+				9E237AD91E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */,
 				9E237A3F1E33A06F00CA2FD1 /* NetworkRequestConstants.swift in Sources */,
 				9E237AAE1E340E8E00CA2FD1 /* ITunesAssembly.swift in Sources */,
+				9E237AF71E34396200CA2FD1 /* ThrottlerImplementation.swift in Sources */,
 				9E237A501E33A79800CA2FD1 /* URLBuilderImplementation.swift in Sources */,
 				9E237A311E339BB800CA2FD1 /* Deserializer.swift in Sources */,
 				9E237A271E33980300CA2FD1 /* AppDelegate.swift in Sources */,
@@ -622,35 +781,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E237AEB1E342DFB00CA2FD1 /* GithubInteractorInput.swift in Sources */,
 				9E237A661E33B4E800CA2FD1 /* GithubRepository.swift in Sources */,
 				9E237A401E33A06F00CA2FD1 /* NetworkRequestConstants.swift in Sources */,
 				9E237A351E339BFC00CA2FD1 /* JSONDeserializer.swift in Sources */,
 				9E237A321E339BB800CA2FD1 /* Deserializer.swift in Sources */,
+				9E237AC81E341CE100CA2FD1 /* MainModuleInputProvider.swift in Sources */,
 				9E237AAF1E340E8E00CA2FD1 /* ITunesAssembly.swift in Sources */,
+				9E237AEE1E342E4600CA2FD1 /* GithubInteractorOutput.swift in Sources */,
+				9E237ADA1E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */,
 				9E237A4A1E33A37100CA2FD1 /* RequestBuilderImplementation.swift in Sources */,
 				9E237A441E33A19500CA2FD1 /* RequestBuilderConfiguration.swift in Sources */,
+				9E237AE01E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift in Sources */,
 				9E237AAB1E340DF400CA2FD1 /* GithubAssembly.swift in Sources */,
 				9E237A5F1E33AC6A00CA2FD1 /* GithubRepositorySearchConfiguration.swift in Sources */,
 				9E237A4E1E33A6CB00CA2FD1 /* URLBuilder.swift in Sources */,
 				9E237AA31E340C9E00CA2FD1 /* AssemblyFactory.swift in Sources */,
 				9E237A3C1E339CFC00CA2FD1 /* NetworkClientImplementation.swift in Sources */,
+				9E237AFF1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift in Sources */,
 				9E237A791E33EBE900CA2FD1 /* MainRouterInput.swift in Sources */,
+				9E237ABE1E3419F300CA2FD1 /* MainModuleOutput.swift in Sources */,
 				9E237A511E33A79800CA2FD1 /* URLBuilderImplementation.swift in Sources */,
 				9E237A7C1E33EC2500CA2FD1 /* MainRouter.swift in Sources */,
 				9E237A961E34086300CA2FD1 /* MainPresenter.swift in Sources */,
 				9E237A471E33A32F00CA2FD1 /* RequestBuilder.swift in Sources */,
 				9E237A281E33980300CA2FD1 /* AppDelegate.swift in Sources */,
+				9E237AE31E342BE400CA2FD1 /* GithubServiceImplementation.swift in Sources */,
 				9E237AB51E34105400CA2FD1 /* GithubAssemblyImplementation.swift in Sources */,
+				9E237ACE1E34224900CA2FD1 /* MainModuleOutputProvider.swift in Sources */,
 				9E237A811E33ED2300CA2FD1 /* GithubViewController.swift in Sources */,
 				9E237A881E33FFA100CA2FD1 /* GithubViewInput.swift in Sources */,
 				9E237A8C1E3405CD00CA2FD1 /* MainViewController.swift in Sources */,
+				9E237AD21E34299800CA2FD1 /* ServiceAssembly.swift in Sources */,
 				9E237A851E33ED9D00CA2FD1 /* ApplicationAssembly.swift in Sources */,
 				9E237A6A1E33B5A200CA2FD1 /* GithubMapper.swift in Sources */,
+				9E237AF11E342EC500CA2FD1 /* GithubInteractor.swift in Sources */,
+				9E237AC21E341A3600CA2FD1 /* GithubPresenter.swift in Sources */,
+				9E237AFC1E343B9D00CA2FD1 /* HelperAssembly.swift in Sources */,
+				9E237ACB1E341F3200CA2FD1 /* MainModuleInput.swift in Sources */,
+				9E237AC51E341A8F00CA2FD1 /* GithubViewOutput.swift in Sources */,
 				9E237A9C1E34099600CA2FD1 /* ITunesViewController.swift in Sources */,
+				9E237AF81E34396200CA2FD1 /* ThrottlerImplementation.swift in Sources */,
 				9E237AA71E340DB100CA2FD1 /* MainAssembly.swift in Sources */,
 				9E237A751E33EA3B00CA2FD1 /* UIViewController.swift in Sources */,
 				9E237A8F1E34068700CA2FD1 /* MainViewInput.swift in Sources */,
 				9E237A6D1E33B5D500CA2FD1 /* GithubMapperImplementation.swift in Sources */,
+				9E237AD61E342A1100CA2FD1 /* GithubService.swift in Sources */,
 				9E237A9F1E3409A700CA2FD1 /* ITunesViewInput.swift in Sources */,
 				9E237ABB1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */,
 				9E237A161E3396D300CA2FD1 /* GithubItunesViewerTests.swift in Sources */,
@@ -658,6 +834,8 @@
 				9E237AB21E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift in Sources */,
 				9E237A541E33A80B00CA2FD1 /* URLParametersTransformable.swift in Sources */,
 				9E237A711E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift in Sources */,
+				9E237ADD1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift in Sources */,
+				9E237AF51E3438E300CA2FD1 /* Throttler.swift in Sources */,
 				9E237A921E34069800CA2FD1 /* MainViewOutput.swift in Sources */,
 				9E237AB81E34108A00CA2FD1 /* MainAssemblyImplementation.swift in Sources */,
 				9E237A391E339CCC00CA2FD1 /* NetworkClient.swift in Sources */,

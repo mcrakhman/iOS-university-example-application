@@ -8,14 +8,23 @@
 
 import Foundation
 
-class MainPresenter: MainViewOutput {
+class MainPresenter: MainViewOutput, MainModuleInput {
     
     var router: MainRouterInput?
+    weak var moduleOutput: MainModuleOutput?
     
     func didSelect(_ screen: SelectedScreen) {
         switch screen {
-        case .github: router?.showGithub()
-        case .iTunes: router?.showITunes()
+            case .github: router?.showGithub()
+            case .iTunes: router?.showITunes()
         }
+    }
+    
+    func didChange(_ text: String) {
+        moduleOutput?.didChange(text)
+    }
+    
+    func provide(with output: MainModuleOutput?) {
+        moduleOutput = output
     }
 }

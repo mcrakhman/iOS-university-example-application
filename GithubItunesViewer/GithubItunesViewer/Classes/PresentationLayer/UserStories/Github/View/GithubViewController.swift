@@ -8,7 +8,11 @@
 
 import UIKit
 
-class GithubViewController: UIViewController, GithubViewInput {
+class GithubViewController: UIViewController, GithubViewInput, MainModuleOutputProvider {
+    var output: GithubViewOutput?
     
+    func provideMainModuleOutput() -> MainModuleOutput? {
+        return output as? MainModuleOutput
+    }
 }
 

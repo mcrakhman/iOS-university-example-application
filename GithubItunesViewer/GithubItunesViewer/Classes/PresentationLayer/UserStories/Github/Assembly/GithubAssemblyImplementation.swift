@@ -20,6 +20,16 @@ class GithubAssemblyImplementation: GithubAssembly {
         let storyboard = UIStoryboard(name: StoryboardConstants.main, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: GithubViewController.storyboardIdentifier) as! GithubViewController
         
+        let presenter = GithubPresenter()
+        let githubService = assemblyFactory.serviceAssembly().githubService()
+        let interactor = GithubInteractor()
+        
+        presenter.view = viewController
+        presenter.interactor = interactor
+        viewController.output = presenter
+        interactor.githubService = githubService
+        interactor.output = presenter
+        
         return viewController
     }
 }

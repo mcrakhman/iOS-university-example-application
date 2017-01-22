@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct GithubRepositorySearchConfiguration: URLParametersTransformable {
+struct GithubRepositorySearchConfiguration: URLParametersTransformable, URLBuilderConfiguration {
     let searchString: String
     
     func toDictionary() -> [String : String] {

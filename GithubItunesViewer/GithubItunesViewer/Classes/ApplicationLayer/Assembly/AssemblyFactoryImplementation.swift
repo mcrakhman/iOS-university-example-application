@@ -20,4 +20,16 @@ class AssemblyFactoryImplementation: AssemblyFactory {
     func mainAssembly() -> MainAssembly {
         return MainAssemblyImplementation(assemblyFactory: self)
     }
+    
+    func coreAssembly() -> CoreAssembly {
+        return CoreAssemblyImplementation()
+    }
+    
+    func serviceAssembly() -> ServiceAssembly {
+        return ServiceAssemblyImplementation(assemblyFactory: self)
+    }
+    
+    func helperAssembly() -> HelperAssembly {
+        return HelperAssemblyImplementation()
+    }
 }

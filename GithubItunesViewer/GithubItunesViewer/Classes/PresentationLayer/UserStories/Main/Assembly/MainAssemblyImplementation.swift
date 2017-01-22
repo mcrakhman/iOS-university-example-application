@@ -17,16 +17,20 @@ class MainAssemblyImplementation: MainAssembly {
     }
     
     func module() -> UIViewController {
+        let helperAssembly = assemblyFactory.helperAssembly()
+        
         let storyboard = UIStoryboard(name: StoryboardConstants.main, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: MainViewController.storyboardIdentifier) as! MainViewController
         
         let presenter = MainPresenter()
         let router = MainRouter()
+        let throttler = helperAssembly.throttler()
         
         presenter.router = router
         router.viewController = viewController
         router.assemblyFactory = assemblyFactory
         viewController.output = presenter
+        viewController.throttler = throttler
         
         let navigationController = UINavigationController(rootViewController: viewController)
         

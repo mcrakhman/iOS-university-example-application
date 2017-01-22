@@ -13,15 +13,22 @@ enum SelectedScreen: Int {
     case iTunes
 }
 
-class MainViewController: UIViewController, ViewControllerEmbedding {
+enum MainViewControllerConstants {
+    static let throttleDelay: TimeInterval = 1.0
+}
+
+class MainViewController: UIViewController, ViewControllerEmbedding, MainViewInput, MainModuleInputProvider, UISearchBarDelegate {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var output: MainViewOutput?
+    var throttler: Throttler?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
     }
     
     @IBAction func didChangeSegmentedControlValue(_ sender: Any) {
@@ -32,5 +39,14 @@ class MainViewController: UIViewController, ViewControllerEmbedding {
         output?.didSelect(screen)
     }
     
+    func provideMainModuleInput() -> MainModuleInput? {
+        return output as? MainModuleInput
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        throttler?.throttle(MainViewControllerConstants.throttleDelay) {
+            self.output?.didChange(searchText)
+        }
+    }
 }
 

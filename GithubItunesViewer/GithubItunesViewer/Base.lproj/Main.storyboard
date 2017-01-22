@@ -57,6 +57,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="XM0-PX-94U" id="I0G-AO-1KH"/>
+                        <outlet property="searchBar" destination="Sgf-Br-sBs" id="VvM-5V-qRl"/>
                         <outlet property="segmentedControl" destination="yif-KJ-W6o" id="yig-Zr-IY2"/>
                     </connections>
                 </viewController>

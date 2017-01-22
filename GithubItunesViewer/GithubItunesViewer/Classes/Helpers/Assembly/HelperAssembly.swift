@@ -1,5 +1,5 @@
 //
-//  MainViewOutput.swift
+//  HelperAssembly.swift
 //  GithubItunesViewer
 //
 //  Created by m.rakhmanov on 22.01.17.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-protocol MainViewOutput: class {
-    func didSelect(_ screen: SelectedScreen)
-    func didChange(_ text: String)
+protocol HelperAssembly {
+    func throttler() -> Throttler
 }

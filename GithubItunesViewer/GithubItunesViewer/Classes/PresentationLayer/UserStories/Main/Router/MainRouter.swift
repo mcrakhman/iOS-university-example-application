@@ -11,46 +11,56 @@ import UIKit
 
 class MainRouter: MainRouterInput {
     
-    var viewController: UIViewController?
+    var viewController: MainViewInput?
     var assemblyFactory: AssemblyFactory?
     
     func showGithub() {
-        guard let viewController = viewController,
+        guard let viewController = viewController as? UIViewController,
               let assemblyFactory = assemblyFactory,
               let rootViewController = viewController as? ViewControllerEmbedding else {
             return
         }
         
-        var existingViewController = viewController.child(ofType: GithubViewInput.self)
+        var destinationViewController = viewController.child(ofType: GithubViewInput.self)
                 
-        if existingViewController == nil {
+        if destinationViewController == nil {
             let newViewController = assemblyFactory.githubAssembly().module()
             rootViewController.embed(newViewController)
-            existingViewController = newViewController
+            destinationViewController = newViewController
         }
         
-        if let existingViewController = existingViewController {
-            rootViewController.embeddedTransition(to: existingViewController)
+        if let destinationViewController = destinationViewController {
+            instantiateDataFlow(inputProvider: viewController as? MainModuleInputProvider,
+                                outputProvider: destinationViewController as? MainModuleOutputProvider)
+            rootViewController.embeddedTransition(to: destinationViewController)
         }
     }
     
     func showITunes() {
-        guard let viewController = viewController,
-            let assemblyFactory = assemblyFactory,
-            let rootViewController = viewController as? ViewControllerEmbedding else {
+        guard let viewController = viewController as? UIViewController,
+              let assemblyFactory = assemblyFactory,
+              let rootViewController = viewController as? ViewControllerEmbedding else {
                 return
         }
         
-        var existingViewController = viewController.child(ofType: ITunesViewInput.self)
+        var destinationViewController = viewController.child(ofType: ITunesViewInput.self)
         
-        if existingViewController == nil {
+        if destinationViewController == nil {
             let newViewController = assemblyFactory.iTunesAssembly().module()
             rootViewController.embed(newViewController)
-            existingViewController = newViewController
+            destinationViewController = newViewController
         }
         
-        if let existingViewController = existingViewController {
-            rootViewController.embeddedTransition(to: existingViewController)
+        if let destinationViewController = destinationViewController {
+            instantiateDataFlow(inputProvider: viewController as? MainModuleInputProvider,
+                                outputProvider: destinationViewController as? MainModuleOutputProvider)
+            rootViewController.embeddedTransition(to: destinationViewController)
         }
+    }
+    
+    private func instantiateDataFlow(inputProvider: MainModuleInputProvider?, outputProvider: MainModuleOutputProvider?) {
+        let input = inputProvider?.provideMainModuleInput()
+        let output = outputProvider?.provideMainModuleOutput()
+        input?.provide(with: output)
     }
 }
