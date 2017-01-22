@@ -30,6 +30,11 @@ class GithubAssemblyImplementation: GithubAssembly {
         interactor.githubService = githubService
         interactor.output = presenter
         
+        let viewModelFactory = GithubViewModelFactoryImplementation()
+        let dataDisplayManager = GithubDataDisplayManagerImplementation()
+        dataDisplayManager.factory = viewModelFactory
+        viewController.dataDisplayManager = dataDisplayManager
+        
         return viewController
     }
 }

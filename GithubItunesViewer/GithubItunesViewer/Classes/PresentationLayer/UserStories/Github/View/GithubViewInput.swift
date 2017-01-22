@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol GithubViewInput: class {}
+protocol GithubViewInput: class {
+    func update(with repositories: [GithubRepository])
+}

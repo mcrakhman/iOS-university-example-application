@@ -29,14 +29,11 @@ class MainViewController: UIViewController, ViewControllerEmbedding, MainViewInp
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
+        changeScreen()
     }
     
     @IBAction func didChangeSegmentedControlValue(_ sender: Any) {
-        guard let screen = SelectedScreen(rawValue: segmentedControl.selectedSegmentIndex) else {
-            return
-        }
-        
-        output?.didSelect(screen)
+        changeScreen()
     }
     
     func provideMainModuleInput() -> MainModuleInput? {
@@ -47,6 +44,14 @@ class MainViewController: UIViewController, ViewControllerEmbedding, MainViewInp
         throttler?.throttle(MainViewControllerConstants.throttleDelay) {
             self.output?.didChange(searchText)
         }
+    }
+    
+    private func changeScreen() {
+        guard let screen = SelectedScreen(rawValue: segmentedControl.selectedSegmentIndex) else {
+            return
+        }
+        
+        output?.didSelect(screen)
     }
 }
 

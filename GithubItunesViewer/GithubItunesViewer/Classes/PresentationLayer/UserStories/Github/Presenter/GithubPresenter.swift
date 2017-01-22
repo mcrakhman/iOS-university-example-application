@@ -18,7 +18,7 @@ class GithubPresenter: MainModuleOutput, GithubViewOutput, GithubInteractorOutpu
     }
     
     func didReceive(_ repositories: [GithubRepository]) {
-        print(repositories)
+        view?.update(with: repositories)
     }
     
     func didFail(with error: Error) {
