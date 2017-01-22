@@ -19,7 +19,7 @@ class GithubViewModelFactoryImplementation: GithubViewModelFactory {
         let offset = tuple.offset
         
         let imageUrl = URL(string: element.avatarUrlString)
-        let userUrl = URL(string: element.avatarUrlString)
+        let userUrl = URL(string: element.repositoryUrlString)
         
         if offset % 2 == 0 {
             return GithubRepositoryViewModel(associatedCell: LeftDescriptionCell.self,

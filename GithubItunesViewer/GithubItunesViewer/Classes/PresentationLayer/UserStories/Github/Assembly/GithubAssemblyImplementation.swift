@@ -23,6 +23,7 @@ class GithubAssemblyImplementation: GithubAssembly {
         let presenter = GithubPresenter()
         let githubService = assemblyFactory.serviceAssembly().githubService()
         let downloaderService = assemblyFactory.serviceAssembly().imageDownloaderService()
+        let heightCalculator = assemblyFactory.helperAssembly().heightCalculator()
         let interactor = GithubInteractor()
         let viewModelFactory = GithubViewModelFactoryImplementation()
         let dataDisplayManager = GithubDataDisplayManagerImplementation()
@@ -39,6 +40,7 @@ class GithubAssemblyImplementation: GithubAssembly {
         
         dataDisplayManager.factory = viewModelFactory
         dataDisplayManager.imageCellDelegate = viewController
+        dataDisplayManager.heightCalculator = heightCalculator
         
         return viewController
     }

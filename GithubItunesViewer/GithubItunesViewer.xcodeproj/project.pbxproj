@@ -157,6 +157,12 @@
 		9E237B411E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B3F1E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift */; };
 		9E237B441E34F49900CA2FD1 /* ImageCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B431E34F49900CA2FD1 /* ImageCellDelegate.swift */; };
 		9E237B451E34F49900CA2FD1 /* ImageCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B431E34F49900CA2FD1 /* ImageCellDelegate.swift */; };
+		9E237B481E35139D00CA2FD1 /* TableViewHeightCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B471E35139D00CA2FD1 /* TableViewHeightCalculator.swift */; };
+		9E237B491E35139D00CA2FD1 /* TableViewHeightCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B471E35139D00CA2FD1 /* TableViewHeightCalculator.swift */; };
+		9E237B4B1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B4A1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift */; };
+		9E237B4C1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B4A1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift */; };
+		9E237B4F1E3520FE00CA2FD1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B4E1E3520FE00CA2FD1 /* UIImage.swift */; };
+		9E237B501E3520FE00CA2FD1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B4E1E3520FE00CA2FD1 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,6 +257,9 @@
 		9E237B3C1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownloaderServiceImplementation.swift; path = Classes/ServiceLayer/ImageDownloaderService/ImageDownloaderServiceImplementation.swift; sourceTree = "<group>"; };
 		9E237B3F1E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownloaderConfiguration.swift; path = Classes/ServiceLayer/ImageDownloaderService/ImageDownloaderConfiguration.swift; sourceTree = "<group>"; };
 		9E237B431E34F49900CA2FD1 /* ImageCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCellDelegate.swift; path = Classes/PresentationLayer/CommonComponents/ImageCellDelegate/ImageCellDelegate.swift; sourceTree = "<group>"; };
+		9E237B471E35139D00CA2FD1 /* TableViewHeightCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewHeightCalculator.swift; path = Classes/Helpers/TableViewHeightCalculator/TableViewHeightCalculator.swift; sourceTree = "<group>"; };
+		9E237B4A1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewHeightCalculatorImplementation.swift; path = Classes/Helpers/TableViewHeightCalculator/TableViewHeightCalculatorImplementation.swift; sourceTree = "<group>"; };
+		9E237B4E1E3520FE00CA2FD1 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Classes/Extensions/UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,10 +407,10 @@
 		9E237A2E1E33996400CA2FD1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				9E237B371E34EC6800CA2FD1 /* Image */,
+				9E237AF91E343B8B00CA2FD1 /* Assembly */,
+				9E237B461E35136500CA2FD1 /* TableViewHeightCalclulator */,
 				9E237B281E34CD0800CA2FD1 /* TableViewDataDisplayManager */,
 				9E237B031E34BBDD00CA2FD1 /* ConfigurableCell */,
-				9E237AF91E343B8B00CA2FD1 /* Assembly */,
 				9E237AF21E3438CC00CA2FD1 /* Throttler */,
 				9E237A6E1E33E36E00CA2FD1 /* ViewControllerEmbedding */,
 			);
@@ -485,6 +494,7 @@
 		9E237A721E33EA1900CA2FD1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9E237B4E1E3520FE00CA2FD1 /* UIImage.swift */,
 				9E237B001E34B43E00CA2FD1 /* Dictionary.swift */,
 				9E237A731E33EA3B00CA2FD1 /* UIViewController.swift */,
 			);
@@ -741,13 +751,6 @@
 			name = TableViewDataDisplayManager;
 			sourceTree = "<group>";
 		};
-		9E237B371E34EC6800CA2FD1 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Image;
-			sourceTree = "<group>";
-		};
 		9E237B381E34EC8600CA2FD1 /* ImageDownloaderService */ = {
 			isa = PBXGroup;
 			children = (
@@ -764,6 +767,15 @@
 				9E237B431E34F49900CA2FD1 /* ImageCellDelegate.swift */,
 			);
 			name = ImageCellDelegate;
+			sourceTree = "<group>";
+		};
+		9E237B461E35136500CA2FD1 /* TableViewHeightCalclulator */ = {
+			isa = PBXGroup;
+			children = (
+				9E237B471E35139D00CA2FD1 /* TableViewHeightCalculator.swift */,
+				9E237B4A1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift */,
+			);
+			name = TableViewHeightCalclulator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -904,6 +916,7 @@
 				9E237A801E33ED2300CA2FD1 /* GithubViewController.swift in Sources */,
 				9E237AA21E340C9E00CA2FD1 /* AssemblyFactory.swift in Sources */,
 				9E237AD51E342A1100CA2FD1 /* GithubService.swift in Sources */,
+				9E237B4F1E3520FE00CA2FD1 /* UIImage.swift in Sources */,
 				9E237AEA1E342DFB00CA2FD1 /* GithubInteractorInput.swift in Sources */,
 				9E237B3D1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift in Sources */,
 				9E237AC11E341A3600CA2FD1 /* GithubPresenter.swift in Sources */,
@@ -929,6 +942,8 @@
 				9E237ACD1E34224900CA2FD1 /* MainModuleOutputProvider.swift in Sources */,
 				9E237AFE1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift in Sources */,
 				9E237A3B1E339CFC00CA2FD1 /* NetworkClientImplementation.swift in Sources */,
+				9E237B4B1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift in Sources */,
+				9E237B481E35139D00CA2FD1 /* TableViewHeightCalculator.swift in Sources */,
 				9E237A841E33ED9D00CA2FD1 /* ApplicationAssembly.swift in Sources */,
 				9E237A431E33A19500CA2FD1 /* RequestBuilderConfiguration.swift in Sources */,
 				9E237B2A1E34D24700CA2FD1 /* TableViewDataDisplayManager.swift in Sources */,
@@ -953,6 +968,7 @@
 			files = (
 				9E237AEB1E342DFB00CA2FD1 /* GithubInteractorInput.swift in Sources */,
 				9E237A661E33B4E800CA2FD1 /* GithubRepository.swift in Sources */,
+				9E237B4C1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift in Sources */,
 				9E237A401E33A06F00CA2FD1 /* NetworkRequestConstants.swift in Sources */,
 				9E237B171E34C90800CA2FD1 /* LeftDescriptionCell.swift in Sources */,
 				9E237A351E339BFC00CA2FD1 /* JSONDeserializer.swift in Sources */,
@@ -1001,6 +1017,7 @@
 				9E237AC51E341A8F00CA2FD1 /* GithubViewOutput.swift in Sources */,
 				9E237B211E34C9BF00CA2FD1 /* GithubRepositoryViewModel.swift in Sources */,
 				9E237A9C1E34099600CA2FD1 /* ITunesViewController.swift in Sources */,
+				9E237B501E3520FE00CA2FD1 /* UIImage.swift in Sources */,
 				9E237AF81E34396200CA2FD1 /* ThrottlerImplementation.swift in Sources */,
 				9E237AA71E340DB100CA2FD1 /* MainAssembly.swift in Sources */,
 				9E237A751E33EA3B00CA2FD1 /* UIViewController.swift in Sources */,
@@ -1016,6 +1033,7 @@
 				9E237B2B1E34D24700CA2FD1 /* TableViewDataDisplayManager.swift in Sources */,
 				9E237AB21E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift in Sources */,
 				9E237A541E33A80B00CA2FD1 /* URLParametersTransformable.swift in Sources */,
+				9E237B491E35139D00CA2FD1 /* TableViewHeightCalculator.swift in Sources */,
 				9E237A711E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift in Sources */,
 				9E237B0E1E34C77200CA2FD1 /* GithubViewModelFactory.swift in Sources */,
 				9E237ADD1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift in Sources */,

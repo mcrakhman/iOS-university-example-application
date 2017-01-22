@@ -10,15 +10,15 @@ protocol ConfigurableCell {
     static var identifier: String { get }
     
     func configure(with viewModel: CellViewModel)
-    func configure(with viewModel: CellViewModel, delegate: CellDelegate)
+    func configure(with viewModel: CellViewModel, delegate: CellDelegate?)
 }
 
 extension ConfigurableCell {
     func configure(with viewModel: CellViewModel) {
-        fatalError()
+        configure(with: viewModel, delegate: nil)
     }
     
-    func configure(with viewModel: CellViewModel, delegate: CellDelegate) {
+    func configure(with viewModel: CellViewModel, delegate: CellDelegate?) {
         fatalError()
     }
 }

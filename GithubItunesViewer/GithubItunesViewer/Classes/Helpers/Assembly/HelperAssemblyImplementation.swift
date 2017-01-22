@@ -12,4 +12,8 @@ class HelperAssemblyImplementation: HelperAssembly {
     func throttler() -> Throttler {
         return ThrottlerImplementation()
     }
+    
+    func heightCalculator() -> TableViewHeightCalculator {
+        return TableViewHeightCalculatorImplementation()
+    }
 }
