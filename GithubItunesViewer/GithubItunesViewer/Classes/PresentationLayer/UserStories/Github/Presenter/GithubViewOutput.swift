@@ -9,5 +9,8 @@
 import Foundation
 
 protocol GithubViewOutput: class {
+    func viewIsReady()
     func didAskToDownloadImage(with configuration: ImageDownloaderConfiguration)
+    func didAskToTransition(with configuration: ImageTransitionConfiguration)
+    func didTapRepeatButton()
 }

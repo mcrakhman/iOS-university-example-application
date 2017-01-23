@@ -13,6 +13,7 @@ class MainRouter: MainRouterInput {
     
     var viewController: MainViewInput?
     var assemblyFactory: AssemblyFactory?
+    var animator: ScaleTransitionAnimator?
     
     func showGithub() {
         guard let viewController = viewController as? UIViewController,
@@ -58,9 +59,27 @@ class MainRouter: MainRouterInput {
         }
     }
     
+    func show(_ configuration: ImageTransitionConfiguration) {
+        guard let viewController = viewController as? UIViewController,
+            let assemblyFactory = assemblyFactory else {
+                return
+        }
+        
+        let iconViewController = assemblyFactory.iconAssembly().module(with: configuration.image)
+        let animator = assemblyFactory.helperAssembly().scaleAnimator()
+        
+        iconViewController.transitioningDelegate = animator
+        animator.originFrame = configuration.frame
+        
+        viewController.present(iconViewController, animated: true, completion: nil)
+        
+        self.animator = animator
+    }
+    
     private func instantiateDataFlow(inputProvider: MainModuleInputProvider?, outputProvider: MainModuleOutputProvider?) {
-        let input = inputProvider?.provideMainModuleInput()
-        let output = outputProvider?.provideMainModuleOutput()
+        let input = inputProvider?.provideMainModuleInput() as? GithubModuleOutput & MainModuleInput
+        let output = outputProvider?.provideMainModuleOutput() as? MainModuleOutput & GithubModuleInput
         input?.provide(with: output)
+        output?.provide(with: input)
     }
 }

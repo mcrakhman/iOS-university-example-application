@@ -10,4 +10,8 @@ import Foundation
 
 protocol GithubViewInput: class {
     func update(with repositories: [GithubRepository])
+    func showError(_ description: String)
+    func showMessage(_ description: String)
+    func showLoading()
+    func setupInitialState()
 }

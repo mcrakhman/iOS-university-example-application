@@ -163,6 +163,27 @@
 		9E237B4C1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B4A1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift */; };
 		9E237B4F1E3520FE00CA2FD1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B4E1E3520FE00CA2FD1 /* UIImage.swift */; };
 		9E237B501E3520FE00CA2FD1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237B4E1E3520FE00CA2FD1 /* UIImage.swift */; };
+		9EF3F74F1E36637B00271C45 /* GithubModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F74E1E36637B00271C45 /* GithubModuleOutput.swift */; };
+		9EF3F7501E36637B00271C45 /* GithubModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F74E1E36637B00271C45 /* GithubModuleOutput.swift */; };
+		9EF3F7521E36648C00271C45 /* GithubModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7511E36648C00271C45 /* GithubModuleInput.swift */; };
+		9EF3F7531E36648C00271C45 /* GithubModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7511E36648C00271C45 /* GithubModuleInput.swift */; };
+		9EF3F75A1E366B9700271C45 /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7591E366B9700271C45 /* IconViewController.swift */; };
+		9EF3F75B1E366B9700271C45 /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7591E366B9700271C45 /* IconViewController.swift */; };
+		9EF3F7601E366C3500271C45 /* IconPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F75F1E366C3500271C45 /* IconPresenter.swift */; };
+		9EF3F7611E366C3500271C45 /* IconPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F75F1E366C3500271C45 /* IconPresenter.swift */; };
+		9EF3F7631E366C5100271C45 /* IconAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7621E366C5100271C45 /* IconAssembly.swift */; };
+		9EF3F7641E366C5100271C45 /* IconAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7621E366C5100271C45 /* IconAssembly.swift */; };
+		9EF3F7661E366F3900271C45 /* IconViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7651E366F3900271C45 /* IconViewOutput.swift */; };
+		9EF3F7671E366F3900271C45 /* IconViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7651E366F3900271C45 /* IconViewOutput.swift */; };
+		9EF3F7691E366F9F00271C45 /* IconRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7681E366F9F00271C45 /* IconRouterInput.swift */; };
+		9EF3F76A1E366F9F00271C45 /* IconRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7681E366F9F00271C45 /* IconRouterInput.swift */; };
+		9EF3F76D1E366FC200271C45 /* IconRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F76C1E366FC200271C45 /* IconRouter.swift */; };
+		9EF3F76E1E366FC200271C45 /* IconRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F76C1E366FC200271C45 /* IconRouter.swift */; };
+		9EF3F7701E36705200271C45 /* IconViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F76F1E36705200271C45 /* IconViewInput.swift */; };
+		9EF3F7711E36705200271C45 /* IconViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F76F1E36705200271C45 /* IconViewInput.swift */; };
+		9EF3F7731E36720D00271C45 /* IconAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7721E36720D00271C45 /* IconAssemblyImplementation.swift */; };
+		9EF3F7741E36720D00271C45 /* IconAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7721E36720D00271C45 /* IconAssemblyImplementation.swift */; };
+		9EFEA2491E3643CD0038625B /* ScaleTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEA2481E3643CD0038625B /* ScaleTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,6 +281,17 @@
 		9E237B471E35139D00CA2FD1 /* TableViewHeightCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewHeightCalculator.swift; path = Classes/Helpers/TableViewHeightCalculator/TableViewHeightCalculator.swift; sourceTree = "<group>"; };
 		9E237B4A1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewHeightCalculatorImplementation.swift; path = Classes/Helpers/TableViewHeightCalculator/TableViewHeightCalculatorImplementation.swift; sourceTree = "<group>"; };
 		9E237B4E1E3520FE00CA2FD1 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Classes/Extensions/UIImage.swift; sourceTree = "<group>"; };
+		9EF3F74E1E36637B00271C45 /* GithubModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubModuleOutput.swift; path = Classes/PresentationLayer/UserStories/Github/Presenter/GithubModuleOutput.swift; sourceTree = "<group>"; };
+		9EF3F7511E36648C00271C45 /* GithubModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GithubModuleInput.swift; path = Classes/PresentationLayer/UserStories/Github/Presenter/GithubModuleInput.swift; sourceTree = "<group>"; };
+		9EF3F7591E366B9700271C45 /* IconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconViewController.swift; path = Classes/PresentationLayer/UserStories/Icon/View/IconViewController.swift; sourceTree = "<group>"; };
+		9EF3F75F1E366C3500271C45 /* IconPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconPresenter.swift; path = Classes/PresentationLayer/UserStories/Icon/Presenter/IconPresenter.swift; sourceTree = "<group>"; };
+		9EF3F7621E366C5100271C45 /* IconAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconAssembly.swift; path = Classes/PresentationLayer/UserStories/Icon/Assembly/IconAssembly.swift; sourceTree = "<group>"; };
+		9EF3F7651E366F3900271C45 /* IconViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconViewOutput.swift; path = Classes/PresentationLayer/UserStories/Icon/Presenter/IconViewOutput.swift; sourceTree = "<group>"; };
+		9EF3F7681E366F9F00271C45 /* IconRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconRouterInput.swift; path = Classes/PresentationLayer/UserStories/Icon/Router/IconRouterInput.swift; sourceTree = "<group>"; };
+		9EF3F76C1E366FC200271C45 /* IconRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconRouter.swift; path = Classes/PresentationLayer/UserStories/Icon/Router/IconRouter.swift; sourceTree = "<group>"; };
+		9EF3F76F1E36705200271C45 /* IconViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconViewInput.swift; path = Classes/PresentationLayer/UserStories/Icon/View/IconViewInput.swift; sourceTree = "<group>"; };
+		9EF3F7721E36720D00271C45 /* IconAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconAssemblyImplementation.swift; path = Classes/PresentationLayer/UserStories/Icon/Assembly/IconAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9EFEA2481E3643CD0038625B /* ScaleTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScaleTransitionAnimator.swift; path = Classes/PresentationLayer/CommonComponents/ScaleTransitionAnimator/ScaleTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,8 +377,8 @@
 		9E237A221E33979100CA2FD1 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				9E237B0F1E34C88700CA2FD1 /* CommonComponents */,
 				9E237A291E33981500CA2FD1 /* UserStories */,
+				9E237B0F1E34C88700CA2FD1 /* CommonComponents */,
 			);
 			name = PresentationLayer;
 			sourceTree = "<group>";
@@ -385,6 +417,7 @@
 		9E237A291E33981500CA2FD1 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				9EF3F7551E366B5C00271C45 /* Icon */,
 				9E237A981E34096C00CA2FD1 /* ITunes */,
 				9E237A7D1E33ECF500CA2FD1 /* Github */,
 				9E237A2A1E33983300CA2FD1 /* Main */,
@@ -614,6 +647,8 @@
 			isa = PBXGroup;
 			children = (
 				9E237AC01E341A3600CA2FD1 /* GithubPresenter.swift */,
+				9EF3F7511E36648C00271C45 /* GithubModuleInput.swift */,
+				9EF3F74E1E36637B00271C45 /* GithubModuleOutput.swift */,
 				9E237AC31E341A8F00CA2FD1 /* GithubViewOutput.swift */,
 				9E237AEC1E342E4600CA2FD1 /* GithubInteractorOutput.swift */,
 			);
@@ -710,6 +745,7 @@
 		9E237B0F1E34C88700CA2FD1 /* CommonComponents */ = {
 			isa = PBXGroup;
 			children = (
+				9EFEA2471E36439D0038625B /* ScaleTransitionAnimator */,
 				9E237B421E34F47E00CA2FD1 /* ImageCellDelegate */,
 				9E237B141E34C8E900CA2FD1 /* LeftDescriptionCell */,
 				9E237B131E34C8DD00CA2FD1 /* RightDescriptionCell */,
@@ -776,6 +812,61 @@
 				9E237B4A1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift */,
 			);
 			name = TableViewHeightCalclulator;
+			sourceTree = "<group>";
+		};
+		9EF3F7551E366B5C00271C45 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				9EF3F76B1E366FAE00271C45 /* Router */,
+				9EF3F75E1E366BD300271C45 /* Presenter */,
+				9EF3F75D1E366BCA00271C45 /* Assembly */,
+				9EF3F75C1E366BBE00271C45 /* View */,
+			);
+			name = Icon;
+			sourceTree = "<group>";
+		};
+		9EF3F75C1E366BBE00271C45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EF3F76F1E36705200271C45 /* IconViewInput.swift */,
+				9EF3F7591E366B9700271C45 /* IconViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9EF3F75D1E366BCA00271C45 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9EF3F7621E366C5100271C45 /* IconAssembly.swift */,
+				9EF3F7721E36720D00271C45 /* IconAssemblyImplementation.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		9EF3F75E1E366BD300271C45 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9EF3F7651E366F3900271C45 /* IconViewOutput.swift */,
+				9EF3F75F1E366C3500271C45 /* IconPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9EF3F76B1E366FAE00271C45 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9EF3F7681E366F9F00271C45 /* IconRouterInput.swift */,
+				9EF3F76C1E366FC200271C45 /* IconRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		9EFEA2471E36439D0038625B /* ScaleTransitionAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				9EFEA2481E3643CD0038625B /* ScaleTransitionAnimator.swift */,
+			);
+			name = ScaleTransitionAnimator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -895,6 +986,7 @@
 				9E237A691E33B5A200CA2FD1 /* GithubMapper.swift in Sources */,
 				9E237AFB1E343B9D00CA2FD1 /* HelperAssembly.swift in Sources */,
 				9E237B401E34F33400CA2FD1 /* ImageDownloaderConfiguration.swift in Sources */,
+				9EF3F7661E366F3900271C45 /* IconViewOutput.swift in Sources */,
 				9E237A9B1E34099600CA2FD1 /* ITunesViewController.swift in Sources */,
 				9E237AB71E34108A00CA2FD1 /* MainAssemblyImplementation.swift in Sources */,
 				9E237A5E1E33AC6A00CA2FD1 /* GithubRepositorySearchConfiguration.swift in Sources */,
@@ -905,6 +997,7 @@
 				9E237A8E1E34068700CA2FD1 /* MainViewInput.swift in Sources */,
 				9E237A561E33A89700CA2FD1 /* NetworkRequestErrors.swift in Sources */,
 				9E237B111E34C8B900CA2FD1 /* RightDescriptionCell.swift in Sources */,
+				9EF3F75A1E366B9700271C45 /* IconViewController.swift in Sources */,
 				9E237A6C1E33B5D500CA2FD1 /* GithubMapperImplementation.swift in Sources */,
 				9E237A951E34086300CA2FD1 /* MainPresenter.swift in Sources */,
 				9E237A4D1E33A6CB00CA2FD1 /* URLBuilder.swift in Sources */,
@@ -921,8 +1014,10 @@
 				9E237B3D1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift in Sources */,
 				9E237AC11E341A3600CA2FD1 /* GithubPresenter.swift in Sources */,
 				9E237A491E33A37100CA2FD1 /* RequestBuilderImplementation.swift in Sources */,
+				9EF3F7701E36705200271C45 /* IconViewInput.swift in Sources */,
 				9E237ABD1E3419F300CA2FD1 /* MainModuleOutput.swift in Sources */,
 				9E237ADF1E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift in Sources */,
+				9EF3F7731E36720D00271C45 /* IconAssemblyImplementation.swift in Sources */,
 				9E237B3A1E34ECB000CA2FD1 /* ImageDownloaderService.swift in Sources */,
 				9E237AE21E342BE400CA2FD1 /* GithubServiceImplementation.swift in Sources */,
 				9E237AAA1E340DF400CA2FD1 /* GithubAssembly.swift in Sources */,
@@ -935,27 +1030,34 @@
 				9E237B201E34C9BF00CA2FD1 /* GithubRepositoryViewModel.swift in Sources */,
 				9E237A651E33B4E800CA2FD1 /* GithubRepository.swift in Sources */,
 				9E237B231E34CA5A00CA2FD1 /* GithubViewModelFactoryImplementation.swift in Sources */,
+				9EF3F76D1E366FC200271C45 /* IconRouter.swift in Sources */,
 				9E237A531E33A80B00CA2FD1 /* URLParametersTransformable.swift in Sources */,
 				9E237AD11E34299800CA2FD1 /* ServiceAssembly.swift in Sources */,
 				9E237A7B1E33EC2500CA2FD1 /* MainRouter.swift in Sources */,
 				9E237AC41E341A8F00CA2FD1 /* GithubViewOutput.swift in Sources */,
 				9E237ACD1E34224900CA2FD1 /* MainModuleOutputProvider.swift in Sources */,
+				9EF3F7521E36648C00271C45 /* GithubModuleInput.swift in Sources */,
 				9E237AFE1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift in Sources */,
 				9E237A3B1E339CFC00CA2FD1 /* NetworkClientImplementation.swift in Sources */,
 				9E237B4B1E3513D400CA2FD1 /* TableViewHeightCalculatorImplementation.swift in Sources */,
+				9EF3F74F1E36637B00271C45 /* GithubModuleOutput.swift in Sources */,
 				9E237B481E35139D00CA2FD1 /* TableViewHeightCalculator.swift in Sources */,
 				9E237A841E33ED9D00CA2FD1 /* ApplicationAssembly.swift in Sources */,
 				9E237A431E33A19500CA2FD1 /* RequestBuilderConfiguration.swift in Sources */,
 				9E237B2A1E34D24700CA2FD1 /* TableViewDataDisplayManager.swift in Sources */,
 				9E237A741E33EA3B00CA2FD1 /* UIViewController.swift in Sources */,
 				9E237B0D1E34C77200CA2FD1 /* GithubViewModelFactory.swift in Sources */,
+				9EFEA2491E3643CD0038625B /* ScaleTransitionAnimator.swift in Sources */,
 				9E237AD91E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */,
 				9E237B011E34B43E00CA2FD1 /* Dictionary.swift in Sources */,
+				9EF3F7631E366C5100271C45 /* IconAssembly.swift in Sources */,
 				9E237A3F1E33A06F00CA2FD1 /* NetworkRequestConstants.swift in Sources */,
 				9E237AAE1E340E8E00CA2FD1 /* ITunesAssembly.swift in Sources */,
 				9E237AF71E34396200CA2FD1 /* ThrottlerImplementation.swift in Sources */,
 				9E237A501E33A79800CA2FD1 /* URLBuilderImplementation.swift in Sources */,
 				9E237A311E339BB800CA2FD1 /* Deserializer.swift in Sources */,
+				9EF3F7691E366F9F00271C45 /* IconRouterInput.swift in Sources */,
+				9EF3F7601E366C3500271C45 /* IconPresenter.swift in Sources */,
 				9E237A271E33980300CA2FD1 /* AppDelegate.swift in Sources */,
 				9E237AB41E34105400CA2FD1 /* GithubAssemblyImplementation.swift in Sources */,
 				9E237A701E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift in Sources */,
@@ -976,6 +1078,7 @@
 				9E237AC81E341CE100CA2FD1 /* MainModuleInputProvider.swift in Sources */,
 				9E237AAF1E340E8E00CA2FD1 /* ITunesAssembly.swift in Sources */,
 				9E237B121E34C8B900CA2FD1 /* RightDescriptionCell.swift in Sources */,
+				9EF3F7671E366F3900271C45 /* IconViewOutput.swift in Sources */,
 				9E237AEE1E342E4600CA2FD1 /* GithubInteractorOutput.swift in Sources */,
 				9E237ADA1E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */,
 				9E237B3B1E34ECB000CA2FD1 /* ImageDownloaderService.swift in Sources */,
@@ -983,6 +1086,7 @@
 				9E237A441E33A19500CA2FD1 /* RequestBuilderConfiguration.swift in Sources */,
 				9E237B3E1E34ED6E00CA2FD1 /* ImageDownloaderServiceImplementation.swift in Sources */,
 				9E237AE01E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift in Sources */,
+				9EF3F75B1E366B9700271C45 /* IconViewController.swift in Sources */,
 				9E237AAB1E340DF400CA2FD1 /* GithubAssembly.swift in Sources */,
 				9E237A5F1E33AC6A00CA2FD1 /* GithubRepositorySearchConfiguration.swift in Sources */,
 				9E237A4E1E33A6CB00CA2FD1 /* URLBuilder.swift in Sources */,
@@ -999,10 +1103,13 @@
 				9E237A471E33A32F00CA2FD1 /* RequestBuilder.swift in Sources */,
 				9E237A281E33980300CA2FD1 /* AppDelegate.swift in Sources */,
 				9E237AE31E342BE400CA2FD1 /* GithubServiceImplementation.swift in Sources */,
+				9EF3F7501E36637B00271C45 /* GithubModuleOutput.swift in Sources */,
 				9E237AB51E34105400CA2FD1 /* GithubAssemblyImplementation.swift in Sources */,
 				9E237ACE1E34224900CA2FD1 /* MainModuleOutputProvider.swift in Sources */,
+				9EF3F7711E36705200271C45 /* IconViewInput.swift in Sources */,
 				9E237A811E33ED2300CA2FD1 /* GithubViewController.swift in Sources */,
 				9E237B021E34B43E00CA2FD1 /* Dictionary.swift in Sources */,
+				9EF3F7741E36720D00271C45 /* IconAssemblyImplementation.swift in Sources */,
 				9E237B061E34C59300CA2FD1 /* ConfigurableCell.swift in Sources */,
 				9E237A881E33FFA100CA2FD1 /* GithubViewInput.swift in Sources */,
 				9E237A8C1E3405CD00CA2FD1 /* MainViewController.swift in Sources */,
@@ -1015,6 +1122,8 @@
 				9E237AFC1E343B9D00CA2FD1 /* HelperAssembly.swift in Sources */,
 				9E237ACB1E341F3200CA2FD1 /* MainModuleInput.swift in Sources */,
 				9E237AC51E341A8F00CA2FD1 /* GithubViewOutput.swift in Sources */,
+				9EF3F76E1E366FC200271C45 /* IconRouter.swift in Sources */,
+				9EF3F7531E36648C00271C45 /* GithubModuleInput.swift in Sources */,
 				9E237B211E34C9BF00CA2FD1 /* GithubRepositoryViewModel.swift in Sources */,
 				9E237A9C1E34099600CA2FD1 /* ITunesViewController.swift in Sources */,
 				9E237B501E3520FE00CA2FD1 /* UIImage.swift in Sources */,
@@ -1033,11 +1142,14 @@
 				9E237B2B1E34D24700CA2FD1 /* TableViewDataDisplayManager.swift in Sources */,
 				9E237AB21E340EBD00CA2FD1 /* ITunesAssemblyImplementation.swift in Sources */,
 				9E237A541E33A80B00CA2FD1 /* URLParametersTransformable.swift in Sources */,
+				9EF3F7641E366C5100271C45 /* IconAssembly.swift in Sources */,
 				9E237B491E35139D00CA2FD1 /* TableViewHeightCalculator.swift in Sources */,
 				9E237A711E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift in Sources */,
 				9E237B0E1E34C77200CA2FD1 /* GithubViewModelFactory.swift in Sources */,
 				9E237ADD1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift in Sources */,
 				9E237AF51E3438E300CA2FD1 /* Throttler.swift in Sources */,
+				9EF3F76A1E366F9F00271C45 /* IconRouterInput.swift in Sources */,
+				9EF3F7611E366C3500271C45 /* IconPresenter.swift in Sources */,
 				9E237A921E34069800CA2FD1 /* MainViewOutput.swift in Sources */,
 				9E237AB81E34108A00CA2FD1 /* MainAssemblyImplementation.swift in Sources */,
 				9E237A391E339CCC00CA2FD1 /* NetworkClient.swift in Sources */,
@@ -1238,6 +1350,7 @@
 				9E237A1C1E3396D300CA2FD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E237A1D1E3396D300CA2FD1 /* Build configuration list for PBXNativeTarget "GithubItunesViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -1246,6 +1359,7 @@
 				9E237A1F1E3396D300CA2FD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

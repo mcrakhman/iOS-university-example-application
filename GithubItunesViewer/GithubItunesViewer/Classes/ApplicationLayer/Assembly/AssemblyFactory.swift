@@ -12,6 +12,7 @@ protocol AssemblyFactory: class {
     func githubAssembly() -> GithubAssembly
     func mainAssembly() -> MainAssembly
     func iTunesAssembly() -> ITunesAssembly
+    func iconAssembly() -> IconAssembly
     func coreAssembly() -> CoreAssembly
     func helperAssembly() -> HelperAssembly
     func serviceAssembly() -> ServiceAssembly

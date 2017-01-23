@@ -6,8 +6,14 @@
 //  Copyright © 2017 m.rakhmanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct ImageTransitionConfiguration {
+    var image: UIImage
+    var frame: CGRect
+}
 
 protocol ImageCellDelegate: class, CellDelegate {
     func downloadImage(with configuration: ImageDownloaderConfiguration)
+    func didReceiveImageTransition(_ configuration: ImageTransitionConfiguration)
 }

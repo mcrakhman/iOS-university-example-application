@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LeftDescriptionCell: UITableViewCell, ConfigurableCell {
+class LeftDescriptionCell: UITableViewCell, ConfigurableCell, CAAnimationDelegate {
     
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -16,6 +16,8 @@ class LeftDescriptionCell: UITableViewCell, ConfigurableCell {
     
     @IBOutlet weak var titleLabelSupreviewTrailing: NSLayoutConstraint!
     @IBOutlet weak var supreviewTitleLabelLeading: NSLayoutConstraint!
+    
+    weak var delegate: ImageCellDelegate?
     
     func configure(with viewModel: CellViewModel, delegate: CellDelegate?) {
         guard let viewModel = viewModel as? GithubRepositoryViewModel else {
@@ -26,14 +28,39 @@ class LeftDescriptionCell: UITableViewCell, ConfigurableCell {
         titleLabel?.text = viewModel.login
         
         if let delegate = delegate as? ImageCellDelegate,
-            let url = viewModel.imageUrl {
+           let url = viewModel.imageUrl {
+            
+            self.delegate = delegate
             
             let completion: (UIImage) -> () = { [weak self] image in
+                self?.iconImageView.contentMode = .scaleAspectFill
                 self?.iconImageView.image = image
             }
             let configuration = ImageDownloaderConfiguration(url: url, completion: completion)
             delegate.downloadImage(with: configuration)
         }
+    }
+    
+    override func awakeFromNib() {
+        if iconImageView.gestureRecognizers == nil {
+            addRecognizer()
+        }
+    }
+    
+    func tapImage() {
+        guard let image = iconImageView.image else {
+            return
+        }
+        
+        let frame = contentView.convert(iconImageView.frame, to: nil)
+        let configuration = ImageTransitionConfiguration(image: image, frame: frame)
+        
+        delegate?.didReceiveImageTransition(configuration)
+    }
+    
+    func addRecognizer() {
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapImage))
+        iconImageView.addGestureRecognizer(gestureRecognizer)
     }
     
     override func layoutSubviews() {
@@ -44,5 +71,4 @@ class LeftDescriptionCell: UITableViewCell, ConfigurableCell {
         descriptionLabel.preferredMaxLayoutWidth = width
         titleLabel.preferredMaxLayoutWidth = width
     }
-
 }

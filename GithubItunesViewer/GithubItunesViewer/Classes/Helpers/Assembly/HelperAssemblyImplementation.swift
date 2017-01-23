@@ -16,4 +16,8 @@ class HelperAssemblyImplementation: HelperAssembly {
     func heightCalculator() -> TableViewHeightCalculator {
         return TableViewHeightCalculatorImplementation()
     }
+    
+    func scaleAnimator() -> ScaleTransitionAnimator {
+        return ScaleTransitionAnimator()
+    }
 }

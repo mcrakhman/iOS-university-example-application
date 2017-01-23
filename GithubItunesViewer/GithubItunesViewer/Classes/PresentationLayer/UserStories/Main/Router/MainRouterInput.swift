@@ -11,4 +11,6 @@ import Foundation
 protocol MainRouterInput: class {
     func showITunes()
     func showGithub()
+    func show(_ configuration: ImageTransitionConfiguration)
+    
 }

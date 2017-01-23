@@ -11,4 +11,5 @@ import Foundation
 protocol HelperAssembly {
     func throttler() -> Throttler
     func heightCalculator() -> TableViewHeightCalculator
+    func scaleAnimator() -> ScaleTransitionAnimator
 }

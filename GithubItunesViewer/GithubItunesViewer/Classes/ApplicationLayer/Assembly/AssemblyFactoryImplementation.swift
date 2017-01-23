@@ -32,4 +32,8 @@ class AssemblyFactoryImplementation: AssemblyFactory {
     func helperAssembly() -> HelperAssembly {
         return HelperAssemblyImplementation()
     }
+    
+    func iconAssembly() -> IconAssembly {
+        return IconAssemblyImplementation()
+    }
 }

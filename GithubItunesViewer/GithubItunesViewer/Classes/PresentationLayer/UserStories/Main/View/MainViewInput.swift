@@ -8,6 +8,4 @@
 
 import Foundation
 
-protocol MainViewInput: class {
-    
-}
+protocol MainViewInput: class {}

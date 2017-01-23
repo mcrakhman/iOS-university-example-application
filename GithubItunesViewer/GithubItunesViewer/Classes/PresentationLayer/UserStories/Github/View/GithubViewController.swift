@@ -13,10 +13,14 @@ class GithubViewController: UIViewController, GithubViewInput, MainModuleOutputP
     var dataDisplayManager: GithubDataDisplayManager?
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var messageView: UIView!
+    @IBOutlet weak var loadingView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableView()
+        output?.viewIsReady()
     }
     
     private func setupTableView() {
@@ -30,17 +34,63 @@ class GithubViewController: UIViewController, GithubViewInput, MainModuleOutputP
         tableView.dataSource = dataDisplayManager?.dataSourceForTableView()
     }
     
-    func update(with repositories: [GithubRepository]) {
-        dataDisplayManager?.update(with: repositories)
-        tableView.reloadData()
-    }
-    
     func provideMainModuleOutput() -> MainModuleOutput? {
         return output as? MainModuleOutput
     }
     
     func downloadImage(with configuration: ImageDownloaderConfiguration) {
         output?.didAskToDownloadImage(with: configuration)
+    }
+    
+    func update(with repositories: [GithubRepository]) {
+        activityIndicator.stopAnimating()
+        loadingView.isHidden = true
+        messageView.isHidden = true
+        tableView.isHidden = false
+        changeTableData(with: repositories)
+    }
+    
+    func changeTableData(with repositories: [GithubRepository]) {
+        dataDisplayManager?.update(with: repositories)
+        tableView.reloadData()
+    }
+    
+    func setupInitialState() {
+        setupTableView()
+        loadingView.isHidden = true
+        messageView.isHidden = true
+        tableView.isHidden = true
+    }
+    
+    func showLoading() {
+        loadingView.isHidden = false
+        messageView.isHidden = true
+        tableView.isHidden = true
+        activityIndicator.startAnimating()
+    }
+    
+    func showError(_ description: String) {
+        activityIndicator.stopAnimating()
+        loadingView.isHidden = true
+        messageView.isHidden = false
+        tableView.isHidden = true
+        messageLabel.text = description
+    }
+    
+    func showMessage(_ description: String) {
+        activityIndicator.stopAnimating()
+        loadingView.isHidden = true
+        messageView.isHidden = false
+        tableView.isHidden = true
+        messageLabel.text = description
+    }
+    
+    @IBAction func repeatButtonTapped(_ sender: Any) {
+        output?.didTapRepeatButton()
+    }
+    
+    func didReceiveImageTransition(_ configuration: ImageTransitionConfiguration) {
+        output?.didAskToTransition(with: configuration)
     }
 }
 

@@ -27,6 +27,7 @@ class MainAssemblyImplementation: MainAssembly {
         let throttler = helperAssembly.throttler()
         
         presenter.router = router
+        presenter.view = viewController
         router.viewController = viewController
         router.assemblyFactory = assemblyFactory
         viewController.output = presenter

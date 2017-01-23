@@ -8,10 +8,11 @@
 
 import Foundation
 
-class MainPresenter: MainViewOutput, MainModuleInput {
+class MainPresenter: MainViewOutput, MainModuleInput, GithubModuleOutput {
     
     var router: MainRouterInput?
     weak var moduleOutput: MainModuleOutput?
+    weak var view: MainViewInput?
     
     func didSelect(_ screen: SelectedScreen) {
         switch screen {
@@ -26,5 +27,9 @@ class MainPresenter: MainViewOutput, MainModuleInput {
     
     func provide(with output: MainModuleOutput?) {
         moduleOutput = output
+    }
+    
+    func didAskToTransition(with configuration: ImageTransitionConfiguration) {
+        router?.show(configuration)
     }
 }
