@@ -17,10 +17,6 @@ extension ConfigurableCell {
     func configure(with viewModel: CellViewModel) {
         configure(with: viewModel, delegate: nil)
     }
-    
-    func configure(with viewModel: CellViewModel, delegate: CellDelegate?) {
-        fatalError()
-    }
 }
 
 protocol CellDelegate {}

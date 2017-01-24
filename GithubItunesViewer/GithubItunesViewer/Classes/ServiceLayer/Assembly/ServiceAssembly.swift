@@ -10,5 +10,6 @@ import Foundation
 
 protocol ServiceAssembly {
     func githubService() -> GithubService
+    func iTunesService() -> ITunesService
     func imageDownloaderService() -> ImageDownloaderService
 }

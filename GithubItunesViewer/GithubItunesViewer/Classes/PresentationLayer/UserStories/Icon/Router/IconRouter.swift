@@ -15,6 +15,6 @@ class IconRouter: IconRouterInput {
         guard let viewController = transitionHander as? UIViewController else {
             return
         }
-        viewController.presentingViewController?.dismiss(animated: true, completion: nil)
+        viewController.dismiss(animated: true, completion: nil)
     }
 }

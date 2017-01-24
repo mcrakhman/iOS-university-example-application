@@ -10,6 +10,7 @@ import Foundation
 
 protocol CoreAssembly {
     func githubMapper() -> GithubMapper
+    func iTunesMapper() -> ITunesMapper
     func networkClient() -> NetworkClient
     func urlBuilder() -> URLBuilder
     func requestBuilder() -> RequestBuilder

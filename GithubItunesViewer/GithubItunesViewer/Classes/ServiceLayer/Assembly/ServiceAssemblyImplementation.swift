@@ -30,6 +30,21 @@ class ServiceAssemblyImplementation: ServiceAssembly {
                                            requestBuilder: requestBuilder)
     }
     
+    func iTunesService() -> ITunesService {
+        let coreAssembly = assemblyFactory.coreAssembly()
+        let mapper = coreAssembly.iTunesMapper()
+        let networkClient = coreAssembly.networkClient()
+        let deserializer = coreAssembly.jsonDeserializer()
+        let urlBuilder = coreAssembly.urlBuilder()
+        let requestBuilder = coreAssembly.requestBuilder()
+        
+        return ITunesServiceImplementation(mapper: mapper,
+                                           networkClient: networkClient,
+                                           deserializer: deserializer,
+                                           urlBuilder: urlBuilder,
+                                           requestBuilder: requestBuilder)
+    }
+    
     func imageDownloaderService() -> ImageDownloaderService {
         let coreAssembly = assemblyFactory.coreAssembly()
         let networkClient = coreAssembly.networkClient()

@@ -10,13 +10,13 @@ import Foundation
 
 class GithubInteractor: GithubInteractorInput {
     
-    var githubService: GithubService?
+    var githubService: ITunesService?
     var downloaderService: ImageDownloaderService?
     var output: GithubInteractorOutput?
     
     func requestRepositioryInformation(_ requestString: String) {
-        let configuration = GithubRepositorySearchConfiguration(searchString: requestString)
-        githubService?.updateRepositiories(with: configuration) { [weak self] response in
+        let configuration = ITunesSearchConfiguration(searchString: requestString)
+        githubService?.updateItems(with: configuration) { [weak self] response in
             guard let strongSelf = self else {
                 return
             }

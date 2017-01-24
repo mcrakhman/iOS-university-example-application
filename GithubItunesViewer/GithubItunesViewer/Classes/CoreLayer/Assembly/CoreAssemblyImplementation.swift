@@ -13,6 +13,10 @@ class CoreAssemblyImplementation: CoreAssembly {
         return GithubMapperImplementation()
     }
     
+    func iTunesMapper() -> ITunesMapper {
+        return ITunesMapperImplementation()
+    }
+    
     func networkClient() -> NetworkClient {
         return NetworkClientImplementation(session: URLSession.shared)
     }

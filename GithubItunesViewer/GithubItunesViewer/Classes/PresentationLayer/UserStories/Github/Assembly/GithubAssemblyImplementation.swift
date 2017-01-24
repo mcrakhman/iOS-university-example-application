@@ -21,7 +21,7 @@ class GithubAssemblyImplementation: GithubAssembly {
        
         let viewController = storyboard.instantiateViewController(withIdentifier: GithubViewController.storyboardIdentifier) as! GithubViewController
         let presenter = GithubPresenter()
-        let githubService = assemblyFactory.serviceAssembly().githubService()
+        let githubService = assemblyFactory.serviceAssembly().iTunesService()
         let downloaderService = assemblyFactory.serviceAssembly().imageDownloaderService()
         let heightCalculator = assemblyFactory.helperAssembly().heightCalculator()
         let interactor = GithubInteractor()
