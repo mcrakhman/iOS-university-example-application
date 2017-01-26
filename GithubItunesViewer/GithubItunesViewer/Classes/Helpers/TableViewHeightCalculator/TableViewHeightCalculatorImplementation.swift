@@ -42,8 +42,8 @@ class TableViewHeightCalculatorImplementation: TableViewHeightCalculator {
         cell.layoutIfNeeded()
         
         let height = cell.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
-        cachedHeights[row] = height
+        cachedHeights[row] = ceil(height)
         
-        return height
+        return ceil(height)
     }
 }

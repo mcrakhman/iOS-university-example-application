@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
+enum EmbeddedControllerIdentifiers {
+    static let github = "Github"
+    static let iTunes = "ITunes"
+}
+
 class MainRouter: MainRouterInput {
     
     var viewController: MainViewInput?
@@ -16,47 +21,19 @@ class MainRouter: MainRouterInput {
     var animator: ScaleTransitionAnimator?
     
     func showGithub() {
-        guard let viewController = viewController as? UIViewController,
-              let assemblyFactory = assemblyFactory,
-              let rootViewController = viewController as? ViewControllerEmbedding else {
+        guard let assemblyFactory = assemblyFactory else {
             return
         }
-        
-        var destinationViewController = viewController.child(ofType: GithubViewInput.self)
-                
-        if destinationViewController == nil {
-            let newViewController = assemblyFactory.githubAssembly().module()
-            rootViewController.embed(newViewController)
-            destinationViewController = newViewController
-        }
-        
-        if let destinationViewController = destinationViewController {
-            instantiateDataFlow(inputProvider: viewController as? MainModuleInputProvider,
-                                outputProvider: destinationViewController as? MainModuleOutputProvider)
-            rootViewController.embeddedTransition(to: destinationViewController)
-        }
+        showDetailModule(with: EmbeddedControllerIdentifiers.github,
+                         constructor: assemblyFactory.githubAssembly().module)
     }
     
     func showITunes() {
-        guard let viewController = viewController as? UIViewController,
-              let assemblyFactory = assemblyFactory,
-              let rootViewController = viewController as? ViewControllerEmbedding else {
-                return
+        guard let assemblyFactory = assemblyFactory else {
+            return
         }
-        
-        var destinationViewController = viewController.child(ofType: ITunesViewInput.self)
-        
-        if destinationViewController == nil {
-            let newViewController = assemblyFactory.iTunesAssembly().module()
-            rootViewController.embed(newViewController)
-            destinationViewController = newViewController
-        }
-        
-        if let destinationViewController = destinationViewController {
-            instantiateDataFlow(inputProvider: viewController as? MainModuleInputProvider,
-                                outputProvider: destinationViewController as? MainModuleOutputProvider)
-            rootViewController.embeddedTransition(to: destinationViewController)
-        }
+        showDetailModule(with: EmbeddedControllerIdentifiers.iTunes,
+                         constructor: assemblyFactory.iTunesAssembly().module)
     }
     
     func show(_ configuration: ImageTransitionConfiguration) {
@@ -76,9 +53,30 @@ class MainRouter: MainRouterInput {
         self.animator = animator
     }
     
+    private func showDetailModule(with identifier: String, constructor: () -> UIViewController) {
+        guard let viewController = viewController as? UIViewController,
+              let rootViewController = viewController as? ViewControllerEmbedding else {
+                return
+        }
+        
+        var destinationViewController = rootViewController.findEmbeddableChild(with: identifier)
+        
+        if destinationViewController == nil {
+            let newViewController = constructor()
+            rootViewController.embed(newViewController)
+            destinationViewController = newViewController
+        }
+        
+        if let destinationViewController = destinationViewController {
+            instantiateDataFlow(inputProvider: viewController as? MainModuleInputProvider,
+                                outputProvider: destinationViewController as? MainModuleOutputProvider)
+            rootViewController.embeddedTransition(to: destinationViewController)
+        }
+    }
+    
     private func instantiateDataFlow(inputProvider: MainModuleInputProvider?, outputProvider: MainModuleOutputProvider?) {
-        let input = inputProvider?.provideMainModuleInput() as? GithubModuleOutput & MainModuleInput
-        let output = outputProvider?.provideMainModuleOutput() as? MainModuleOutput & GithubModuleInput
+        let input = inputProvider?.provideMainModuleInput() as? DetailInfoModuleOutput & MainModuleInput
+        let output = outputProvider?.provideMainModuleOutput() as? MainModuleOutput & DetailInfoModuleInput
         input?.provide(with: output)
         output?.provide(with: input)
     }

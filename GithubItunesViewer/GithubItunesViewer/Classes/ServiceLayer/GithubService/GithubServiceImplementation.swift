@@ -30,7 +30,7 @@ class GithubServiceImplementation: GithubService {
         self.requestBuilder = requestBuilder
     }
     
-    func updateRepositiories(with configuration: GithubRepositorySearchConfiguration,
+    func updateRepositories(with configuration: GithubRepositorySearchConfiguration,
                              completion:@escaping RepositoryResponse) {
         do {
             let url = try urlBuilder.build(withAPIPath: .githubPath,

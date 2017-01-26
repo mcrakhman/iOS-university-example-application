@@ -9,24 +9,22 @@
 import Foundation
 
 class ITunesMapperImplementation: ITunesMapper {
-    func mapItemsArray(_ data: Any) throws -> [GithubRepository] {
+    func mapItemsArray(_ data: Any) throws -> [SongData] {
         guard let dictionary = data as? [String: Any] else {
             throw MapperError.invalidData
         }
         
-        let items = dictionary[stringDictArray: "results"] ?? []
-        let repositories = items.map(mapItem)
-        return repositories
+        let results = dictionary[stringDictArray: "results"] ?? []
+        let items = results.map(mapItem)
+        return items
     }
     
-    private func mapItem(_ dictionary: [String: Any]) -> GithubRepository {
-        let urlString       = dictionary["trackName"] as? String ?? ""
-        let avatarUrlString = dictionary["artworkUrl100"] as? String ?? ""
-        let login           = dictionary["artistName"] as? String ?? ""
+    private func mapItem(_ dictionary: [String: Any]) -> SongData {
+        let trackName      = dictionary["trackName"] as? String ?? ""
+        let imageUrlString = dictionary["artworkUrl100"] as? String ?? ""
+        let authorName     = dictionary["artistName"] as? String ?? ""
         
-        return GithubRepository(avatarUrlString: avatarUrlString,
-                                login: login,
-                                repositoryUrlString: urlString)
+        return SongData(authorName: authorName, imageUrlString: imageUrlString, trackName: trackName)
         
     }
 }

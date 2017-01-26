@@ -14,6 +14,7 @@ protocol ViewControllerEmbedding {
 
     func embed(_ viewController: UIViewController)
     func embeddedTransition(to viewController: UIViewController)
+    func findEmbeddableChild(with identifier: String) -> UIViewController?
 }
 
 extension ViewControllerEmbedding where Self: UIViewController {
@@ -27,8 +28,21 @@ extension ViewControllerEmbedding where Self: UIViewController {
     
     func embeddedTransition(to viewController: UIViewController) {
         viewController.willMove(toParentViewController: self)
+        self.beginAppearanceTransition(false, animated: true)
+        viewController.beginAppearanceTransition(true, animated: false)
         containerView.bringSubview(toFront: viewController.view)
         viewController.didMove(toParentViewController: self)
+        viewController.endAppearanceTransition()
+        self.endAppearanceTransition()
+    }
+    
+    func findEmbeddableChild(with identifier: String) -> UIViewController? {
+        let viewControllers = childViewControllers.map { $0 as? ViewControllerEmbeddable }.filter { $0 != nil }
+        if let embeddableViewControllers = viewControllers as? [ViewControllerEmbeddable], embeddableViewControllers.count > 0 {
+            return embeddableViewControllers.filter { $0.embedIdentifier == identifier }.first as? UIViewController
+        }
+        
+        return nil
     }
     
     private func setupConstraints(for viewController: UIViewController) {

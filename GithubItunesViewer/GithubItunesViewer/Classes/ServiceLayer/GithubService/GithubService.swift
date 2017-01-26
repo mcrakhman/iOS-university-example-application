@@ -11,5 +11,5 @@ import Foundation
 typealias RepositoryResponse = (() throws -> [GithubRepository]) -> ()
 
 protocol GithubService: class {
-    func updateRepositiories(with configuration: GithubRepositorySearchConfiguration, completion:@escaping RepositoryResponse)
+    func updateRepositories(with configuration: GithubRepositorySearchConfiguration, completion: @escaping RepositoryResponse)
 }

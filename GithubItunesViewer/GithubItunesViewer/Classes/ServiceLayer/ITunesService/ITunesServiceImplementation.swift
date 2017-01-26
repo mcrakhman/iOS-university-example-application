@@ -31,7 +31,7 @@ class ITunesServiceImplementation: ITunesService {
     }
     
     func updateItems(with configuration: ITunesSearchConfiguration,
-                             completion:@escaping RepositoryResponse) {
+                             completion:@escaping SongDataResponse) {
         do {
             let url = try urlBuilder.build(withAPIPath: .iTunesPath,
                                            APIMethod: .iTunesMethod,
@@ -45,7 +45,7 @@ class ITunesServiceImplementation: ITunesService {
     }
     
     private func performNetworkOperations(with request: URLRequest,
-                                          completion: @escaping RepositoryResponse) {
+                                          completion: @escaping SongDataResponse) {
         
         networkClient.perform(request: request) { [weak self] result in
             guard let strongSelf = self else {

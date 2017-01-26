@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MainPresenter: MainViewOutput, MainModuleInput, GithubModuleOutput {
+class MainPresenter: MainViewOutput, MainModuleInput, DetailInfoModuleOutput {
     
     var router: MainRouterInput?
     weak var moduleOutput: MainModuleOutput?

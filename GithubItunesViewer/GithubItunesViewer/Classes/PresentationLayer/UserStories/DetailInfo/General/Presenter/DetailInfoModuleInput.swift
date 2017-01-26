@@ -1,5 +1,5 @@
 //
-//  ITunesMapper.swift
+//  DetailInfoModuleInput.swift
 //  GithubItunesViewer
 //
 //  Created by m.rakhmanov on 23.01.17.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ITunesMapper {
-    func mapItemsArray(_ data: Any) throws -> [SongData]
+protocol DetailInfoModuleInput: class {
+    func provide(with output: DetailInfoModuleOutput?)
 }

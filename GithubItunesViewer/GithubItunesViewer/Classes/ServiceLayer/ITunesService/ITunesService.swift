@@ -8,6 +8,8 @@
 
 import Foundation
 
+typealias SongDataResponse = (() throws -> [SongData]) -> ()
+
 protocol ITunesService: class {
-    func updateItems(with configuration: ITunesSearchConfiguration, completion: @escaping RepositoryResponse)
+    func updateItems(with configuration: ITunesSearchConfiguration, completion: @escaping SongDataResponse)
 }

@@ -43,6 +43,7 @@ class MainViewController: UIViewController, ViewControllerEmbedding, MainViewInp
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         throttler?.throttle(MainViewControllerConstants.throttleDelay) {
             self.output?.didChange(searchText)
+            self.searchBar.resignFirstResponder()
         }
     }
     
