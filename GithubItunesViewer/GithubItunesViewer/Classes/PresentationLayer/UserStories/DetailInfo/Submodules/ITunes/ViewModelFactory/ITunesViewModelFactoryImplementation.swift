@@ -19,7 +19,7 @@ class ITunesViewModelFactoryImplementation: ITunesViewModelFactory {
         
         let imageUrl = URL(string: element.imageUrlString)
     
-        if offset % 2 == 0 {
+        if offset % 2 != 0 {
             return EntryDescriptionViewModel(associatedCell: LeftDescriptionCell.self,
                                              title: element.authorName,
                                              imageUrl: imageUrl,

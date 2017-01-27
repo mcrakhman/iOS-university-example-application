@@ -20,7 +20,7 @@ class GithubViewModelFactoryImplementation: GithubViewModelFactory {
         
         let imageUrl = URL(string: element.avatarUrlString)
         
-        if offset % 2 != 0 {
+        if offset % 2 == 0 {
             return EntryDescriptionViewModel(associatedCell: LeftDescriptionCell.self,
                                              title: element.login,
                                              imageUrl: imageUrl,

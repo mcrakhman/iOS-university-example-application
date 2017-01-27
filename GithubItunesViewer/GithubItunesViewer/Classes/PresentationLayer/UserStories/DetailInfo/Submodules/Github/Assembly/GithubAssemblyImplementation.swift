@@ -29,6 +29,8 @@ class GithubAssemblyImplementation: GithubAssembly {
         let interactor = GithubInteractor()
         let viewModelFactory = GithubViewModelFactoryImplementation()
         let dataDisplayManager = DetailInfoDataDisplayManagerImplementation()
+        let router = DetailInfoRouter()
+        let animator = ScaleTransitionAnimator()
         
         interactor.githubService = githubService
         interactor.downloaderService = downloaderService
@@ -37,9 +39,14 @@ class GithubAssemblyImplementation: GithubAssembly {
         
         presenter.view = viewController
         presenter.interactor = interactor
+        presenter.router = router
         
         viewController.output = presenter
         viewController.dataDisplayManager = dataDisplayManager
+        
+        router.animator = animator
+        router.transitionHandler = viewController
+        router.assemblyFactory = assemblyFactory
         
         dataDisplayManager.imageCellDelegate = viewController
         dataDisplayManager.heightCalculator = heightCalculator

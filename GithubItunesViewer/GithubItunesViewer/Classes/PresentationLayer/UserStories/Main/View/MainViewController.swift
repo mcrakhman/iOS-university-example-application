@@ -17,7 +17,11 @@ enum MainViewControllerConstants {
     static let throttleDelay: TimeInterval = 1.0
 }
 
-class MainViewController: UIViewController, ViewControllerEmbedding, MainViewInput, MainModuleInputProvider, UISearchBarDelegate {
+class MainViewController: UIViewController, ViewControllerEmbedding, MainViewInput, UISearchBarDelegate {
+    
+    var container: UIView {
+        return containerView
+    }
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var containerView: UIView!
@@ -34,10 +38,6 @@ class MainViewController: UIViewController, ViewControllerEmbedding, MainViewInp
     
     @IBAction func didChangeSegmentedControlValue(_ sender: Any) {
         changeScreen()
-    }
-    
-    func provideMainModuleInput() -> MainModuleInput? {
-        return output as? MainModuleInput
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

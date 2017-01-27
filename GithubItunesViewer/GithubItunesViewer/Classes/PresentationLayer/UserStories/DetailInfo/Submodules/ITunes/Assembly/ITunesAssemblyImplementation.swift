@@ -29,6 +29,8 @@ class ITunesAssemblyImplementation: ITunesAssembly {
         let interactor = ITunesInteractor()
         let viewModelFactory = ITunesViewModelFactoryImplementation()
         let dataDisplayManager = DetailInfoDataDisplayManagerImplementation()
+        let router = DetailInfoRouter()
+        let animator = ScaleTransitionAnimator()
         
         interactor.iTunesService = iTunesService
         interactor.downloaderService = downloaderService
@@ -37,6 +39,11 @@ class ITunesAssemblyImplementation: ITunesAssembly {
         
         presenter.view = viewController
         presenter.interactor = interactor
+        presenter.router = router
+        
+        router.animator = animator
+        router.transitionHandler = viewController
+        router.assemblyFactory = assemblyFactory
         
         viewController.output = presenter
         viewController.dataDisplayManager = dataDisplayManager

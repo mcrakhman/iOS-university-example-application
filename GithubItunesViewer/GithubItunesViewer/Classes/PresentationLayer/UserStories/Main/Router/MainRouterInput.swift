@@ -9,8 +9,6 @@
 import Foundation
 
 protocol MainRouterInput: class {
-    func showITunes()
-    func showGithub()
-    func show(_ configuration: ImageTransitionConfiguration)
-    
+    func showITunes(with input: MainModuleInput)
+    func showGithub(with input: MainModuleInput)
 }

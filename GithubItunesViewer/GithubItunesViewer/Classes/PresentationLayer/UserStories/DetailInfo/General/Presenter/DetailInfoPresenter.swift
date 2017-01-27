@@ -16,11 +16,11 @@ enum ScreenState {
     case found([CellViewModel])
 }
 
-class DetailInfoPresenter: MainModuleOutput, DetailInfoViewOutput, DetailInfoInteractorOutput, DetailInfoModuleInput {
+class DetailInfoPresenter: MainModuleOutput, DetailInfoViewOutput, DetailInfoInteractorOutput {
     
     weak var view: DetailInfoViewInput?
-    weak var output: DetailInfoModuleOutput?
     var interactor: DetailInfoInteractorInput?
+    var router: DetailInfoRouterInput?
     
     var state: ScreenState = .initial {
         didSet {
@@ -34,11 +34,7 @@ class DetailInfoPresenter: MainModuleOutput, DetailInfoViewOutput, DetailInfoInt
     }
     
     func didAskToTransition(with configuration: ImageTransitionConfiguration) {
-        output?.didAskToTransition(with: configuration)
-    }
-    
-    func provide(with output: DetailInfoModuleOutput?) {
-        self.output = output
+        router?.openImage(with: configuration)
     }
     
     func viewIsReady() {

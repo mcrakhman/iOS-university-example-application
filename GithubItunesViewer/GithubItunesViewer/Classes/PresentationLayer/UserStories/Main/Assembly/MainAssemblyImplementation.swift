@@ -28,7 +28,7 @@ class MainAssemblyImplementation: MainAssembly {
         
         presenter.router = router
         presenter.view = viewController
-        router.viewController = viewController
+        router.transitionHandler = viewController
         router.assemblyFactory = assemblyFactory
         viewController.output = presenter
         viewController.throttler = throttler

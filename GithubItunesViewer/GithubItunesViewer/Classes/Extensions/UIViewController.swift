@@ -12,8 +12,4 @@ extension UIViewController {
     static var storyboardIdentifier: String {
         return String(describing: self)
     }
-    
-    func child<T>(ofType type: T.Type) -> UIViewController? {
-        return childViewControllers.filter { $0 is T }.first
-    }
 }

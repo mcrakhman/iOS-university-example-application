@@ -71,8 +71,6 @@
 		9E237ABB1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AB91E34139500CA2FD1 /* AssemblyFactoryImplementation.swift */; };
 		9E237ABD1E3419F300CA2FD1 /* MainModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ABC1E3419F300CA2FD1 /* MainModuleOutput.swift */; };
 		9E237ABE1E3419F300CA2FD1 /* MainModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ABC1E3419F300CA2FD1 /* MainModuleOutput.swift */; };
-		9E237AC71E341CE100CA2FD1 /* MainModuleInputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC61E341CE100CA2FD1 /* MainModuleInputProvider.swift */; };
-		9E237AC81E341CE100CA2FD1 /* MainModuleInputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC61E341CE100CA2FD1 /* MainModuleInputProvider.swift */; };
 		9E237ACA1E341F3200CA2FD1 /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC91E341F3200CA2FD1 /* MainModuleInput.swift */; };
 		9E237ACB1E341F3200CA2FD1 /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237AC91E341F3200CA2FD1 /* MainModuleInput.swift */; };
 		9E237ACD1E34224900CA2FD1 /* MainModuleOutputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237ACC1E34224900CA2FD1 /* MainModuleOutputProvider.swift */; };
@@ -141,10 +139,6 @@
 		9E8C45F91E39CE160087A92D /* DetailInfoViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45F51E39CE160087A92D /* DetailInfoViewInput.swift */; };
 		9E8C46001E39CE430087A92D /* DetailInfoInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45FB1E39CE430087A92D /* DetailInfoInteractorOutput.swift */; };
 		9E8C46011E39CE430087A92D /* DetailInfoInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45FB1E39CE430087A92D /* DetailInfoInteractorOutput.swift */; };
-		9E8C46021E39CE430087A92D /* DetailInfoModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45FC1E39CE430087A92D /* DetailInfoModuleInput.swift */; };
-		9E8C46031E39CE430087A92D /* DetailInfoModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45FC1E39CE430087A92D /* DetailInfoModuleInput.swift */; };
-		9E8C46041E39CE430087A92D /* DetailInfoModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45FD1E39CE430087A92D /* DetailInfoModuleOutput.swift */; };
-		9E8C46051E39CE430087A92D /* DetailInfoModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45FD1E39CE430087A92D /* DetailInfoModuleOutput.swift */; };
 		9E8C46061E39CE430087A92D /* DetailInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45FE1E39CE430087A92D /* DetailInfoPresenter.swift */; };
 		9E8C46071E39CE430087A92D /* DetailInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45FE1E39CE430087A92D /* DetailInfoPresenter.swift */; };
 		9E8C46081E39CE430087A92D /* DetailInfoViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45FF1E39CE430087A92D /* DetailInfoViewOutput.swift */; };
@@ -171,6 +165,13 @@
 		9E8C46271E39CE8C0087A92D /* ITunesViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C46251E39CE8C0087A92D /* ITunesViewModelFactory.swift */; };
 		9E8C46291E39CF040087A92D /* ITunesViewModelFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C46281E39CF040087A92D /* ITunesViewModelFactoryImplementation.swift */; };
 		9E8C462A1E39CF040087A92D /* ITunesViewModelFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C46281E39CF040087A92D /* ITunesViewModelFactoryImplementation.swift */; };
+		9E8C462D1E3B226B0087A92D /* DetailInfoRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C462C1E3B226B0087A92D /* DetailInfoRouterInput.swift */; };
+		9E8C462E1E3B226B0087A92D /* DetailInfoRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C462C1E3B226B0087A92D /* DetailInfoRouterInput.swift */; };
+		9E8C46301E3B22D50087A92D /* DetailInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C462F1E3B22D50087A92D /* DetailInfoRouter.swift */; };
+		9E8C46311E3B22D50087A92D /* DetailInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C462F1E3B22D50087A92D /* DetailInfoRouter.swift */; };
+		9E8C46321E3B315B0087A92D /* ViewControllerEmbeddable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C45761E37BF320087A92D /* ViewControllerEmbeddable.swift */; };
+		9E8C46331E3B315B0087A92D /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C457D1E39AE0C0087A92D /* SongData.swift */; };
+		9E8C46341E3B31740087A92D /* ScaleTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEA2481E3643CD0038625B /* ScaleTransitionAnimator.swift */; };
 		9EF3F75A1E366B9700271C45 /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7591E366B9700271C45 /* IconViewController.swift */; };
 		9EF3F75B1E366B9700271C45 /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F7591E366B9700271C45 /* IconViewController.swift */; };
 		9EF3F7601E366C3500271C45 /* IconPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3F75F1E366C3500271C45 /* IconPresenter.swift */; };
@@ -249,7 +250,6 @@
 		9E237AB61E34108A00CA2FD1 /* MainAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainAssemblyImplementation.swift; path = Classes/PresentationLayer/UserStories/Main/Assembly/MainAssemblyImplementation.swift; sourceTree = "<group>"; };
 		9E237AB91E34139500CA2FD1 /* AssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssemblyFactoryImplementation.swift; path = Classes/ApplicationLayer/Assembly/AssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
 		9E237ABC1E3419F300CA2FD1 /* MainModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainModuleOutput.swift; path = Classes/PresentationLayer/UserStories/Main/Presenter/MainModuleOutput.swift; sourceTree = "<group>"; };
-		9E237AC61E341CE100CA2FD1 /* MainModuleInputProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainModuleInputProvider.swift; path = Classes/PresentationLayer/UserStories/Main/Presenter/MainModuleInputProvider.swift; sourceTree = "<group>"; };
 		9E237AC91E341F3200CA2FD1 /* MainModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainModuleInput.swift; path = Classes/PresentationLayer/UserStories/Main/Presenter/MainModuleInput.swift; sourceTree = "<group>"; };
 		9E237ACC1E34224900CA2FD1 /* MainModuleOutputProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainModuleOutputProvider.swift; path = Classes/PresentationLayer/UserStories/Main/Presenter/MainModuleOutputProvider.swift; sourceTree = "<group>"; };
 		9E237AD01E34299800CA2FD1 /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceAssembly.swift; path = Classes/ServiceLayer/Assembly/ServiceAssembly.swift; sourceTree = "<group>"; };
@@ -285,8 +285,6 @@
 		9E8C45F41E39CE160087A92D /* DetailInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoViewController.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/General/View/DetailInfoViewController.swift; sourceTree = "<group>"; };
 		9E8C45F51E39CE160087A92D /* DetailInfoViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoViewInput.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/General/View/DetailInfoViewInput.swift; sourceTree = "<group>"; };
 		9E8C45FB1E39CE430087A92D /* DetailInfoInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoInteractorOutput.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/General/Presenter/DetailInfoInteractorOutput.swift; sourceTree = "<group>"; };
-		9E8C45FC1E39CE430087A92D /* DetailInfoModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoModuleInput.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/General/Presenter/DetailInfoModuleInput.swift; sourceTree = "<group>"; };
-		9E8C45FD1E39CE430087A92D /* DetailInfoModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoModuleOutput.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/General/Presenter/DetailInfoModuleOutput.swift; sourceTree = "<group>"; };
 		9E8C45FE1E39CE430087A92D /* DetailInfoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoPresenter.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/General/Presenter/DetailInfoPresenter.swift; sourceTree = "<group>"; };
 		9E8C45FF1E39CE430087A92D /* DetailInfoViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoViewOutput.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/General/Presenter/DetailInfoViewOutput.swift; sourceTree = "<group>"; };
 		9E8C460A1E39CE4A0087A92D /* DetailInfoInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoInteractorInput.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/General/Interactor/DetailInfoInteractorInput.swift; sourceTree = "<group>"; };
@@ -300,6 +298,8 @@
 		9E8C46221E39CE840087A92D /* ITunesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ITunesInteractor.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/Submodules/ITunes/Interactor/ITunesInteractor.swift; sourceTree = "<group>"; };
 		9E8C46251E39CE8C0087A92D /* ITunesViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ITunesViewModelFactory.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/Submodules/ITunes/ViewModelFactory/ITunesViewModelFactory.swift; sourceTree = "<group>"; };
 		9E8C46281E39CF040087A92D /* ITunesViewModelFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ITunesViewModelFactoryImplementation.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/Submodules/ITunes/ViewModelFactory/ITunesViewModelFactoryImplementation.swift; sourceTree = "<group>"; };
+		9E8C462C1E3B226B0087A92D /* DetailInfoRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoRouterInput.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/General/Router/DetailInfoRouterInput.swift; sourceTree = "<group>"; };
+		9E8C462F1E3B22D50087A92D /* DetailInfoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoRouter.swift; path = Classes/PresentationLayer/UserStories/DetailInfo/General/Router/DetailInfoRouter.swift; sourceTree = "<group>"; };
 		9EF3F7591E366B9700271C45 /* IconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconViewController.swift; path = Classes/PresentationLayer/UserStories/Icon/View/IconViewController.swift; sourceTree = "<group>"; };
 		9EF3F75F1E366C3500271C45 /* IconPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconPresenter.swift; path = Classes/PresentationLayer/UserStories/Icon/Presenter/IconPresenter.swift; sourceTree = "<group>"; };
 		9EF3F7621E366C5100271C45 /* IconAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconAssembly.swift; path = Classes/PresentationLayer/UserStories/Icon/Assembly/IconAssembly.swift; sourceTree = "<group>"; };
@@ -601,7 +601,6 @@
 			children = (
 				9E237A941E34086300CA2FD1 /* MainPresenter.swift */,
 				9E237ABC1E3419F300CA2FD1 /* MainModuleOutput.swift */,
-				9E237AC61E341CE100CA2FD1 /* MainModuleInputProvider.swift */,
 				9E237ACC1E34224900CA2FD1 /* MainModuleOutputProvider.swift */,
 				9E237AC91E341F3200CA2FD1 /* MainModuleInput.swift */,
 			);
@@ -719,6 +718,7 @@
 				9E8C45D01E39CD780087A92D /* View */,
 				9E8C45CC1E39CD060087A92D /* Presenter */,
 				9E8C45CB1E39CCF90087A92D /* Interactor */,
+				9E8C462B1E3B22080087A92D /* Router */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -816,8 +816,6 @@
 			isa = PBXGroup;
 			children = (
 				9E8C45FB1E39CE430087A92D /* DetailInfoInteractorOutput.swift */,
-				9E8C45FC1E39CE430087A92D /* DetailInfoModuleInput.swift */,
-				9E8C45FD1E39CE430087A92D /* DetailInfoModuleOutput.swift */,
 				9E8C45FE1E39CE430087A92D /* DetailInfoPresenter.swift */,
 				9E8C45FF1E39CE430087A92D /* DetailInfoViewOutput.swift */,
 			);
@@ -896,6 +894,15 @@
 				9E8C45EF1E39CE0E0087A92D /* DetailInfoDataDisplayManagerImplementation.swift */,
 			);
 			name = DataDisplayManager;
+			sourceTree = "<group>";
+		};
+		9E8C462B1E3B22080087A92D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9E8C462C1E3B226B0087A92D /* DetailInfoRouterInput.swift */,
+				9E8C462F1E3B22D50087A92D /* DetailInfoRouter.swift */,
+			);
+			name = Router;
 			sourceTree = "<group>";
 		};
 		9EF3F7551E366B5C00271C45 /* Icon */ = {
@@ -1083,6 +1090,7 @@
 				9E237A341E339BFC00CA2FD1 /* JSONDeserializer.swift in Sources */,
 				9E237B051E34C59300CA2FD1 /* ConfigurableCell.swift in Sources */,
 				9E8C45DA1E39CDD90087A92D /* DescriptionCell.swift in Sources */,
+				9E8C46301E3B22D50087A92D /* DetailInfoRouter.swift in Sources */,
 				9E237AF41E3438E300CA2FD1 /* Throttler.swift in Sources */,
 				9E237A8B1E3405CD00CA2FD1 /* MainViewController.swift in Sources */,
 				9E237ADC1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift in Sources */,
@@ -1128,13 +1136,11 @@
 				9E8C45E71E39CDF00087A92D /* RightDescriptionCell.swift in Sources */,
 				9E237ADF1E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift in Sources */,
 				9EF3F7731E36720D00271C45 /* IconAssemblyImplementation.swift in Sources */,
-				9E8C46041E39CE430087A92D /* DetailInfoModuleOutput.swift in Sources */,
 				9E8C46081E39CE430087A92D /* DetailInfoViewOutput.swift in Sources */,
 				9E237B3A1E34ECB000CA2FD1 /* ImageDownloaderService.swift in Sources */,
 				9E8C46001E39CE430087A92D /* DetailInfoInteractorOutput.swift in Sources */,
 				9E237AE21E342BE400CA2FD1 /* GithubServiceImplementation.swift in Sources */,
 				9E237AA61E340DB100CA2FD1 /* MainAssembly.swift in Sources */,
-				9E237AC71E341CE100CA2FD1 /* MainModuleInputProvider.swift in Sources */,
 				9E237A461E33A32F00CA2FD1 /* RequestBuilder.swift in Sources */,
 				9E237A651E33B4E800CA2FD1 /* GithubRepository.swift in Sources */,
 				9EF3F76D1E366FC200271C45 /* IconRouter.swift in Sources */,
@@ -1156,11 +1162,11 @@
 				9E8C46231E39CE840087A92D /* ITunesInteractor.swift in Sources */,
 				9E237AD91E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */,
 				9E237B011E34B43E00CA2FD1 /* Dictionary.swift in Sources */,
-				9E8C46021E39CE430087A92D /* DetailInfoModuleInput.swift in Sources */,
 				9EF3F7631E366C5100271C45 /* IconAssembly.swift in Sources */,
 				9E237A3F1E33A06F00CA2FD1 /* NetworkRequestConstants.swift in Sources */,
 				9E8C45F81E39CE160087A92D /* DetailInfoViewInput.swift in Sources */,
 				9E237AF71E34396200CA2FD1 /* ThrottlerImplementation.swift in Sources */,
+				9E8C462D1E3B226B0087A92D /* DetailInfoRouterInput.swift in Sources */,
 				9EF3F77E1E369EED00271C45 /* ITunesSearchConfiguration.swift in Sources */,
 				9E237A501E33A79800CA2FD1 /* URLBuilderImplementation.swift in Sources */,
 				9E237A311E339BB800CA2FD1 /* Deserializer.swift in Sources */,
@@ -1187,7 +1193,6 @@
 				9E8C45DE1E39CDE00087A92D /* EntryDescriptionViewModel.swift in Sources */,
 				9E237A351E339BFC00CA2FD1 /* JSONDeserializer.swift in Sources */,
 				9E237A321E339BB800CA2FD1 /* Deserializer.swift in Sources */,
-				9E237AC81E341CE100CA2FD1 /* MainModuleInputProvider.swift in Sources */,
 				9EF3F7671E366F3900271C45 /* IconViewOutput.swift in Sources */,
 				9EF3F7861E36A13000271C45 /* ITunesMapper.swift in Sources */,
 				9E237ADA1E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */,
@@ -1201,14 +1206,12 @@
 				9E237AE01E342B9A00CA2FD1 /* ServiceAssemblyImplementation.swift in Sources */,
 				9EF3F75B1E366B9700271C45 /* IconViewController.swift in Sources */,
 				9E237A5F1E33AC6A00CA2FD1 /* GithubRepositorySearchConfiguration.swift in Sources */,
-				9E8C46031E39CE430087A92D /* DetailInfoModuleInput.swift in Sources */,
 				9E237A4E1E33A6CB00CA2FD1 /* URLBuilder.swift in Sources */,
 				9E8C45ED1E39CDF80087A92D /* ImageCellDelegate.swift in Sources */,
 				9E8C46211E39CE7D0087A92D /* ITunesAssemblyImplementation.swift in Sources */,
 				9E8C46071E39CE430087A92D /* DetailInfoPresenter.swift in Sources */,
 				9E237AA31E340C9E00CA2FD1 /* AssemblyFactory.swift in Sources */,
 				9E237A3C1E339CFC00CA2FD1 /* NetworkClientImplementation.swift in Sources */,
-				9E8C46051E39CE430087A92D /* DetailInfoModuleOutput.swift in Sources */,
 				9E237AFF1E343BB700CA2FD1 /* HelperAssemblyImplementation.swift in Sources */,
 				9EF3F7821E36A08B00271C45 /* ITunesServiceImplementation.swift in Sources */,
 				9EF3F7891E36A15B00271C45 /* ITunesMapperImplementation.swift in Sources */,
@@ -1216,6 +1219,7 @@
 				9E8C45DB1E39CDD90087A92D /* DescriptionCell.swift in Sources */,
 				9E237ABE1E3419F300CA2FD1 /* MainModuleOutput.swift in Sources */,
 				9E237A511E33A79800CA2FD1 /* URLBuilderImplementation.swift in Sources */,
+				9E8C46321E3B315B0087A92D /* ViewControllerEmbeddable.swift in Sources */,
 				9E8C45E21E39CDE80087A92D /* LeftDescriptionCell.swift in Sources */,
 				9E8C45F11E39CE0E0087A92D /* DetailInfoDataDisplayManager.swift in Sources */,
 				9E237A7C1E33EC2500CA2FD1 /* MainRouter.swift in Sources */,
@@ -1223,12 +1227,14 @@
 				9E237A961E34086300CA2FD1 /* MainPresenter.swift in Sources */,
 				9E8C46241E39CE840087A92D /* ITunesInteractor.swift in Sources */,
 				9E237A471E33A32F00CA2FD1 /* RequestBuilder.swift in Sources */,
+				9E8C46331E3B315B0087A92D /* SongData.swift in Sources */,
 				9E237A281E33980300CA2FD1 /* AppDelegate.swift in Sources */,
 				9E8C46121E39CE650087A92D /* GithubAssemblyImplementation.swift in Sources */,
 				9E237AE31E342BE400CA2FD1 /* GithubServiceImplementation.swift in Sources */,
 				9E237ACE1E34224900CA2FD1 /* MainModuleOutputProvider.swift in Sources */,
 				9EF3F7711E36705200271C45 /* IconViewInput.swift in Sources */,
 				9E8C45F91E39CE160087A92D /* DetailInfoViewInput.swift in Sources */,
+				9E8C46341E3B31740087A92D /* ScaleTransitionAnimator.swift in Sources */,
 				9E237B021E34B43E00CA2FD1 /* Dictionary.swift in Sources */,
 				9EF3F7741E36720D00271C45 /* IconAssemblyImplementation.swift in Sources */,
 				9E8C45F71E39CE160087A92D /* DetailInfoViewController.swift in Sources */,
@@ -1244,11 +1250,13 @@
 				9E237B501E3520FE00CA2FD1 /* UIImage.swift in Sources */,
 				9E237AF81E34396200CA2FD1 /* ThrottlerImplementation.swift in Sources */,
 				9E237AA71E340DB100CA2FD1 /* MainAssembly.swift in Sources */,
+				9E8C46311E3B22D50087A92D /* DetailInfoRouter.swift in Sources */,
 				9E237A751E33EA3B00CA2FD1 /* UIViewController.swift in Sources */,
 				9E237A8F1E34068700CA2FD1 /* MainViewInput.swift in Sources */,
 				9E237A6D1E33B5D500CA2FD1 /* GithubMapperImplementation.swift in Sources */,
 				9E8C46151E39CE6B0087A92D /* GithubInteractor.swift in Sources */,
 				9E237AD61E342A1100CA2FD1 /* GithubService.swift in Sources */,
+				9E8C462E1E3B226B0087A92D /* DetailInfoRouterInput.swift in Sources */,
 				9EF3F77C1E369E8500271C45 /* ITunesService.swift in Sources */,
 				9E8C45E81E39CDF00087A92D /* RightDescriptionCell.swift in Sources */,
 				9E237ABB1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */,

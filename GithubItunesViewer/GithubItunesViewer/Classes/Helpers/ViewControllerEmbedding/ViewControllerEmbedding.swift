@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol ViewControllerEmbedding {
-    var containerView: UIView! { get set }
+    var container: UIView { get }
 
     func embed(_ viewController: UIViewController)
     func embeddedTransition(to viewController: UIViewController)
@@ -21,17 +21,20 @@ extension ViewControllerEmbedding where Self: UIViewController {
     
     func embed(_ viewController: UIViewController) {
         addChildViewController(viewController)
-        containerView.addSubview(viewController.view)
+        container.addSubview(viewController.view)
         viewController.view.translatesAutoresizingMaskIntoConstraints = false
         setupConstraints(for: viewController)
     }
     
     func embeddedTransition(to viewController: UIViewController) {
         viewController.willMove(toParentViewController: self)
+        
         self.beginAppearanceTransition(false, animated: true)
         viewController.beginAppearanceTransition(true, animated: false)
-        containerView.bringSubview(toFront: viewController.view)
+        
+        container.bringSubview(toFront: viewController.view)
         viewController.didMove(toParentViewController: self)
+        
         viewController.endAppearanceTransition()
         self.endAppearanceTransition()
     }
@@ -46,10 +49,10 @@ extension ViewControllerEmbedding where Self: UIViewController {
     }
     
     private func setupConstraints(for viewController: UIViewController) {
-        viewController.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor).isActive = true
-        viewController.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor).isActive = true
-        viewController.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
-        viewController.view.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
+        viewController.view.leadingAnchor.constraint(equalTo: container.leadingAnchor).isActive = true
+        viewController.view.trailingAnchor.constraint(equalTo: container.trailingAnchor).isActive = true
+        viewController.view.bottomAnchor.constraint(equalTo: container.bottomAnchor).isActive = true
+        viewController.view.topAnchor.constraint(equalTo: container.topAnchor).isActive = true
     }
 }
 

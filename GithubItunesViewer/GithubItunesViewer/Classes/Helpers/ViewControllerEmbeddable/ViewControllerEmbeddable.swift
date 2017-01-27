@@ -10,6 +10,5 @@ import Foundation
 
 protocol ViewControllerEmbeddable {
     var embedIdentifier: String { get }
-    
     func addEmbedIdentifier(_ identifier: String)
 }

@@ -16,45 +16,32 @@ enum EmbeddedControllerIdentifiers {
 
 class MainRouter: MainRouterInput {
     
-    var viewController: MainViewInput?
+    weak var transitionHandler: MainViewInput?
     var assemblyFactory: AssemblyFactory?
     var animator: ScaleTransitionAnimator?
     
-    func showGithub() {
+    func showGithub(with input: MainModuleInput) {
         guard let assemblyFactory = assemblyFactory else {
             return
         }
         showDetailModule(with: EmbeddedControllerIdentifiers.github,
+                         input: input,
                          constructor: assemblyFactory.githubAssembly().module)
     }
     
-    func showITunes() {
+    func showITunes(with input: MainModuleInput) {
         guard let assemblyFactory = assemblyFactory else {
             return
         }
         showDetailModule(with: EmbeddedControllerIdentifiers.iTunes,
+                         input: input,
                          constructor: assemblyFactory.iTunesAssembly().module)
     }
-    
-    func show(_ configuration: ImageTransitionConfiguration) {
-        guard let viewController = viewController as? UIViewController,
-            let assemblyFactory = assemblyFactory else {
-                return
-        }
-        
-        let iconViewController = assemblyFactory.iconAssembly().module(with: configuration.image)
-        let animator = assemblyFactory.helperAssembly().scaleAnimator()
-        
-        iconViewController.transitioningDelegate = animator
-        animator.originFrame = configuration.frame
-        
-        viewController.present(iconViewController, animated: true, completion: nil)
-        
-        self.animator = animator
-    }
-    
-    private func showDetailModule(with identifier: String, constructor: () -> UIViewController) {
-        guard let viewController = viewController as? UIViewController,
+
+    private func showDetailModule(with identifier: String,
+                                  input: MainModuleInput,
+                                  constructor: () -> UIViewController) {
+        guard let viewController = transitionHandler as? UIViewController,
               let rootViewController = viewController as? ViewControllerEmbedding else {
                 return
         }
@@ -68,16 +55,15 @@ class MainRouter: MainRouterInput {
         }
         
         if let destinationViewController = destinationViewController {
-            instantiateDataFlow(inputProvider: viewController as? MainModuleInputProvider,
+            instantiateDataFlow(input: input,
                                 outputProvider: destinationViewController as? MainModuleOutputProvider)
             rootViewController.embeddedTransition(to: destinationViewController)
         }
     }
     
-    private func instantiateDataFlow(inputProvider: MainModuleInputProvider?, outputProvider: MainModuleOutputProvider?) {
-        let input = inputProvider?.provideMainModuleInput() as? DetailInfoModuleOutput & MainModuleInput
-        let output = outputProvider?.provideMainModuleOutput() as? MainModuleOutput & DetailInfoModuleInput
-        input?.provide(with: output)
-        output?.provide(with: input)
+    private func instantiateDataFlow(input: MainModuleInput,
+                                     outputProvider: MainModuleOutputProvider?) {
+        let output = outputProvider?.provideMainModuleOutput()
+        input.provide(with: output)
     }
 }
