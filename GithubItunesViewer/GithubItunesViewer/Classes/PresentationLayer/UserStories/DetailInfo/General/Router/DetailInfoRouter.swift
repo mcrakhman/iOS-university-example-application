@@ -9,9 +9,9 @@
 import UIKit
 
 class DetailInfoRouter: DetailInfoRouterInput {
-    var assemblyFactory: AssemblyFactory?
     var animator: ScaleTransitionAnimator?
     weak var transitionHandler: DetailInfoViewInput?
+    weak var assemblyFactory: AssemblyFactory?
     
     func openImage(with configuration: ImageTransitionConfiguration) {
         guard let viewController = transitionHandler as? UIViewController,

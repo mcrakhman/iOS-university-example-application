@@ -17,8 +17,7 @@ enum EmbeddedControllerIdentifiers {
 class MainRouter: MainRouterInput {
     
     weak var transitionHandler: MainViewInput?
-    var assemblyFactory: AssemblyFactory?
-    var animator: ScaleTransitionAnimator?
+    weak var assemblyFactory: AssemblyFactory?
     
     func showGithub(with input: MainModuleInput) {
         guard let assemblyFactory = assemblyFactory else {
