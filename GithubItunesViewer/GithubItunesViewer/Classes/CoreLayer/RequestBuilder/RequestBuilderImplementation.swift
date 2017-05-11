@@ -12,7 +12,7 @@ class RequestBuilderImplementation: RequestBuilder {
     
     func build(_ configuration: RequestBuilderConfiguration) -> URLRequest {
         var request = URLRequest(url: configuration.url,
-                                 cachePolicy: .useProtocolCachePolicy,
+                                 cachePolicy: .returnCacheDataElseLoad,
                                  timeoutInterval: configuration.timoutInterval)
         
         request.httpMethod = configuration.method.rawValue

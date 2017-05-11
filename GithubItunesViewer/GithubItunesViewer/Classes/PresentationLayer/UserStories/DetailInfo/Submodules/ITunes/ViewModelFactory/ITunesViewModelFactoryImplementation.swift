@@ -18,17 +18,12 @@ class ITunesViewModelFactoryImplementation: ITunesViewModelFactory {
         let offset = tuple.offset
         
         let imageUrl = URL(string: element.imageUrlString)
-    
-        if offset % 2 != 0 {
-            return EntryDescriptionViewModel(associatedCell: LeftDescriptionCell.self,
-                                             title: element.authorName,
-                                             imageUrl: imageUrl,
-                                             description: element.trackName)
-        } else {
-            return EntryDescriptionViewModel(associatedCell: RightDescriptionCell.self,
-                                             title: element.authorName,
-                                             imageUrl: imageUrl,
-                                             description: element.trackName)
-        }
+
+        return EntryDescriptionViewModel(
+            associatedCell: offset % 2 != 0 ? LeftDescriptionCell.self : RightDescriptionCell.self,
+            title: element.authorName,
+            imageUrl: imageUrl,
+            description: element.trackName
+        )
     }
 }

@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E1DC7641EC49BCD00FD87C8 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DC7631EC49BCD00FD87C8 /* NetworkClientTests.swift */; };
+		9E1DC7671EC4A5F300FD87C8 /* JSONDeserializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DC7661EC4A5F300FD87C8 /* JSONDeserializerTests.swift */; };
+		9E1DC76A1EC4AA2900FD87C8 /* GithubMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DC7691EC4AA2900FD87C8 /* GithubMapperTests.swift */; };
+		9E1DC76E1EC4C91600FD87C8 /* GithubServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DC76D1EC4C91600FD87C8 /* GithubServiceTests.swift */; };
 		9E237A061E3396D300CA2FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E237A041E3396D300CA2FD1 /* Main.storyboard */; };
 		9E237A081E3396D300CA2FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E237A071E3396D300CA2FD1 /* Assets.xcassets */; };
 		9E237A0B1E3396D300CA2FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E237A091E3396D300CA2FD1 /* LaunchScreen.storyboard */; };
-		9E237A161E3396D300CA2FD1 /* GithubItunesViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A151E3396D300CA2FD1 /* GithubItunesViewerTests.swift */; };
 		9E237A271E33980300CA2FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A261E33980300CA2FD1 /* AppDelegate.swift */; };
 		9E237A281E33980300CA2FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A261E33980300CA2FD1 /* AppDelegate.swift */; };
 		9E237A311E339BB800CA2FD1 /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E237A301E339BB800CA2FD1 /* Deserializer.swift */; };
@@ -212,13 +215,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E1DC7631EC49BCD00FD87C8 /* NetworkClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		9E1DC7661EC4A5F300FD87C8 /* JSONDeserializerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDeserializerTests.swift; sourceTree = "<group>"; };
+		9E1DC7691EC4AA2900FD87C8 /* GithubMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubMapperTests.swift; sourceTree = "<group>"; };
+		9E1DC76D1EC4C91600FD87C8 /* GithubServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubServiceTests.swift; sourceTree = "<group>"; };
 		9E2379FD1E3396D300CA2FD1 /* GithubItunesViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubItunesViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E237A051E3396D300CA2FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E237A071E3396D300CA2FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E237A0A1E3396D300CA2FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E237A0C1E3396D300CA2FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E237A111E3396D300CA2FD1 /* GithubItunesViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubItunesViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E237A151E3396D300CA2FD1 /* GithubItunesViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubItunesViewerTests.swift; sourceTree = "<group>"; };
 		9E237A171E3396D300CA2FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E237A261E33980300CA2FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Classes/ApplicationLayer/AppDelegate.swift; sourceTree = "<group>"; };
 		9E237A301E339BB800CA2FD1 /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deserializer.swift; path = Classes/CoreLayer/Deserializer/Deserializer.swift; sourceTree = "<group>"; };
@@ -334,6 +340,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E1DC7611EC47D8400FD87C8 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9E1DC7681EC4AA1500FD87C8 /* Mapper */,
+				9E1DC7651EC4A5E300FD87C8 /* JSONDeserializer */,
+				9E1DC7621EC49BA600FD87C8 /* NetworkClient */,
+			);
+			name = CoreLayer;
+			path = Classes/CoreLayer;
+			sourceTree = "<group>";
+		};
+		9E1DC7621EC49BA600FD87C8 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				9E1DC7631EC49BCD00FD87C8 /* NetworkClientTests.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		9E1DC7651EC4A5E300FD87C8 /* JSONDeserializer */ = {
+			isa = PBXGroup;
+			children = (
+				9E1DC7661EC4A5F300FD87C8 /* JSONDeserializerTests.swift */,
+			);
+			path = JSONDeserializer;
+			sourceTree = "<group>";
+		};
+		9E1DC7681EC4AA1500FD87C8 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				9E1DC7691EC4AA2900FD87C8 /* GithubMapperTests.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		9E1DC76B1EC4B2D600FD87C8 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9E1DC76C1EC4B2D600FD87C8 /* GithubService */,
+			);
+			name = ServiceLayer;
+			path = Classes/ServiceLayer;
+			sourceTree = "<group>";
+		};
+		9E1DC76C1EC4B2D600FD87C8 /* GithubService */ = {
+			isa = PBXGroup;
+			children = (
+				9E1DC76D1EC4C91600FD87C8 /* GithubServiceTests.swift */,
+			);
+			path = GithubService;
+			sourceTree = "<group>";
+		};
 		9E2379F41E3396D300CA2FD1 = {
 			isa = PBXGroup;
 			children = (
@@ -367,7 +425,8 @@
 		9E237A141E3396D300CA2FD1 /* GithubItunesViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				9E237A151E3396D300CA2FD1 /* GithubItunesViewerTests.swift */,
+				9E1DC76B1EC4B2D600FD87C8 /* ServiceLayer */,
+				9E1DC7611EC47D8400FD87C8 /* CoreLayer */,
 				9E237A171E3396D300CA2FD1 /* Info.plist */,
 			);
 			path = GithubItunesViewerTests;
@@ -1033,6 +1092,7 @@
 					};
 					9E237A101E3396D300CA2FD1 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Z5M5E3T534;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9E2379FC1E3396D300CA2FD1;
 					};
@@ -1195,6 +1255,7 @@
 				9E237A321E339BB800CA2FD1 /* Deserializer.swift in Sources */,
 				9EF3F7671E366F3900271C45 /* IconViewOutput.swift in Sources */,
 				9EF3F7861E36A13000271C45 /* ITunesMapper.swift in Sources */,
+				9E1DC76E1EC4C91600FD87C8 /* GithubServiceTests.swift in Sources */,
 				9E237ADA1E342A3C00CA2FD1 /* CoreAssembly.swift in Sources */,
 				9E8C46011E39CE430087A92D /* DetailInfoInteractorOutput.swift in Sources */,
 				9E8C462A1E39CF040087A92D /* ITunesViewModelFactoryImplementation.swift in Sources */,
@@ -1216,6 +1277,7 @@
 				9EF3F7821E36A08B00271C45 /* ITunesServiceImplementation.swift in Sources */,
 				9EF3F7891E36A15B00271C45 /* ITunesMapperImplementation.swift in Sources */,
 				9E237A791E33EBE900CA2FD1 /* MainRouterInput.swift in Sources */,
+				9E1DC7641EC49BCD00FD87C8 /* NetworkClientTests.swift in Sources */,
 				9E8C45DB1E39CDD90087A92D /* DescriptionCell.swift in Sources */,
 				9E237ABE1E3419F300CA2FD1 /* MainModuleOutput.swift in Sources */,
 				9E237A511E33A79800CA2FD1 /* URLBuilderImplementation.swift in Sources */,
@@ -1260,7 +1322,7 @@
 				9EF3F77C1E369E8500271C45 /* ITunesService.swift in Sources */,
 				9E8C45E81E39CDF00087A92D /* RightDescriptionCell.swift in Sources */,
 				9E237ABB1E34139500CA2FD1 /* AssemblyFactoryImplementation.swift in Sources */,
-				9E237A161E3396D300CA2FD1 /* GithubItunesViewerTests.swift in Sources */,
+				9E1DC76A1EC4AA2900FD87C8 /* GithubMapperTests.swift in Sources */,
 				9E237A571E33A89700CA2FD1 /* NetworkRequestErrors.swift in Sources */,
 				9E237B2B1E34D24700CA2FD1 /* TableViewDataDisplayManager.swift in Sources */,
 				9E8C45F31E39CE0E0087A92D /* DetailInfoDataDisplayManagerImplementation.swift in Sources */,
@@ -1271,6 +1333,7 @@
 				9E237A711E33E3FF00CA2FD1 /* ViewControllerEmbedding.swift in Sources */,
 				9E8C461F1E39CE7D0087A92D /* ITunesAssembly.swift in Sources */,
 				9EF3F77F1E369EED00271C45 /* ITunesSearchConfiguration.swift in Sources */,
+				9E1DC7671EC4A5F300FD87C8 /* JSONDeserializerTests.swift in Sources */,
 				9E237ADD1E342AC200CA2FD1 /* CoreAssemblyImplementation.swift in Sources */,
 				9E237AF51E3438E300CA2FD1 /* Throttler.swift in Sources */,
 				9EF3F76A1E366F9F00271C45 /* IconRouterInput.swift in Sources */,
@@ -1435,6 +1498,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z5M5E3T534;
 				INFOPLIST_FILE = GithubItunesViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RDS.GithubItunesViewerTests;
@@ -1449,6 +1513,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z5M5E3T534;
 				INFOPLIST_FILE = GithubItunesViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RDS.GithubItunesViewerTests;

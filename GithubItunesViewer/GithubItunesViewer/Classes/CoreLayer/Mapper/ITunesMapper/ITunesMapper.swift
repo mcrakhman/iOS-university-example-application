@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ITunesMapper {
-    func mapItemsArray(_ data: Any) throws -> [SongData]
+    func mapItemsArray(_ data: Any) -> [SongData]
 }

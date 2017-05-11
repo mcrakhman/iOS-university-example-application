@@ -10,13 +10,13 @@ import Foundation
 
 class ITunesServiceImplementation: ITunesService {
     
-    let mapper: ITunesMapper
-    let networkClient: NetworkClient
-    let deserializer: Deserializer
-    let urlBuilder: URLBuilder
-    let requestBuilder: RequestBuilder
+    private let mapper: ITunesMapper
+    private let networkClient: NetworkClient
+    private let deserializer: Deserializer
+    private let urlBuilder: URLBuilder
+    private let requestBuilder: RequestBuilder
     
-    let queue = DispatchQueue.global()
+    private let queue = DispatchQueue.global()
     
     init(mapper: ITunesMapper,
          networkClient: NetworkClient,
@@ -31,12 +31,14 @@ class ITunesServiceImplementation: ITunesService {
     }
     
     func updateItems(with configuration: ITunesSearchConfiguration,
-                             completion:@escaping SongDataResponse) {
+                             completion: @escaping SongDataResponse) {
         do {
             let url = try urlBuilder.build(withAPIPath: .iTunesPath,
                                            APIMethod: .iTunesMethod,
                                            configuration: configuration)
-            let requestConfiguration = RequestBuilderConfiguration(method: .GET, timoutInterval: 20.0, url: url)
+            let requestConfiguration = RequestBuilderConfiguration(method: .GET,
+                                                                   timoutInterval: 20.0,
+                                                                   url: url)
             let request = requestBuilder.build(requestConfiguration)
             performNetworkOperations(with: request, completion: completion)
         } catch let error {
@@ -56,7 +58,7 @@ class ITunesServiceImplementation: ITunesService {
                 do {
                     let response = try result()
                     let deserialized = try strongSelf.deserializer.deserialize(data: response)
-                    let mapped = try strongSelf.mapper.mapItemsArray(deserialized)
+                    let mapped = strongSelf.mapper.mapItemsArray(deserialized)
                     
                     DispatchQueue.main.async {
                         completion { return mapped }

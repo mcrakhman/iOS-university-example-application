@@ -10,13 +10,13 @@ import Foundation
 
 class GithubServiceImplementation: GithubService {
     
-    let mapper: GithubMapper
-    let networkClient: NetworkClient
-    let deserializer: Deserializer
-    let urlBuilder: URLBuilder
-    let requestBuilder: RequestBuilder
+    private let mapper: GithubMapper
+    private let networkClient: NetworkClient
+    private let deserializer: Deserializer
+    private let urlBuilder: URLBuilder
+    private let requestBuilder: RequestBuilder
     
-    let queue = DispatchQueue.global()
+    private let queue = DispatchQueue.global()
     
     init(mapper: GithubMapper,
          networkClient: NetworkClient,
@@ -31,7 +31,7 @@ class GithubServiceImplementation: GithubService {
     }
     
     func updateRepositories(with configuration: GithubRepositorySearchConfiguration,
-                             completion:@escaping RepositoryResponse) {
+                            completion: @escaping RepositoryResponse) {
         do {
             let url = try urlBuilder.build(withAPIPath: .githubPath,
                                            APIMethod: .githubMethod,
@@ -58,7 +58,7 @@ class GithubServiceImplementation: GithubService {
                 do {
                     let response = try result()
                     let deserialized = try strongSelf.deserializer.deserialize(data: response)
-                    let mapped = try strongSelf.mapper.mapRepositoryArray(deserialized)
+                    let mapped = strongSelf.mapper.mapRepositoryArray(deserialized)
                     
                     DispatchQueue.main.async {
                         completion { return mapped }

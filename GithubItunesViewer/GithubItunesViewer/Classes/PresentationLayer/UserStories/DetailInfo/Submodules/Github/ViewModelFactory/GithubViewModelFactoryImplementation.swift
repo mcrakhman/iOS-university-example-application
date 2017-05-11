@@ -19,17 +19,12 @@ class GithubViewModelFactoryImplementation: GithubViewModelFactory {
         let offset = tuple.offset
         
         let imageUrl = URL(string: element.avatarUrlString)
-        
-        if offset % 2 == 0 {
-            return EntryDescriptionViewModel(associatedCell: LeftDescriptionCell.self,
-                                             title: element.login,
-                                             imageUrl: imageUrl,
-                                             description: element.repositoryUrlString)
-        } else {
-            return EntryDescriptionViewModel(associatedCell: RightDescriptionCell.self,
-                                             title: element.login,
-                                             imageUrl: imageUrl,
-                                             description: element.repositoryUrlString)
-        }
+
+        return EntryDescriptionViewModel(
+            associatedCell: offset % 2 != 0 ? LeftDescriptionCell.self : RightDescriptionCell.self,
+            title: element.login,
+            imageUrl: imageUrl,
+            description: element.repositoryUrlString
+        )
     }
 }

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol GithubMapper {
-    func mapRepositoryArray(_ data: Any) throws -> [GithubRepository]
+    func mapRepositoryArray(_ data: Any) -> [GithubRepository]
 }
