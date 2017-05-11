@@ -120,6 +120,35 @@ class GithubServiceTests: XCTestCase {
         }
     }
 
+    func testThatDeserializerErrorResultsInServiceError() {
+
+        // given
+        let testExpectation = expectation(description: "Github service returned deserializer error")
+        let configuration = GithubRepositorySearchConfiguration(searchString: "someString")
+        deserializer.shouldThrowError = true
+
+        // when
+        var expectedError: Error?
+
+        githubService.updateRepositories(with: configuration) { response in
+            testExpectation.fulfill()
+            do {
+                _ = try response()
+            } catch let error {
+                expectedError = error
+            }
+        }
+
+        waitForExpectations(timeout: defaultTimeout) { _ in
+            XCTAssertTrue(self.urlBuilder.buildCalled)
+            XCTAssertTrue(self.requestBuilder.buildCalled)
+            XCTAssertTrue(self.networkClient.performCalled)
+            XCTAssertTrue(self.deserializer.deserializeCalled)
+            XCTAssertTrue(expectedError as? MockError == .error)
+            XCTAssertFalse(self.mapper.mapCalled)
+        }
+    }
+
     // MARK: Mocks
 
     class MapperMock: GithubMapper {

@@ -23,11 +23,7 @@ class DetailInfoViewController: UIViewController, DetailInfoViewInput, MainModul
         super.viewDidLoad()
         output?.viewIsReady()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
+
     private func setupTableView() {
         let rightCellNib = UINib(nibName: RightDescriptionCell.identifier, bundle: Bundle.main)
         tableView.register(rightCellNib, forCellReuseIdentifier: RightDescriptionCell.identifier)

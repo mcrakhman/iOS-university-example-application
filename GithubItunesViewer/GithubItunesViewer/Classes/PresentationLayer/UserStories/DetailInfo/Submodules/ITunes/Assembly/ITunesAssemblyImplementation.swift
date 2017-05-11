@@ -20,7 +20,7 @@ class ITunesAssemblyImplementation: ITunesAssembly {
         let storyboard = UIStoryboard(name: StoryboardConstants.main, bundle: nil)
         
         let viewController = storyboard.instantiateViewController(withIdentifier: DetailInfoViewController.storyboardIdentifier) as! DetailInfoViewController
-        viewController.embedIdentifier = EmbeddedControllerIdentifiers.iTunes
+        viewController.embedIdentifier = EmbeddedModuleIdentifier.iTunes.rawValue
         
         let presenter = DetailInfoPresenter()
         let iTunesService = assemblyFactory.serviceAssembly().iTunesService()

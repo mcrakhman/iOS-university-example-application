@@ -11,9 +11,12 @@ import UIKit
 
 protocol ViewControllerEmbedding {
     var container: UIView { get }
-
+    
     func embed(_ viewController: UIViewController)
-    func embeddedTransition(to viewController: UIViewController)
+    func embedAndTransition(from sourceViewController: UIViewController,
+                            to destinationViewController: UIViewController)
+    func transition(from sourceViewController: UIViewController,
+                    to destinationViewController: UIViewController)
     func findEmbeddableChild(with identifier: String) -> UIViewController?
 }
 
@@ -24,28 +27,30 @@ extension ViewControllerEmbedding where Self: UIViewController {
         container.addSubview(viewController.view)
         viewController.view.translatesAutoresizingMaskIntoConstraints = false
         setupConstraints(for: viewController)
-    }
-    
-    func embeddedTransition(to viewController: UIViewController) {
-        viewController.willMove(toParentViewController: self)
-        
-        self.beginAppearanceTransition(false, animated: true)
-        viewController.beginAppearanceTransition(true, animated: false)
-        
-        container.bringSubview(toFront: viewController.view)
         viewController.didMove(toParentViewController: self)
-        
-        viewController.endAppearanceTransition()
-        self.endAppearanceTransition()
+    }
+
+    func embedAndTransition(from sourceViewController: UIViewController,
+                            to destinationViewController: UIViewController) {
+        sourceViewController.beginAppearanceTransition(false, animated: false)
+        embed(destinationViewController)
+        sourceViewController.endAppearanceTransition()
+    }
+
+    func transition(from sourceViewController: UIViewController,
+                    to destinationViewController: UIViewController) {
+        sourceViewController.beginAppearanceTransition(false, animated: false)
+        destinationViewController.beginAppearanceTransition(true, animated: false)
+
+        container.bringSubview(toFront: destinationViewController.view)
+
+        sourceViewController.endAppearanceTransition()
+        destinationViewController.endAppearanceTransition()
     }
     
     func findEmbeddableChild(with identifier: String) -> UIViewController? {
-        let viewControllers = childViewControllers.map { $0 as? ViewControllerEmbeddable }.filter { $0 != nil }
-        if let embeddableViewControllers = viewControllers as? [ViewControllerEmbeddable], embeddableViewControllers.count > 0 {
-            return embeddableViewControllers.filter { $0.embedIdentifier == identifier }.first as? UIViewController
-        }
-        
-        return nil
+        let viewControllers = childViewControllers.flatMap { $0 as? ViewControllerEmbeddable }
+        return viewControllers.first(where: { $0.embedIdentifier == identifier }) as? UIViewController
     }
     
     private func setupConstraints(for viewController: UIViewController) {

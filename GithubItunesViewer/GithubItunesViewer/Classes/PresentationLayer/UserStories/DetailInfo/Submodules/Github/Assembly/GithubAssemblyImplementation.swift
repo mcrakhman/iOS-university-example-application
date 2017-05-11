@@ -20,7 +20,7 @@ class GithubAssemblyImplementation: GithubAssembly {
         let storyboard = UIStoryboard(name: StoryboardConstants.main, bundle: nil)
        
         let viewController = storyboard.instantiateViewController(withIdentifier: DetailInfoViewController.storyboardIdentifier) as! DetailInfoViewController
-        viewController.embedIdentifier = EmbeddedControllerIdentifiers.github
+        viewController.embedIdentifier = EmbeddedModuleIdentifier.github.rawValue
         
         let presenter = DetailInfoPresenter()
         let githubService = assemblyFactory.serviceAssembly().githubService()

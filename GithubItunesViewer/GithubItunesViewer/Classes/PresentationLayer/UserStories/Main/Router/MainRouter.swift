@@ -9,32 +9,37 @@
 import Foundation
 import UIKit
 
-enum EmbeddedControllerIdentifiers {
-    static let github = "Github"
-    static let iTunes = "ITunes"
+enum EmbeddedModuleIdentifier: String {
+    case github = "Github"
+    case iTunes = "ITunes"
 }
 
 class MainRouter: MainRouterInput {
     
     weak var transitionHandler: MainViewInput?
     weak var assemblyFactory: AssemblyFactory?
+    var currentModule: EmbeddedModuleIdentifier = .github
     
     func showGithub(with input: MainModuleInput) {
         guard let assemblyFactory = assemblyFactory else {
             return
         }
-        showDetailModule(with: EmbeddedControllerIdentifiers.github,
+
+        showDetailModule(with: EmbeddedModuleIdentifier.github.rawValue,
                          input: input,
                          constructor: assemblyFactory.githubAssembly().module)
+        currentModule = .github
     }
     
     func showITunes(with input: MainModuleInput) {
         guard let assemblyFactory = assemblyFactory else {
             return
         }
-        showDetailModule(with: EmbeddedControllerIdentifiers.iTunes,
+
+        showDetailModule(with: EmbeddedModuleIdentifier.iTunes.rawValue,
                          input: input,
                          constructor: assemblyFactory.iTunesAssembly().module)
+        currentModule = .iTunes
     }
 
     private func showDetailModule(with identifier: String,
@@ -45,19 +50,30 @@ class MainRouter: MainRouterInput {
                 return
         }
         
-        var destinationViewController = rootViewController.findEmbeddableChild(with: identifier)
-        
-        if destinationViewController == nil {
+        var destinationVC = rootViewController.findEmbeddableChild(with: identifier)
+        let sourceVC = rootViewController.findEmbeddableChild(with: currentModule.rawValue)
+
+        switch (destinationVC, sourceVC) {
+        case (nil, nil):
             let newViewController = constructor()
             rootViewController.embed(newViewController)
-            destinationViewController = newViewController
+            destinationVC = newViewController
+
+        case (nil, .some(let sourceVC)):
+            let newViewController = constructor()
+            rootViewController.embedAndTransition(from: sourceVC,
+                                                  to: newViewController)
+            destinationVC = newViewController
+
+        case (.some(let destinationVC), .some(let sourceVC)):
+            rootViewController.transition(from: sourceVC,
+                                          to: destinationVC)
+
+        default: break
         }
-        
-        if let destinationViewController = destinationViewController {
-            instantiateDataFlow(input: input,
-                                outputProvider: destinationViewController as? MainModuleOutputProvider)
-            rootViewController.embeddedTransition(to: destinationViewController)
-        }
+
+        instantiateDataFlow(input: input,
+                            outputProvider: destinationVC as? MainModuleOutputProvider)
     }
     
     private func instantiateDataFlow(input: MainModuleInput,
