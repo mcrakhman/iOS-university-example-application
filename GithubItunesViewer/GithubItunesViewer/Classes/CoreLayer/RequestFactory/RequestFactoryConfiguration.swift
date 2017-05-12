@@ -1,5 +1,5 @@
 //
-//  RequestBuilderConfiguration.swift
+//  RequestFactoryConfiguration.swift
 //  GithubItunesViewer
 //
 //  Created by m.rakhmanov on 21.01.17.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RequestBuilderConfiguration {
+struct RequestFactoryConfiguration {
     let method: NetworkRequestConstants.HTTPMethod
     let timoutInterval: Double
     let url: URL

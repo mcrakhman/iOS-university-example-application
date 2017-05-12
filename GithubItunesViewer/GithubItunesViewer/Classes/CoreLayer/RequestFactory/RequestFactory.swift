@@ -1,5 +1,5 @@
 //
-//  RequestBuilder.swift
+//  RequestFactory.swift
 //  GithubItunesViewer
 //
 //  Created by m.rakhmanov on 21.01.17.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol RequestBuilder {
-    func build(_ configuration: RequestBuilderConfiguration) -> URLRequest
+protocol RequestFactory {
+    func create(_ configuration: RequestFactoryConfiguration) -> URLRequest
 }

@@ -15,8 +15,8 @@ class GithubServiceTests: XCTestCase {
     var mapper: MapperMock!
     var networkClient: NetworkClientMock!
     var deserializer: DeserializerMock!
-    var urlBuilder: URLBuilderMock!
-    var requestBuilder: RequestBuilderMock!
+    var urlFactory: URLFactoryMock!
+    var requestFactory: RequestFactoryMock!
     var githubService: GithubService!
 
     override func setUp() {
@@ -24,14 +24,14 @@ class GithubServiceTests: XCTestCase {
         mapper = MapperMock()
         networkClient = NetworkClientMock()
         deserializer = DeserializerMock()
-        urlBuilder = URLBuilderMock()
-        requestBuilder = RequestBuilderMock()
+        urlFactory = URLFactoryMock()
+        requestFactory = RequestFactoryMock()
         githubService = GithubServiceImplementation(
             mapper: mapper,
             networkClient: networkClient,
             deserializer: deserializer,
-            urlBuilder: urlBuilder,
-            requestBuilder: requestBuilder
+            urlFactory: urlFactory,
+            requestFactory: requestFactory
         )
     }
 
@@ -54,20 +54,20 @@ class GithubServiceTests: XCTestCase {
         }
 
         waitForExpectations(timeout: defaultTimeout) { _ in
-            XCTAssertTrue(self.urlBuilder.buildCalled)
-            XCTAssertTrue(self.requestBuilder.buildCalled)
+            XCTAssertTrue(self.urlFactory.createCalled)
+            XCTAssertTrue(self.requestFactory.createCalled)
             XCTAssertTrue(self.networkClient.performCalled)
             XCTAssertTrue(self.deserializer.deserializeCalled)
             XCTAssertTrue(self.mapper.mapCalled)
         }
     }
 
-    func testThatURLBuilderErrorResultsInServiceError() {
+    func testThatURLFactoryErrorResultsInServiceError() {
 
         // given
-        let testExpectation = expectation(description: "Github returned url builder error")
+        let testExpectation = expectation(description: "Github returned url createer error")
         let configuration = GithubRepositorySearchConfiguration(searchString: "someString")
-        urlBuilder.shouldThrowError = true
+        urlFactory.shouldThrowError = true
 
         // when
         var expectedError: Error?
@@ -82,9 +82,9 @@ class GithubServiceTests: XCTestCase {
         }
 
         waitForExpectations(timeout: defaultTimeout) { _ in
-            XCTAssertTrue(self.urlBuilder.buildCalled)
+            XCTAssertTrue(self.urlFactory.createCalled)
             XCTAssertTrue(expectedError as? NetworkRequestError == .urlConfigurationParserNotImplemented)
-            XCTAssertFalse(self.requestBuilder.buildCalled)
+            XCTAssertFalse(self.requestFactory.createCalled)
             XCTAssertFalse(self.networkClient.performCalled)
             XCTAssertFalse(self.deserializer.deserializeCalled)
             XCTAssertFalse(self.mapper.mapCalled)
@@ -111,8 +111,8 @@ class GithubServiceTests: XCTestCase {
         }
 
         waitForExpectations(timeout: defaultTimeout) { _ in
-            XCTAssertTrue(self.urlBuilder.buildCalled)
-            XCTAssertTrue(self.requestBuilder.buildCalled)
+            XCTAssertTrue(self.urlFactory.createCalled)
+            XCTAssertTrue(self.requestFactory.createCalled)
             XCTAssertTrue(self.networkClient.performCalled)
             XCTAssertTrue(expectedError as? NetworkClientError == .emptyDataReturned)
             XCTAssertFalse(self.deserializer.deserializeCalled)
@@ -140,8 +140,8 @@ class GithubServiceTests: XCTestCase {
         }
 
         waitForExpectations(timeout: defaultTimeout) { _ in
-            XCTAssertTrue(self.urlBuilder.buildCalled)
-            XCTAssertTrue(self.requestBuilder.buildCalled)
+            XCTAssertTrue(self.urlFactory.createCalled)
+            XCTAssertTrue(self.requestFactory.createCalled)
             XCTAssertTrue(self.networkClient.performCalled)
             XCTAssertTrue(self.deserializer.deserializeCalled)
             XCTAssertTrue(expectedError as? MockError == .error)
@@ -160,15 +160,15 @@ class GithubServiceTests: XCTestCase {
         }
     }
 
-    class URLBuilderMock: URLBuilder {
+    class URLFactoryMock: URLFactory {
         let defaultUrl = URL(string: "some.url")!
-        var buildCalled = false
+        var createCalled = false
         var shouldThrowError = false
 
-        func build(withAPIPath path: NetworkRequestConstants.APIPath,
-                   APIMethod method: NetworkRequestConstants.APIMethodName,
-                   configuration: URLBuilderConfiguration) throws -> URL {
-            buildCalled = true
+        func create(withAPIPath path: NetworkRequestConstants.APIPath,
+                    APIMethod method: NetworkRequestConstants.APIMethodName,
+                    configuration: URLFactoryConfiguration) throws -> URL {
+            createCalled = true
             if shouldThrowError {
                 throw NetworkRequestError.urlConfigurationParserNotImplemented
             }
@@ -177,11 +177,11 @@ class GithubServiceTests: XCTestCase {
         }
     }
 
-    class RequestBuilderMock: RequestBuilder {
-        var buildCalled = false
+    class RequestFactoryMock: RequestFactory {
+        var createCalled = false
 
-        func build(_ configuration: RequestBuilderConfiguration) -> URLRequest {
-            buildCalled = true
+        func create(_ configuration: RequestFactoryConfiguration) -> URLRequest {
+            createCalled = true
 
             return URLRequest(url: configuration.url)
         }

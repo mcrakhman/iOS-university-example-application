@@ -1,5 +1,5 @@
 //
-//  URLBuilderImplementation.swift
+//  URLFactoryImplementation.swift
 //  GithubItunesViewer
 //
 //  Created by m.rakhmanov on 21.01.17.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-class URLBuilderImplementation: URLBuilder {
+class URLFactoryImplementation: URLFactory {
     
-    // MARK: - Методы URLBuilder
-    
-    func build(withAPIPath path: NetworkRequestConstants.APIPath,
-               APIMethod method: NetworkRequestConstants.APIMethodName,
-               configuration: URLBuilderConfiguration) throws -> URL {
+    // MARK: - Методы URLFactory
+
+    func create(withAPIPath path: NetworkRequestConstants.APIPath,
+                APIMethod method: NetworkRequestConstants.APIMethodName,
+                configuration: URLFactoryConfiguration) throws -> URL {
         let urlString = path.rawValue + method.rawValue
         
         if let parametersTransformable = configuration as? URLParametersTransformable {

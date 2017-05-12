@@ -20,14 +20,14 @@ class ServiceAssemblyImplementation: ServiceAssembly {
         let mapper = coreAssembly.githubMapper()
         let networkClient = coreAssembly.networkClient()
         let deserializer = coreAssembly.jsonDeserializer()
-        let urlBuilder = coreAssembly.urlBuilder()
-        let requestBuilder = coreAssembly.requestBuilder()
+        let urlFactory = coreAssembly.urlFactory()
+        let requestFactory = coreAssembly.requestFactory()
         
         return GithubServiceImplementation(mapper: mapper,
                                            networkClient: networkClient,
                                            deserializer: deserializer,
-                                           urlBuilder: urlBuilder,
-                                           requestBuilder: requestBuilder)
+                                           urlFactory: urlFactory,
+                                           requestFactory: requestFactory)
     }
     
     func iTunesService() -> ITunesService {
@@ -35,14 +35,14 @@ class ServiceAssemblyImplementation: ServiceAssembly {
         let mapper = coreAssembly.iTunesMapper()
         let networkClient = coreAssembly.networkClient()
         let deserializer = coreAssembly.jsonDeserializer()
-        let urlBuilder = coreAssembly.urlBuilder()
-        let requestBuilder = coreAssembly.requestBuilder()
+        let urlFactory = coreAssembly.urlFactory()
+        let requestFactory = coreAssembly.requestFactory()
         
         return ITunesServiceImplementation(mapper: mapper,
                                            networkClient: networkClient,
                                            deserializer: deserializer,
-                                           urlBuilder: urlBuilder,
-                                           requestBuilder: requestBuilder)
+                                           urlFactory: urlFactory,
+                                           requestFactory: requestFactory)
     }
     
     func imageDownloaderService() -> ImageDownloaderService {

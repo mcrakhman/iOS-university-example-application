@@ -21,12 +21,12 @@ class CoreAssemblyImplementation: CoreAssembly {
         return NetworkClientImplementation(session: URLSession.shared)
     }
     
-    func requestBuilder() -> RequestBuilder {
-        return RequestBuilderImplementation()
+    func requestFactory() -> RequestFactory {
+        return RequestFactoryImplementation()
     }
     
-    func urlBuilder() -> URLBuilder {
-        return URLBuilderImplementation()
+    func urlFactory() -> URLFactory {
+        return URLFactoryImplementation()
     }
     
     func jsonDeserializer() -> Deserializer {

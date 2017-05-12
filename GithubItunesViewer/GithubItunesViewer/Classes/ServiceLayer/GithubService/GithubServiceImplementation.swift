@@ -13,33 +13,33 @@ class GithubServiceImplementation: GithubService {
     private let mapper: GithubMapper
     private let networkClient: NetworkClient
     private let deserializer: Deserializer
-    private let urlBuilder: URLBuilder
-    private let requestBuilder: RequestBuilder
+    private let urlFactory: URLFactory
+    private let requestFactory: RequestFactory
     
     private let queue = DispatchQueue.global()
     
     init(mapper: GithubMapper,
          networkClient: NetworkClient,
          deserializer: Deserializer,
-         urlBuilder: URLBuilder,
-         requestBuilder: RequestBuilder) {
+         urlFactory: URLFactory,
+         requestFactory: RequestFactory) {
         self.mapper = mapper
         self.networkClient = networkClient
         self.deserializer = deserializer
-        self.urlBuilder = urlBuilder
-        self.requestBuilder = requestBuilder
+        self.urlFactory = urlFactory
+        self.requestFactory = requestFactory
     }
     
     func updateRepositories(with configuration: GithubRepositorySearchConfiguration,
                             completion: @escaping RepositoryResponse) {
         do {
-            let url = try urlBuilder.build(withAPIPath: .githubPath,
-                                           APIMethod: .githubMethod,
-                                           configuration: configuration)
-            let requestBuilderConfiguration = RequestBuilderConfiguration(method: .GET,
+            let url = try urlFactory.create(withAPIPath: .githubPath,
+                                            APIMethod: .githubMethod,
+                                            configuration: configuration)
+            let requestFactoryConfiguration = RequestFactoryConfiguration(method: .GET,
                                                                           timoutInterval: 60.0,
                                                                           url: url)
-            let request = requestBuilder.build(requestBuilderConfiguration)
+            let request = requestFactory.create(requestFactoryConfiguration)
             performNetworkOperations(with: request, completion: completion)
         } catch let error {
             completion { throw error }

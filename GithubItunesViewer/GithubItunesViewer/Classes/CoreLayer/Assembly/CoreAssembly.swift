@@ -12,7 +12,7 @@ protocol CoreAssembly {
     func githubMapper() -> GithubMapper
     func iTunesMapper() -> ITunesMapper
     func networkClient() -> NetworkClient
-    func urlBuilder() -> URLBuilder
-    func requestBuilder() -> RequestBuilder
+    func urlFactory() -> URLFactory
+    func requestFactory() -> RequestFactory
     func jsonDeserializer() -> Deserializer
 }

@@ -1,5 +1,5 @@
 //
-//  RequestBuilderImplementation.swift
+//  RequestFactoryImplementation.swift
 //  GithubItunesViewer
 //
 //  Created by m.rakhmanov on 21.01.17.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-class RequestBuilderImplementation: RequestBuilder {
+class RequestFactoryImplementation: RequestFactory {
     
-    func build(_ configuration: RequestBuilderConfiguration) -> URLRequest {
+    func create(_ configuration: RequestFactoryConfiguration) -> URLRequest {
         var request = URLRequest(url: configuration.url,
                                  cachePolicy: .returnCacheDataElseLoad,
                                  timeoutInterval: configuration.timoutInterval)

@@ -13,33 +13,33 @@ class ITunesServiceImplementation: ITunesService {
     private let mapper: ITunesMapper
     private let networkClient: NetworkClient
     private let deserializer: Deserializer
-    private let urlBuilder: URLBuilder
-    private let requestBuilder: RequestBuilder
+    private let urlFactory: URLFactory
+    private let requestFactory: RequestFactory
     
     private let queue = DispatchQueue.global()
     
     init(mapper: ITunesMapper,
          networkClient: NetworkClient,
          deserializer: Deserializer,
-         urlBuilder: URLBuilder,
-         requestBuilder: RequestBuilder) {
+         urlFactory: URLFactory,
+         requestFactory: RequestFactory) {
         self.mapper = mapper
         self.networkClient = networkClient
         self.deserializer = deserializer
-        self.urlBuilder = urlBuilder
-        self.requestBuilder = requestBuilder
+        self.urlFactory = urlFactory
+        self.requestFactory = requestFactory
     }
     
     func updateItems(with configuration: ITunesSearchConfiguration,
                              completion: @escaping SongDataResponse) {
         do {
-            let url = try urlBuilder.build(withAPIPath: .iTunesPath,
+            let url = try urlFactory.create(withAPIPath: .iTunesPath,
                                            APIMethod: .iTunesMethod,
                                            configuration: configuration)
-            let requestConfiguration = RequestBuilderConfiguration(method: .GET,
+            let requestConfiguration = RequestFactoryConfiguration(method: .GET,
                                                                    timoutInterval: 20.0,
                                                                    url: url)
-            let request = requestBuilder.build(requestConfiguration)
+            let request = requestFactory.create(requestConfiguration)
             performNetworkOperations(with: request, completion: completion)
         } catch let error {
             completion { throw error }
