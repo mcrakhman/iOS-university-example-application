@@ -197,6 +197,8 @@
 		9E1DC8ED1EC6201C00FD87C8 /* ImageDownloaderServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DC8271EC61E1500FD87C8 /* ImageDownloaderServiceImplementation.swift */; };
 		9E1DC8EE1EC6201C00FD87C8 /* ITunesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DC8291EC61E1500FD87C8 /* ITunesService.swift */; };
 		9E1DC8EF1EC6201C00FD87C8 /* ITunesServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DC82A1EC61E1500FD87C8 /* ITunesServiceImplementation.swift */; };
+		9E1DC8F31EC620E000FD87C8 /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DC8F21EC620E000FD87C8 /* RequestFactoryTests.swift */; };
+		9E1DC8F51EC620EE00FD87C8 /* URLFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DC8F41EC620EE00FD87C8 /* URLFactoryTests.swift */; };
 		9E237A061E3396D300CA2FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E237A041E3396D300CA2FD1 /* Main.storyboard */; };
 		9E237A081E3396D300CA2FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E237A071E3396D300CA2FD1 /* Assets.xcassets */; };
 		9E237A0B1E3396D300CA2FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E237A091E3396D300CA2FD1 /* LaunchScreen.storyboard */; };
@@ -311,6 +313,8 @@
 		9E1DC88C1EC61EB700FD87C8 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		9E1DC88D1EC61EB700FD87C8 /* RequestFactoryConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactoryConfiguration.swift; sourceTree = "<group>"; };
 		9E1DC88E1EC61EB700FD87C8 /* RequestFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactoryImplementation.swift; sourceTree = "<group>"; };
+		9E1DC8F21EC620E000FD87C8 /* RequestFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactoryTests.swift; sourceTree = "<group>"; };
+		9E1DC8F41EC620EE00FD87C8 /* URLFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLFactoryTests.swift; sourceTree = "<group>"; };
 		9E2379FD1E3396D300CA2FD1 /* GithubItunesViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubItunesViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E237A051E3396D300CA2FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E237A071E3396D300CA2FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -341,6 +345,8 @@
 		9E1DC7611EC47D8400FD87C8 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9E1DC8F01EC620C200FD87C8 /* URLFactory */,
+				9E1DC8F11EC620C200FD87C8 /* RequestFactory */,
 				9E1DC7681EC4AA1500FD87C8 /* Mapper */,
 				9E1DC7651EC4A5E300FD87C8 /* JSONDeserializer */,
 				9E1DC7621EC49BA600FD87C8 /* NetworkClient */,
@@ -995,6 +1001,22 @@
 			path = RequestFactory;
 			sourceTree = "<group>";
 		};
+		9E1DC8F01EC620C200FD87C8 /* URLFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9E1DC8F41EC620EE00FD87C8 /* URLFactoryTests.swift */,
+			);
+			path = URLFactory;
+			sourceTree = "<group>";
+		};
+		9E1DC8F11EC620C200FD87C8 /* RequestFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9E1DC8F21EC620E000FD87C8 /* RequestFactoryTests.swift */,
+			);
+			path = RequestFactory;
+			sourceTree = "<group>";
+		};
 		9E2379F41E3396D300CA2FD1 = {
 			isa = PBXGroup;
 			children = (
@@ -1306,6 +1328,7 @@
 				9E1DC8AA1EC6201C00FD87C8 /* URLParametersTransformable.swift in Sources */,
 				9E1DC8C91EC6201C00FD87C8 /* DetailInfoViewInput.swift in Sources */,
 				9E1DC8A51EC6201C00FD87C8 /* NetworkClientImplementation.swift in Sources */,
+				9E1DC8F31EC620E000FD87C8 /* RequestFactoryTests.swift in Sources */,
 				9E1DC8EF1EC6201C00FD87C8 /* ITunesServiceImplementation.swift in Sources */,
 				9E1DC8BA1EC6201C00FD87C8 /* ScaleTransitionAnimator.swift in Sources */,
 				9E1DC8C71EC6201C00FD87C8 /* DetailInfoDataDisplayManagerImplementation.swift in Sources */,
@@ -1320,6 +1343,7 @@
 				9E1DC8D51EC6201C00FD87C8 /* IconAssemblyImplementation.swift in Sources */,
 				9E1DC8A71EC6201C00FD87C8 /* ITunesSearchConfiguration.swift in Sources */,
 				9E1DC8E71EC6201C00FD87C8 /* ServiceAssembly.swift in Sources */,
+				9E1DC8F51EC620EE00FD87C8 /* URLFactoryTests.swift in Sources */,
 				9E1DC8E31EC6201C00FD87C8 /* MainRouterInput.swift in Sources */,
 				9E1DC89E1EC6201C00FD87C8 /* Deserializer.swift in Sources */,
 				9E1DC8C61EC6201C00FD87C8 /* DetailInfoDataDisplayManager.swift in Sources */,
